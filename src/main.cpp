@@ -7,6 +7,5 @@ using namespace std;
 int main(){
     cout << "Hellor World \n"  ;
     cout << "Whatcha doin ? \n"  ;
-    cout << "Negro  \n"  ;
     return 0;
 }

@@ -1,5 +1,6 @@
 # SDL3-GameProject
 A game project, supposly written in c++ using sdl3 library
+Wir sind 2er Team und sind nichtfachmann, aber wir probieren unser bestes.
 
 
 # Wie kann mann bearbeiten

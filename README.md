@@ -12,6 +12,7 @@ We are a team of two hobby developers learning game development through this pro
 ## Development Guide
 
 ### Prerequisites
+'''sudo pacman -S cmake gcc sdl3'''
 - Linux development environment
 - C++ compiler (g++/clang)
 - SDL3 development libraries

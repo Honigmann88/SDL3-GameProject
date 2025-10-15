@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(){
-    cout << "Hellor World \n"  ;
+    cout << "Hellor Word \n"  ;
     cout << "Whatcha doin ? \n"  ;
     return 0;
 }

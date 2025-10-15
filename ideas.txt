@@ -1,1 +1,9 @@
 Game Ideas: 
+
+First idea: Hungry Dragon 
+
+We are a human that needs to feed the dragon with eggs, at the beginning we only have one chicken, but we need to be fast. At random times 
+one of the eggs is fermented and we can hatch a new chicken but we need to be extra fast and carefull. If dragon is not satisfied with 
+eggs that day, we have to feed him a chicken, if last chicken is eaten we loose the game. 
+
+This idea can be evolutionized.

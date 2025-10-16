@@ -6,9 +6,6 @@
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL_uclibc.dir
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/edit_cache.dir
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/rebuild_cache.dir
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL_ttf/CMakeFiles/SDL3_ttf-shared.dir
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL_ttf/CMakeFiles/edit_cache.dir
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL_ttf/CMakeFiles/rebuild_cache.dir
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL_image/CMakeFiles/SDL3_image-shared.dir
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL_image/CMakeFiles/edit_cache.dir
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL_image/CMakeFiles/rebuild_cache.dir

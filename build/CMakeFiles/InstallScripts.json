@@ -3,7 +3,6 @@
 	[
 		"/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/cmake_install.cmake",
 		"/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/cmake_install.cmake",
-		"/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL_ttf/cmake_install.cmake",
 		"/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL_image/cmake_install.cmake"
 	],
 	"Parallel" : false

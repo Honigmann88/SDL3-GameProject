@@ -135,15 +135,10 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ekipcalismasi/Documents/GitHub/SDL3-Ga
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
-  /usr/include/c++/15.2.1/backward/auto_ptr.h \
   /usr/include/c++/15.2.1/backward/binders.h \
   /usr/include/c++/15.2.1/bit \
-  /usr/include/c++/15.2.1/bits/align.h \
   /usr/include/c++/15.2.1/bits/alloc_traits.h \
-  /usr/include/c++/15.2.1/bits/allocated_ptr.h \
   /usr/include/c++/15.2.1/bits/allocator.h \
-  /usr/include/c++/15.2.1/bits/atomic_base.h \
-  /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h \
   /usr/include/c++/15.2.1/bits/basic_ios.h \
   /usr/include/c++/15.2.1/bits/basic_ios.tcc \
   /usr/include/c++/15.2.1/bits/basic_string.h \
@@ -182,9 +177,6 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ekipcalismasi/Documents/GitHub/SDL3-Ga
   /usr/include/c++/15.2.1/bits/range_access.h \
   /usr/include/c++/15.2.1/bits/refwrap.h \
   /usr/include/c++/15.2.1/bits/requires_hosted.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h \
-  /usr/include/c++/15.2.1/bits/shared_ptr_base.h \
   /usr/include/c++/15.2.1/bits/std_abs.h \
   /usr/include/c++/15.2.1/bits/stl_algobase.h \
   /usr/include/c++/15.2.1/bits/stl_construct.h \
@@ -193,14 +185,10 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ekipcalismasi/Documents/GitHub/SDL3-Ga
   /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/15.2.1/bits/stl_pair.h \
-  /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
-  /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/15.2.1/bits/streambuf.tcc \
   /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/15.2.1/bits/string_view.tcc \
   /usr/include/c++/15.2.1/bits/stringfwd.h \
-  /usr/include/c++/15.2.1/bits/unique_ptr.h \
   /usr/include/c++/15.2.1/bits/uses_allocator.h \
   /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/15.2.1/bits/utility.h \
@@ -217,10 +205,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ekipcalismasi/Documents/GitHub/SDL3-Ga
   /usr/include/c++/15.2.1/debug/assertions.h \
   /usr/include/c++/15.2.1/debug/debug.h \
   /usr/include/c++/15.2.1/exception \
-  /usr/include/c++/15.2.1/ext/aligned_buffer.h \
   /usr/include/c++/15.2.1/ext/alloc_traits.h \
   /usr/include/c++/15.2.1/ext/atomicity.h \
-  /usr/include/c++/15.2.1/ext/concurrence.h \
   /usr/include/c++/15.2.1/ext/numeric_traits.h \
   /usr/include/c++/15.2.1/ext/string_conversions.h \
   /usr/include/c++/15.2.1/ext/type_traits.h \
@@ -229,11 +215,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ekipcalismasi/Documents/GitHub/SDL3-Ga
   /usr/include/c++/15.2.1/iosfwd \
   /usr/include/c++/15.2.1/iostream \
   /usr/include/c++/15.2.1/istream \
-  /usr/include/c++/15.2.1/memory \
   /usr/include/c++/15.2.1/new \
   /usr/include/c++/15.2.1/ostream \
-  /usr/include/c++/15.2.1/pstl/execution_defs.h \
-  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
   /usr/include/c++/15.2.1/pstl/pstl_config.h \
   /usr/include/c++/15.2.1/stdexcept \
   /usr/include/c++/15.2.1/streambuf \
@@ -373,33 +356,11 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/sys/types.h:
 
+/usr/include/sys/single_threaded.h:
+
 /usr/include/sys/select.h:
 
 /usr/include/sys/cdefs.h:
-
-/usr/include/strings.h:
-
-/usr/include/string.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/wctype.h:
-
-/usr/include/sched.h:
-
-/usr/lib/libstdc++.so:
-
-/usr/include/locale.h:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/linux/sched/types.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/gnu/stubs-64.h:
 
 /usr/include/bits/types/wint_t.h:
 
@@ -430,6 +391,8 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_power.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
+
+/usr/include/c++/15.2.1/debug/debug.h:
 
 /usr/include/c++/15.2.1/type_traits:
 
@@ -499,8 +462,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/ios:
 
-/usr/include/c++/15.2.1/pstl/glue_memory_defs.h:
-
 /usr/include/asm/bitsperlong.h:
 
 /usr/include/asm-generic/errno-base.h:
@@ -519,15 +480,13 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/bits/wchar.h:
 
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/15.2.1/bits/stl_tempbuf.h:
-
 /usr/lib32/libpcre2-8.so.0:
 
 /usr/include/c++/15.2.1/bits/ostream.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_video.h:
+
+/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_iostream.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_stdinc.h:
 
@@ -551,8 +510,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/bits/atomic_wide_counter.h:
 
-/usr/include/c++/15.2.1/pstl/execution_defs.h:
-
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_haptic.h:
 
 /usr/include/c++/15.2.1/bits/streambuf.tcc:
@@ -568,10 +525,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/c++/15.2.1/bits/streambuf_iterator.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_events.h:
-
-/usr/include/pthread.h:
-
-/usr/include/c++/15.2.1/bits/stl_uninitialized.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_error.h:
 
@@ -591,6 +544,8 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/bits/pthreadtypes-arch.h:
 
+/usr/include/gnu/stubs.h:
+
 /usr/include/alloca.h:
 
 /usr/include/c++/15.2.1/bits/locale_classes.h:
@@ -607,10 +562,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_log.h:
 
-/usr/include/stdio.h:
-
-/usr/include/bits/wordsize.h:
-
 /usr/include/c++/15.2.1/bits/exception.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_bits.h:
@@ -618,8 +569,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_camera.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/src/main.cpp:
-
-/usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
 
@@ -631,9 +580,9 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/cstdlib:
 
-/usr/include/features.h:
-
 /usr/include/bits/types/__FILE.h:
+
+/usr/include/features.h:
 
 /usr/include/bits/sched.h:
 
@@ -667,6 +616,8 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_pen.h:
 
+/usr/include/linux/errno.h:
+
 /usr/include/bits/struct_rwlock.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_blendmode.h:
@@ -681,9 +632,9 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/asm-generic/posix_types.h:
 
-/usr/include/c++/15.2.1/bits/shared_ptr_atomic.h:
-
 /usr/include/c++/15.2.1/bits/locale_classes.tcc:
+
+/usr/include/stdc-predef.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_clipboard.h:
 
@@ -699,11 +650,11 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_platform_defines.h:
 
-/usr/include/c++/15.2.1/bits/allocated_ptr.h:
-
 /usr/include/c++/15.2.1/cwctype:
 
 /usr/include/c++/15.2.1/istream:
+
+/usr/include/strings.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_process.h:
 
@@ -731,8 +682,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/bits/types/struct_sched_param.h:
 
-/usr/include/c++/15.2.1/memory:
-
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_time.h:
 
 /usr/lib/libz.so.1:
@@ -749,21 +698,7 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/bits/wctype-wchar.h:
 
-/usr/include/c++/15.2.1/backward/auto_ptr.h:
-
-/usr/include/c++/15.2.1/debug/debug.h:
-
-/usr/include/c++/15.2.1/bits/align.h:
-
-/usr/include/c++/15.2.1/bits/functexcept.h:
-
-/usr/include/c++/15.2.1/streambuf:
-
 /usr/include/c++/15.2.1/bits/allocator.h:
-
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_iostream.h:
-
-/usr/include/c++/15.2.1/bits/atomic_base.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_sensor.h:
 
@@ -787,11 +722,17 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/concept_check.h:
 
+/usr/include/c++/15.2.1/bits/cxxabi_forced.h:
+
 /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_hints.h:
 
 /usr/include/c++/15.2.1/bits/exception_defines.h:
+
+/usr/include/c++/15.2.1/bits/functexcept.h:
+
+/usr/include/c++/15.2.1/streambuf:
 
 /usr/include/c++/15.2.1/bits/hash_bytes.h:
 
@@ -855,13 +796,11 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/range_access.h:
 
-/usr/include/sys/single_threaded.h:
-
-/usr/include/c++/15.2.1/bits/shared_ptr.h:
-
 /usr/include/linux/types.h:
 
 /usr/include/c++/15.2.1/bits/std_abs.h:
+
+/usr/include/gnu/stubs-64.h:
 
 /usr/include/c++/15.2.1/bits/stl_iterator.h:
 
@@ -873,7 +812,9 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/string_view.tcc:
 
-/usr/include/c++/15.2.1/bits/unique_ptr.h:
+/usr/lib/libstdc++.so:
+
+/usr/include/locale.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_gpu.h:
 
@@ -885,12 +826,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/uses_allocator_args.h:
 
-/usr/include/linux/posix_types.h:
-
-/usr/include/bits/types/FILE.h:
-
-/usr/include/c++/15.2.1/bits/utility.h:
-
 /usr/include/c++/15.2.1/clocale:
 
 /usr/include/c++/15.2.1/concepts:
@@ -898,8 +833,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/lib/libgcc_s.so:
 
 /usr/include/c++/15.2.1/cstddef:
-
-/usr/include/c++/15.2.1/bits/shared_ptr_base.h:
 
 /usr/include/c++/15.2.1/debug/assertions.h:
 
@@ -917,21 +850,13 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/errno.h:
 
-/usr/include/c++/15.2.1/ext/aligned_buffer.h:
-
 /usr/include/c++/15.2.1/ext/alloc_traits.h:
-
-/usr/include/c++/15.2.1/bits/cxxabi_forced.h:
-
-/usr/include/c++/15.2.1/ext/concurrence.h:
 
 /usr/include/c++/15.2.1/ext/numeric_traits.h:
 
 /usr/include/c++/15.2.1/ext/type_traits.h:
 
 /usr/include/c++/15.2.1/initializer_list:
-
-/usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h:
 
 /usr/include/bits/types/struct_timeval.h:
 
@@ -949,11 +874,9 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/string_view:
 
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
-
 /usr/include/c++/15.2.1/typeinfo:
+
+/usr/include/stdlib.h:
 
 /usr/include/bits/types/__sigset_t.h:
 
@@ -966,3 +889,29 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
 
 /usr/include/features-time64.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/c++/15.2.1/bits/utility.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/linux/sched/types.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/pthread.h:
+
+/usr/include/wctype.h:
+
+/usr/include/sched.h:
+
+/usr/include/endian.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/stdio.h:
+
+/usr/include/string.h:

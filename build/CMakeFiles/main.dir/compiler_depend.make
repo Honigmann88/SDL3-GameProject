@@ -281,62 +281,26 @@ main: /usr/lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a \
   /usr/lib/ld-linux-x86-64.so.2 \
-  /usr/lib/libbrotlicommon.so.1 \
-  /usr/lib/libbrotlidec.so.1 \
-  /usr/lib/libbz2.so.1.0 \
   /usr/lib/libc.so.6 \
   /usr/lib/libc_nonshared.a \
-  /usr/lib/libfreetype.so.6 \
-  /usr/lib/libglib-2.0.so.0 \
-  /usr/lib/libgraphite2.so.3 \
-  /usr/lib/libharfbuzz.so.0 \
   /usr/lib/libm.so.6 \
   /usr/lib/libmvec.so.1 \
-  /usr/lib/libpcre2-8.so.0 \
-  /usr/lib/libpng16.so.16 \
-  /usr/lib/libz.so.1 \
-  /usr/lib32/libbrotlicommon.so.1 \
-  /usr/lib32/libbrotlidec.so.1 \
-  /usr/lib32/libbz2.so.1.0 \
-  /usr/lib32/libfreetype.so.6 \
-  /usr/lib32/libglib-2.0.so.0 \
-  /usr/lib32/libpcre2-8.so.0 \
-  /usr/lib32/libpng16.so.16 \
-  /usr/lib32/libz.so.1 \
   CMakeFiles/main.dir/src/main.cpp.o \
   libSDL3.so.0.3.0 \
-  libSDL3_ttf.so.0.3.0
+  libSDL3_image.so.0.3.0
 
-
-libSDL3_ttf.so.0.3.0:
 
 libSDL3.so.0.3.0:
 
 CMakeFiles/main.dir/src/main.cpp.o:
 
-/usr/lib32/libz.so.1:
-
-/usr/lib32/libpng16.so.16:
-
-/usr/lib32/libbz2.so.1.0:
-
 /usr/lib/libmvec.so.1:
 
 /usr/lib/libm.so.6:
 
-/usr/lib/libgraphite2.so.3:
-
-/usr/lib/libglib-2.0.so.0:
-
-/usr/lib/libfreetype.so.6:
-
 /usr/lib/libc_nonshared.a:
 
 /usr/lib/libc.so.6:
-
-/usr/lib/libbz2.so.1.0:
-
-/usr/lib/libbrotlidec.so.1:
 
 /usr/lib/ld-linux-x86-64.so.2:
 
@@ -349,8 +313,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/lib/Scrt1.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h:
-
-/usr/lib/libbrotlicommon.so.1:
 
 /usr/include/wchar.h:
 
@@ -432,8 +394,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/bits/floatn-common.h:
 
-/usr/lib/libpcre2-8.so.0:
-
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_loadso.h:
 
 /usr/include/bits/errno.h:
@@ -466,8 +426,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/lib32/libbrotlicommon.so.1:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
 
 /usr/include/asm-generic/int-ll64.h:
@@ -480,8 +438,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/bits/wchar.h:
 
-/usr/lib32/libpcre2-8.so.0:
-
 /usr/include/c++/15.2.1/bits/ostream.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_video.h:
@@ -493,8 +449,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/lib/crtn.o:
 
 /usr/include/c++/15.2.1/bits/functional_hash.h:
-
-/usr/lib/libpng16.so.16:
 
 /usr/include/c++/15.2.1/bits/refwrap.h:
 
@@ -515,8 +469,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/c++/15.2.1/bits/streambuf.tcc:
 
 /usr/include/bits/cpu-set.h:
-
-/usr/lib/libharfbuzz.so.0:
 
 /usr/include/c++/15.2.1/bits/cpp_type_traits.h:
 
@@ -670,10 +622,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/cerrno:
 
-/usr/lib32/libglib-2.0.so.0:
-
-/usr/lib32/libbrotlidec.so.1:
-
 /usr/include/bits/byteswap.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_storage.h:
@@ -683,8 +631,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/bits/types/struct_sched_param.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_time.h:
-
-/usr/lib/libz.so.1:
 
 /usr/include/bits/uintn-identity.h:
 
@@ -844,7 +790,7 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/exception:
 
-/usr/lib32/libfreetype.so.6:
+libSDL3_image.so.0.3.0:
 
 /usr/include/c++/15.2.1/tuple:
 

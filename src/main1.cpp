@@ -41,18 +41,21 @@ int main(){
     SDL_Surface* surface = SDL_GetWindowSurface(window);
     SDL_ClearSurface(surface, 0,0,0,0);
 
-    if (SDL_WriteSurfacePixel(surface, 10 , 10 , 60 , 70 , 28 , 1)) {
-        cout << "Pixel written succesfully! \n";
+    for (int i = 0; i <=200; i++) {
+        if (SDL_WriteSurfacePixel(surface, 10 , 10 , 60 , 70 , 28 , 1)) {
+            cout << "Pixel written succesfully! \n";
+        
+        }
+
+        else {
+            cout << "ERROR: Pixel \n";
+        }
     
     }
-
-    else {
-        cout << "ERROR: Pixel \n";
-    }
+   
 
     SDL_UpdateWindowSurface(window);
-   
-   
+
     // 10 Sekunden warten
     SDL_Delay(10000);
     

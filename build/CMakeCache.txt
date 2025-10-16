@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+2DGame_BINARY_DIR:STATIC=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build
+
+//Value Computed by CMake
+2DGame_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+2DGame_SOURCE_DIR:STATIC=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject
+
 //The ALSA (asound) include directory
 ALSA_INCLUDE_DIR:PATH=/usr/include
 
@@ -447,6 +456,15 @@ SDL3_IS_TOP_LEVEL:STATIC=OFF
 SDL3_SOURCE_DIR:STATIC=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL
 
 //Value Computed by CMake
+SDL3_image_BINARY_DIR:STATIC=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL_image
+
+//Value Computed by CMake
+SDL3_image_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+SDL3_image_SOURCE_DIR:STATIC=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_image
+
+//Value Computed by CMake
 SDL3_ttf_BINARY_DIR:STATIC=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL_ttf
 
 //Value Computed by CMake
@@ -454,6 +472,114 @@ SDL3_ttf_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 SDL3_ttf_SOURCE_DIR:STATIC=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_ttf
+
+//Support loading AVIF images
+SDLIMAGE_AVIF:BOOL=ON
+
+//Add AVIF save support
+SDLIMAGE_AVIF_SAVE:BOOL=ON
+
+//Dynamically load AVIF support (requires shared libavif)
+SDLIMAGE_AVIF_SHARED:BOOL=ON
+
+//Use stb_image for loading JPEG and PNG files
+SDLIMAGE_BACKEND_STB:BOOL=ON
+
+//Support loading BMP images
+SDLIMAGE_BMP:BOOL=ON
+
+//Add BMP save support
+SDLIMAGE_BMP_SAVE:BOOL=ON
+
+//Load dependencies dynamically
+SDLIMAGE_DEPS_SHARED:BOOL=ON
+
+//Support loading GIF images
+SDLIMAGE_GIF:BOOL=ON
+
+//Add GIF save support
+SDLIMAGE_GIF_SAVE:BOOL=ON
+
+//Enable SDL3_image install target
+SDLIMAGE_INSTALL:BOOL=OFF
+
+//Support loading JPEG images
+SDLIMAGE_JPG:BOOL=ON
+
+//Add JPEG save support
+SDLIMAGE_JPG_SAVE:BOOL=ON
+
+//Support loading JXL images
+SDLIMAGE_JXL:BOOL=OFF
+
+//Support loading LBM images
+SDLIMAGE_LBM:BOOL=ON
+
+//Support loading PCX images
+SDLIMAGE_PCX:BOOL=ON
+
+//Support loading PNG images
+SDLIMAGE_PNG:BOOL=ON
+
+//Add PNG save support
+SDLIMAGE_PNG_SAVE:BOOL=ON
+
+//Support loading PNM images
+SDLIMAGE_PNM:BOOL=ON
+
+//Support loading QOI images
+SDLIMAGE_QOI:BOOL=ON
+
+//Build the SDL3_image sample program(s)
+SDLIMAGE_SAMPLES:BOOL=OFF
+
+//Fail when a dependency could not be found
+SDLIMAGE_STRICT:BOOL=OFF
+
+//Support loading SVG images
+SDLIMAGE_SVG:BOOL=ON
+
+//Build unit tests?
+SDLIMAGE_TESTS:BOOL=OFF
+
+//Install unit tests?
+SDLIMAGE_TESTS_INSTALL:BOOL=OFF
+
+//Support loading TGA images
+SDLIMAGE_TGA:BOOL=ON
+
+//Add TGA save support
+SDLIMAGE_TGA_SAVE:BOOL=ON
+
+//Support loading TIFF images
+SDLIMAGE_TIF:BOOL=ON
+
+//Dynamically load TIFF support (requires shared libtiff)
+SDLIMAGE_TIF_SHARED:BOOL=ON
+
+//Use vendored third-party libraries
+SDLIMAGE_VENDORED:BOOL=OFF
+
+//Support loading WEBP images
+SDLIMAGE_WEBP:BOOL=ON
+
+//Add WEBP save support
+SDLIMAGE_WEBP_SAVE:BOOL=ON
+
+//Dynamically load WEBP support (requires shared libwebp)
+SDLIMAGE_WEBP_SHARED:BOOL=ON
+
+//Treat warnings as errors
+SDLIMAGE_WERROR:BOOL=OFF
+
+//Support loading XCF images
+SDLIMAGE_XCF:BOOL=ON
+
+//Support loading XPM images
+SDLIMAGE_XPM:BOOL=ON
+
+//Support loading XV images
+SDLIMAGE_XV:BOOL=ON
 
 //Use harfbuzz to improve text shaping
 SDLTTF_HARFBUZZ:BOOL=ON
@@ -812,6 +938,12 @@ SDL_X11_XSYNC:BOOL=ON
 
 //Enable XTest support
 SDL_X11_XTEST:BOOL=ON
+
+//The directory containing a CMake configuration file for TIFF.
+TIFF_DIR:PATH=TIFF_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for Tiff.
+Tiff_DIR:PATH=/usr/lib/cmake/tiff
 
 //Path to a library.
 UDEV_LIB:FILEPATH=/usr/lib/libudev.so
@@ -1290,6 +1422,9 @@ harfbuzz_LINK_LIBRARIES:STRING=
 //Extra link flags of harfbuzz
 harfbuzz_LINK_OPTIONS:STRING=
 
+//The directory containing a CMake configuration file for libavif.
+libavif_DIR:PATH=/usr/lib/cmake/libavif
+
 //Path to a library.
 pkgcfg_lib_DBUS_dbus-1:FILEPATH=/usr/lib/libdbus-1.so
 
@@ -1406,6 +1541,63 @@ sdl3Game_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 sdl3Game_SOURCE_DIR:STATIC=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject
+
+//The directory containing a CMake configuration file for sdl3.
+sdl3_DIR:PATH=sdl3_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for vendored/SDL.
+vendored/SDL_DIR:PATH=vendored/SDL_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for vendored/sdl3.
+vendored/sdl3_DIR:PATH=vendored/sdl3_DIR-NOTFOUND
+
+//Extra compile options of webp
+webp_COMPILE_OPTIONS:STRING=
+
+//The directory containing a CMake configuration file for webp.
+webp_DIR:PATH=webp_DIR-NOTFOUND
+
+//Path to a file.
+webp_INCLUDE_PATH:PATH=/usr/include
+
+//Path to a library.
+webp_LIBRARY:FILEPATH=/usr/lib/libwebp.so
+
+//Extra link flags of webp
+webp_LINK_FLAGS:STRING=
+
+//Extra link libraries of webp
+webp_LINK_LIBRARIES:STRING=
+
+//Extra compile options of webpdemux
+webpdemux_COMPILE_OPTIONS:STRING=
+
+//Path to a file.
+webpdemux_INCLUDE_PATH:PATH=/usr/include
+
+//Path to a library.
+webpdemux_LIBRARY:FILEPATH=/usr/lib/libwebpdemux.so
+
+//Extra link flags of webpdemux
+webpdemux_LINK_FLAGS:STRING=
+
+//Extra link libraries of webpdemux
+webpdemux_LINK_LIBRARIES:STRING=
+
+//Extra compile options of webpmux
+webpmux_COMPILE_OPTIONS:STRING=
+
+//Path to a file.
+webpmux_INCLUDE_PATH:PATH=/usr/include
+
+//Path to a library.
+webpmux_LIBRARY:FILEPATH=/usr/lib/libwebpmux.so
+
+//Extra link flags of webpmux
+webpmux_LINK_FLAGS:STRING=
+
+//Extra link libraries of webpmux
+webpmux_LINK_LIBRARIES:STRING=
 
 
 ########################
@@ -1562,7 +1754,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1678,10 +1870,14 @@ FIND_PACKAGE_MESSAGE_DETAILS_LibUSB:INTERNAL=[/usr/lib/libusb-1.0.so][/usr/inclu
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/libOpenGL.so][/usr/lib/libGLX.so][/usr/include][ ][v()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v2.5.1()]
+//Details about finding TIFF
+FIND_PACKAGE_MESSAGE_DETAILS_TIFF:INTERNAL=[/usr/lib/cmake/tiff][ ][v4.7.1()]
 //Details about finding X11
 FIND_PACKAGE_MESSAGE_DETAILS_X11:INTERNAL=[/usr/include][/usr/lib/libX11.so][ ][v()]
 //Details about finding harfbuzz
 FIND_PACKAGE_MESSAGE_DETAILS_harfbuzz:INTERNAL=[/usr/lib/libharfbuzz.so][/usr/include/harfbuzz][v12.1.0(2.3.1)]
+//Details about finding webp
+FIND_PACKAGE_MESSAGE_DETAILS_webp:INTERNAL=[/usr/lib/libwebp.so][/usr/include][/usr/lib/libwebpdemux.so][/usr/include][/usr/lib/libwebpmux.so][/usr/include][v()]
 //Have library c
 FOUND_CLOCK_GETTIME_LIBC:INTERNAL=1
 //ADVANCED property for variable: FREETYPE_INCLUDE_DIR_freetype2
@@ -1822,6 +2018,8 @@ HAVE_WL_NO_UNDEFINED:INTERNAL=1
 HAVE_XFIXES_H:INTERNAL=1
 //Test HAVE_XGENERICEVENT
 HAVE_XGENERICEVENT:INTERNAL=1
+//Test HAVE_XINPUT2_GESTURE
+HAVE_XINPUT2_GESTURE:INTERNAL=1
 //Test HAVE_XINPUT2_MULTITOUCH
 HAVE_XINPUT2_MULTITOUCH:INTERNAL=1
 //Test HAVE_XINPUT2_SCROLLINFO

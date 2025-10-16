@@ -124,8 +124,6 @@ C_FLAGS = -fPIC -fvisibility=hidden -Wall -Wundef -Wfloat-conversion -fno-strict
 
 # PCH options: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/power/SDL_power.c.o_OPTIONS = -Winvalid-pch;-include;/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 
-# PCH options: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_d3dmath.c.o_OPTIONS = -Winvalid-pch;-include;/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
-
 # PCH options: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_render.c.o_OPTIONS = -Winvalid-pch;-include;/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 
 # PCH options: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_render_unsupported.c.o_OPTIONS = -Winvalid-pch;-include;/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
@@ -409,6 +407,8 @@ C_FLAGS = -fPIC -fvisibility=hidden -Wall -Wundef -Wfloat-conversion -fno-strict
 # PCH options: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-protocol.c.o_OPTIONS = -Winvalid-pch;-include;/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 
 # PCH options: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c.o_OPTIONS = -Winvalid-pch;-include;/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
+
+# PCH options: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.o_OPTIONS = -Winvalid-pch;-include;/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 
 # PCH options: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-warp-v1-protocol.c.o_OPTIONS = -Winvalid-pch;-include;/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 

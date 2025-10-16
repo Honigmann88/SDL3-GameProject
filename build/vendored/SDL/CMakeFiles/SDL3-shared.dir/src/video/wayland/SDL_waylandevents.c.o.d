@@ -88,6 +88,9 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandevents.c.o:
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/tablet-v2-client-protocol.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/primary-selection-unstable-v1-client-protocol.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/input-timestamps-unstable-v1-client-protocol.h \
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/pointer-gestures-unstable-v1-client-protocol.h \
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/cursor-shape-v1-client-protocol.h \
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/viewporter-client-protocol.h \
  /usr/include/linux/input.h /usr/include/sys/time.h \
  /usr/include/features.h /usr/include/bits/types.h \
  /usr/include/bits/types/time_t.h \
@@ -117,6 +120,4 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandevents.c.o:
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
  /usr/include/bits/wordsize.h /usr/include/bits/confname.h \
  /usr/include/bits/getopt_posix.h /usr/include/bits/getopt_core.h \
- /usr/include/bits/unistd_ext.h /usr/include/linux/close_range.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/cursor-shape-v1-client-protocol.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/viewporter-client-protocol.h
+ /usr/include/bits/unistd_ext.h /usr/include/linux/close_range.h

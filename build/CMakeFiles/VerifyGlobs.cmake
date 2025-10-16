@@ -855,7 +855,6 @@ endif()
 # both_sources at vendored/SDL/cmake/sdlcommands.cmake:29 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/*.c")
 set(OLD_GLOB
-  "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/SDL_d3dmath.c"
   "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/SDL_render.c"
   "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/SDL_render_unsupported.c"
   "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/SDL_yuv_sw.c"
@@ -1267,8 +1266,8 @@ set(OLD_GLOB
   "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_video_unsupported.h"
   "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_vulkan_internal.h"
   "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_yuv_c.h"
+  "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/miniz.h"
   "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/stb_image.h"
-  "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/stb_image_write.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

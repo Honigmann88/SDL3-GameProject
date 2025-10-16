@@ -119,4 +119,5 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandvideo.c.o: 
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/xdg-shell-client-protocol.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/xdg-toplevel-icon-v1-client-protocol.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/color-management-v1-client-protocol.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/pointer-warp-v1-client-protocol.h
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/pointer-warp-v1-client-protocol.h \
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/pointer-gestures-unstable-v1-client-protocol.h

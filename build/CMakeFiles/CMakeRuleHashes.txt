@@ -17,6 +17,8 @@ e6899b5c48b8fe91e5999367c9735287 vendored/SDL/wayland-generated-protocols/keyboa
 b3c6e626429bcd3b0c9a380cfde64b58 vendored/SDL/wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-protocol.c
 8a169c5fd2fd548e8c0b9c1fac544190 vendored/SDL/wayland-generated-protocols/pointer-constraints-unstable-v1-client-protocol.h
 098a1049897e4983c80ec500de4b390e vendored/SDL/wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c
+95977e4b1ad27504121387c601c99bff vendored/SDL/wayland-generated-protocols/pointer-gestures-unstable-v1-client-protocol.h
+bdcbcc18480e64fe22852a9d9b3a1cd0 vendored/SDL/wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c
 230e885db1731adec4fa7f20ad1633fa vendored/SDL/wayland-generated-protocols/pointer-warp-v1-client-protocol.h
 b6bec92f701d8a418dfeafbc86ef18eb vendored/SDL/wayland-generated-protocols/pointer-warp-v1-protocol.c
 3944805b91a1d2a3be0ba61434656d47 vendored/SDL/wayland-generated-protocols/primary-selection-unstable-v1-client-protocol.h

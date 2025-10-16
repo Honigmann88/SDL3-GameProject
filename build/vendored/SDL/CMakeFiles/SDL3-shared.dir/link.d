@@ -60,7 +60,6 @@
   CMakeFiles/SDL3-shared.dir/src/misc/SDL_libusb.c.o \
   CMakeFiles/SDL3-shared.dir/src/misc/SDL_url.c.o \
   CMakeFiles/SDL3-shared.dir/src/power/SDL_power.c.o \
-  CMakeFiles/SDL3-shared.dir/src/render/SDL_d3dmath.c.o \
   CMakeFiles/SDL3-shared.dir/src/render/SDL_render.c.o \
   CMakeFiles/SDL3-shared.dir/src/render/SDL_render_unsupported.c.o \
   CMakeFiles/SDL3-shared.dir/src/render/SDL_yuv_sw.c.o \
@@ -203,6 +202,7 @@
   CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/input-timestamps-unstable-v1-protocol.c.o \
   CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-protocol.c.o \
   CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c.o \
+  CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.o \
   CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-warp-v1-protocol.c.o \
   CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/primary-selection-unstable-v1-protocol.c.o \
   CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c.o \
@@ -446,8 +446,6 @@ CMakeFiles/SDL3-shared.dir/src/misc/SDL_libusb.c.o:
 CMakeFiles/SDL3-shared.dir/src/misc/SDL_url.c.o:
 
 CMakeFiles/SDL3-shared.dir/src/power/SDL_power.c.o:
-
-CMakeFiles/SDL3-shared.dir/src/render/SDL_d3dmath.c.o:
 
 CMakeFiles/SDL3-shared.dir/src/render/SDL_render.c.o:
 
@@ -732,6 +730,8 @@ CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/input-timestamps-unstable
 CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-protocol.c.o:
 
 CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c.o:
+
+CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.o:
 
 CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-warp-v1-protocol.c.o:
 

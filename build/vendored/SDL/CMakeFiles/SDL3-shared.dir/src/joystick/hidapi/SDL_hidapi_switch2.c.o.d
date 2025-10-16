@@ -30,4 +30,5 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_switch2.c
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/joystick/hidapi/../SDL_sysjoystick.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/joystick/hidapi/../SDL_joystick_c.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/joystick/hidapi/SDL_hidapijoystick_c.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/joystick/hidapi/../usb_ids.h
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/joystick/hidapi/../usb_ids.h \
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/joystick/hidapi/SDL_hidapi_rumble.h

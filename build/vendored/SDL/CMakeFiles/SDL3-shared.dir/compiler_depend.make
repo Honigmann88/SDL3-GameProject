@@ -146,7 +146,6 @@ libSDL3.so: /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/s
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/power/linux/SDL_syspower.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/process/SDL_process.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/process/posix/SDL_posixprocess.c.o \
-  vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_d3dmath.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_render.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_render_unsupported.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_yuv_sw.c.o \
@@ -298,6 +297,7 @@ libSDL3.so: /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/s
   vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/input-timestamps-unstable-v1-protocol.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-protocol.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c.o \
+  vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-warp-v1-protocol.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/primary-selection-unstable-v1-protocol.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c.o \
@@ -5165,6 +5165,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_switch2.c
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/joystick/SDL_joystick_c.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/joystick/SDL_sysjoystick.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/joystick/usb_ids.h \
+  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/joystick/hidapi/SDL_hidapi_rumble.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/joystick/hidapi/SDL_hidapi_switch2.c \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/joystick/hidapi/SDL_hidapijoystick_c.h \
   /usr/include/bits/libc-header-start.h \
@@ -5724,12 +5725,6 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/process/posix/SDL_posixprocess.c.o: 
   /usr/include/sys/wait.h \
   /usr/include/unistd.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
-
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_d3dmath.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h \
-  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
-  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/SDL_d3dmath.c \
-  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/SDL_d3dmath.h \
-  /usr/include/stdc-predef.h
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_render.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
@@ -7115,8 +7110,8 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_stb.c.o: vendored/SDL/CMak
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_stb.c \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_stb_c.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_surface_c.h \
+  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/miniz.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/stb_image.h \
-  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/stb_image_write.h \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/emmintrin.h
 
@@ -8491,6 +8486,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandevents.c.o:
   vendored/SDL/wayland-generated-protocols/input-timestamps-unstable-v1-client-protocol.h \
   vendored/SDL/wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-client-protocol.h \
   vendored/SDL/wayland-generated-protocols/pointer-constraints-unstable-v1-client-protocol.h \
+  vendored/SDL/wayland-generated-protocols/pointer-gestures-unstable-v1-client-protocol.h \
   vendored/SDL/wayland-generated-protocols/primary-selection-unstable-v1-client-protocol.h \
   vendored/SDL/wayland-generated-protocols/relative-pointer-unstable-v1-client-protocol.h \
   vendored/SDL/wayland-generated-protocols/tablet-v2-client-protocol.h \
@@ -9017,6 +9013,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandvideo.c.o: 
   vendored/SDL/wayland-generated-protocols/input-timestamps-unstable-v1-client-protocol.h \
   vendored/SDL/wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-client-protocol.h \
   vendored/SDL/wayland-generated-protocols/pointer-constraints-unstable-v1-client-protocol.h \
+  vendored/SDL/wayland-generated-protocols/pointer-gestures-unstable-v1-client-protocol.h \
   vendored/SDL/wayland-generated-protocols/pointer-warp-v1-client-protocol.h \
   vendored/SDL/wayland-generated-protocols/primary-selection-unstable-v1-client-protocol.h \
   vendored/SDL/wayland-generated-protocols/relative-pointer-unstable-v1-client-protocol.h \
@@ -13590,6 +13587,18 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-cons
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
 
+vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h \
+  vendored/SDL/wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c \
+  /usr/include/inttypes.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdlib.h \
+  /usr/include/wayland-util.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+
 vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-warp-v1-protocol.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h \
   vendored/SDL/wayland-generated-protocols/pointer-warp-v1-protocol.c \
   /usr/include/inttypes.h \
@@ -13917,6 +13926,8 @@ vendored/SDL/wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/stb_image.h:
 
+/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/miniz.h:
+
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_pixels.c:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_egl.c:
@@ -14077,6 +14088,8 @@ vendored/SDL/wayland-generated-protocols/idle-inhibit-unstable-v1-client-protoco
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/gpu/SDL_shaders_gpu.c:
 
+/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/SDL_d3dmath.h:
+
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/gpu/SDL_pipeline_gpu.c:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/gpu/SDL_gpu_util.h:
@@ -14098,10 +14111,6 @@ vendored/SDL/wayland-generated-protocols/alpha-modifier-v1-protocol.c:
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/ngage/SDL_render_ngage.c:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_render_sw_c.h:
-
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/SDL_d3dmath.h:
-
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/SDL_d3dmath.c:
 
 /usr/include/bits/spawn_ext.h:
 
@@ -14340,8 +14349,6 @@ vendored/SDL/wayland-generated-protocols/wayland-client-protocol.h:
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dialog/unix/SDL_portaldialog.c:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dialog/SDL_dialog.h:
-
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dialog/SDL_dialog.c:
 
 /usr/include/sys/auxv.h:
 
@@ -14817,6 +14824,8 @@ vendored/SDL/wayland-generated-protocols/xdg-toplevel-icon-v1-client-protocol.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/movdirintrin.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512fp16intrin.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/nmmintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/pkuintrin.h:
@@ -15201,6 +15210,14 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/relative-poi
 
 /usr/include/glib-2.0/gio/gcancellable.h:
 
+/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dialog/SDL_dialog.c:
+
+vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.o:
+
+/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_thread.h:
+
+/usr/include/bits/errno.h:
+
 vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxifmaintrin.h:
@@ -15565,8 +15582,6 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_8bitdo.c.
 
 /usr/include/sys/mman.h:
 
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/stb_image_write.h:
-
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_audiotypecvt.c.o:
 
 /usr/include/glib-2.0/gio/gfilemonitor.h:
@@ -15668,6 +15683,8 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_list.c.o:
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_guid.c.o:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/atomic/SDL_atomic.c:
+
+vendored/SDL/wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c:
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_error.c.o:
 
@@ -15919,24 +15936,6 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenevents.
 
 /usr/include/linux/stat.h:
 
-/usr/include/glib-2.0/glib/gtestutils.h:
-
-/usr/include/alsa/hwdep.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/movrsintrin.h:
-
-/usr/include/linux/errno.h:
-
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_thread.h:
-
-/usr/include/bits/errno.h:
-
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/loadso/dlopen/SDL_sysloadso.c.o:
-
-/usr/include/glib-2.0/gio/gmemoryinputstream.h:
-
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_strtokr.c.o:
-
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/main/generic/SDL_sysmain_callbacks.c.o:
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_audiodev.c.o:
@@ -16147,10 +16146,6 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/power/linux/SDL_syspower.c.o:
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512fp16intrin.h:
-
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_d3dmath.c.o:
-
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_render.c.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/clzerointrin.h:
@@ -16270,6 +16265,20 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL.c.o:
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
 
 /usr/include/spa-0.2/spa/param/video/chroma.h:
+
+/usr/include/glib-2.0/glib/gtestutils.h:
+
+/usr/include/alsa/hwdep.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/movrsintrin.h:
+
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/loadso/dlopen/SDL_sysloadso.c.o:
+
+/usr/include/glib-2.0/gio/gmemoryinputstream.h:
+
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_strtokr.c.o:
+
+/usr/include/linux/errno.h:
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/sensor/dummy/SDL_dummysensor.c.o:
 
@@ -16998,6 +17007,8 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/color-manage
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/core/linux/SDL_ime.h:
 
 /usr/include/sys/sysmacros.h:
+
+vendored/SDL/wayland-generated-protocols/pointer-gestures-unstable-v1-client-protocol.h:
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/alpha-modifier-v1-protocol.c.o:
 

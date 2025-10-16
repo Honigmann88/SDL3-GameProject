@@ -3870,30 +3870,6 @@ src/process/posix/SDL_posixprocess.c.s:
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/src/process/posix/SDL_posixprocess.c.s
 .PHONY : src/process/posix/SDL_posixprocess.c.s
 
-src/render/SDL_d3dmath.o: src/render/SDL_d3dmath.c.o
-.PHONY : src/render/SDL_d3dmath.o
-
-# target to build an object file
-src/render/SDL_d3dmath.c.o:
-	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_d3dmath.c.o
-.PHONY : src/render/SDL_d3dmath.c.o
-
-src/render/SDL_d3dmath.i: src/render/SDL_d3dmath.c.i
-.PHONY : src/render/SDL_d3dmath.i
-
-# target to preprocess a source file
-src/render/SDL_d3dmath.c.i:
-	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_d3dmath.c.i
-.PHONY : src/render/SDL_d3dmath.c.i
-
-src/render/SDL_d3dmath.s: src/render/SDL_d3dmath.c.s
-.PHONY : src/render/SDL_d3dmath.s
-
-# target to generate assembly for a file
-src/render/SDL_d3dmath.c.s:
-	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_d3dmath.c.s
-.PHONY : src/render/SDL_d3dmath.c.s
-
 src/render/SDL_render.o: src/render/SDL_render.c.o
 .PHONY : src/render/SDL_render.o
 
@@ -7758,6 +7734,30 @@ wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c.s:
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c.s
 .PHONY : wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c.s
 
+wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.o: wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.o
+.PHONY : wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.o
+
+# target to build an object file
+wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.o:
+	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.o
+.PHONY : wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.o
+
+wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.i: wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.i
+.PHONY : wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.i
+
+# target to preprocess a source file
+wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.i:
+	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.i
+.PHONY : wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.i
+
+wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.s: wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.s
+.PHONY : wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.s
+
+# target to generate assembly for a file
+wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.s:
+	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.s
+.PHONY : wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.s
+
 wayland-generated-protocols/pointer-warp-v1-protocol.o: wayland-generated-protocols/pointer-warp-v1-protocol.c.o
 .PHONY : wayland-generated-protocols/pointer-warp-v1-protocol.o
 
@@ -8570,9 +8570,6 @@ help:
 	@echo "... src/process/posix/SDL_posixprocess.o"
 	@echo "... src/process/posix/SDL_posixprocess.i"
 	@echo "... src/process/posix/SDL_posixprocess.s"
-	@echo "... src/render/SDL_d3dmath.o"
-	@echo "... src/render/SDL_d3dmath.i"
-	@echo "... src/render/SDL_d3dmath.s"
 	@echo "... src/render/SDL_render.o"
 	@echo "... src/render/SDL_render.i"
 	@echo "... src/render/SDL_render.s"
@@ -9056,6 +9053,9 @@ help:
 	@echo "... wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.o"
 	@echo "... wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.i"
 	@echo "... wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.s"
+	@echo "... wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.o"
+	@echo "... wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.i"
+	@echo "... wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.s"
 	@echo "... wayland-generated-protocols/pointer-warp-v1-protocol.o"
 	@echo "... wayland-generated-protocols/pointer-warp-v1-protocol.i"
 	@echo "... wayland-generated-protocols/pointer-warp-v1-protocol.s"

@@ -96,6 +96,7 @@ main_EXTERNAL_OBJECTS =
 main: CMakeFiles/main.dir/src/main.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/compiler_depend.ts
+main: libSDL3_ttf.so.0.3.0
 main: libSDL3.so.0.3.0
 main: /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dynapi/SDL_dynapi.sym
 main: CMakeFiles/main.dir/link.txt

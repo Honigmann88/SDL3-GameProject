@@ -25498,3 +25498,702 @@ events:
         - "/usr/pkg"
         - "/opt"
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "vendored/SDL_ttf/cmake/PrivateSdlFunctions.cmake:247 (check_c_source_compiles)"
+      - "vendored/SDL_ttf/cmake/PrivateSdlFunctions.cmake:288 (sdl_check_linker_flag)"
+      - "vendored/SDL_ttf/CMakeLists.txt:221 (sdl_target_link_options_no_undefined)"
+    checks:
+      - "Performing Test HAVE_WL_NO_UNDEFINED"
+    directories:
+      source: "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles/CMakeScratch/TryCompile-87CL1T"
+      binary: "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles/CMakeScratch/TryCompile-87CL1T"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_ttf/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_WL_NO_UNDEFINED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles/CMakeScratch/TryCompile-87CL1T'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_eae1c/fast
+        make[1]: Entering directory '/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles/CMakeScratch/TryCompile-87CL1T'
+        /usr/bin/make  -f CMakeFiles/cmTC_eae1c.dir/build.make CMakeFiles/cmTC_eae1c.dir/build
+        make[2]: Entering directory '/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles/CMakeScratch/TryCompile-87CL1T'
+        Building C object CMakeFiles/cmTC_eae1c.dir/src.c.o
+        /usr/bin/cc -DHAVE_WL_NO_UNDEFINED  -fPIE -o CMakeFiles/cmTC_eae1c.dir/src.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles/CMakeScratch/TryCompile-87CL1T/src.c
+        Linking C executable cmTC_eae1c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eae1c.dir/link.txt --verbose=1
+        /usr/bin/cc -Wl,--no-undefined CMakeFiles/cmTC_eae1c.dir/src.c.o -o cmTC_eae1c
+        make[2]: Leaving directory '/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles/CMakeScratch/TryCompile-87CL1T'
+        make[1]: Leaving directory '/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles/CMakeScratch/TryCompile-87CL1T'
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:307 (find_library)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:357 (_pkg_find_libs)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:695 (_pkg_recalculate)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:867 (_pkg_check_modules_internal)"
+      - "vendored/SDL_ttf/cmake/Findharfbuzz.cmake:7 (pkg_check_modules)"
+      - "vendored/SDL_ttf/CMakeLists.txt:303 (find_package)"
+    mode: "library"
+    variable: "pkgcfg_lib_PC_HARFBUZZ_harfbuzz"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "harfbuzz"
+    candidate_directories:
+      - "/usr/lib/"
+    found: "/usr/lib/libharfbuzz.so"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vendored/SDL_ttf/cmake/Findharfbuzz.cmake:9 (find_library)"
+      - "vendored/SDL_ttf/CMakeLists.txt:303 (find_package)"
+    mode: "library"
+    variable: "harfbuzz_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "harfbuzz"
+    candidate_directories:
+      - "/usr/lib/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+    found: "/usr/lib/libharfbuzz.so"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vendored/SDL_ttf/cmake/Findharfbuzz.cmake:14 (find_path)"
+      - "vendored/SDL_ttf/CMakeLists.txt:303 (find_package)"
+    mode: "path"
+    variable: "harfbuzz_INCLUDE_PATH"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "hb.h"
+    candidate_directories:
+      - "/usr/include/harfbuzz/"
+      - "/usr/include/"
+      - "/usr/local/bin/harfbuzz/"
+      - "/usr/local/bin/"
+      - "/usr/bin/harfbuzz/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/harfbuzz/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/harfbuzz/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/harfbuzz/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/harfbuzz/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/harfbuzz/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/include/harfbuzz/"
+      - "/usr/local/include/"
+      - "/usr/local/harfbuzz/"
+      - "/usr/local/"
+      - "/usr/include/harfbuzz/"
+      - "/usr/include/"
+      - "/usr/harfbuzz/"
+      - "/usr/"
+      - "/include/harfbuzz/"
+      - "/include/"
+      - "/usr/X11R6/include/harfbuzz/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/harfbuzz/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/harfbuzz/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/harfbuzz/"
+      - "/usr/pkg/"
+      - "/opt/include/harfbuzz/"
+      - "/opt/include/"
+      - "/opt/harfbuzz/"
+      - "/opt/"
+      - "/usr/include/X11/harfbuzz/"
+      - "/usr/include/X11/"
+    found: "/usr/include/harfbuzz/"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vendored/SDL_ttf/cmake/Findplutosvg.cmake:7 (find_library)"
+      - "vendored/SDL_ttf/CMakeLists.txt:397 (find_package)"
+    mode: "library"
+    variable: "plutosvg_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "plutosvg"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+    searched_directories:
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vendored/SDL_ttf/cmake/Findplutosvg.cmake:12 (find_path)"
+      - "vendored/SDL_ttf/CMakeLists.txt:397 (find_package)"
+    mode: "path"
+    variable: "plutosvg_INCLUDE_PATH"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "plutosvg.h"
+    candidate_directories:
+      - "/usr/local/bin/plutosvg/"
+      - "/usr/local/bin/"
+      - "/usr/bin/plutosvg/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/plutosvg/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/plutosvg/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/plutosvg/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/plutosvg/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/plutosvg/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/include/plutosvg/"
+      - "/usr/local/include/"
+      - "/usr/local/plutosvg/"
+      - "/usr/local/"
+      - "/usr/include/plutosvg/"
+      - "/usr/include/"
+      - "/usr/plutosvg/"
+      - "/usr/"
+      - "/include/plutosvg/"
+      - "/include/"
+      - "/usr/X11R6/include/plutosvg/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/plutosvg/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/plutosvg/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/plutosvg/"
+      - "/usr/pkg/"
+      - "/opt/include/plutosvg/"
+      - "/opt/include/"
+      - "/opt/plutosvg/"
+      - "/opt/"
+      - "/usr/include/X11/plutosvg/"
+      - "/usr/include/X11/"
+    searched_directories:
+      - "/usr/local/bin/plutosvg/plutosvg.h"
+      - "/usr/local/bin/plutosvg.h"
+      - "/usr/bin/plutosvg/plutosvg.h"
+      - "/usr/bin/plutosvg.h"
+      - "/usr/local/sbin/plutosvg/plutosvg.h"
+      - "/usr/local/sbin/plutosvg.h"
+      - "/var/lib/flatpak/exports/bin/plutosvg/plutosvg.h"
+      - "/var/lib/flatpak/exports/bin/plutosvg.h"
+      - "/usr/bin/site_perl/plutosvg/plutosvg.h"
+      - "/usr/bin/site_perl/plutosvg.h"
+      - "/usr/bin/vendor_perl/plutosvg/plutosvg.h"
+      - "/usr/bin/vendor_perl/plutosvg.h"
+      - "/usr/bin/core_perl/plutosvg/plutosvg.h"
+      - "/usr/bin/core_perl/plutosvg.h"
+      - "/usr/local/include/plutosvg/plutosvg.h"
+      - "/usr/local/include/plutosvg.h"
+      - "/usr/local/plutosvg/plutosvg.h"
+      - "/usr/local/plutosvg.h"
+      - "/usr/include/plutosvg/plutosvg.h"
+      - "/usr/include/plutosvg.h"
+      - "/usr/plutosvg/plutosvg.h"
+      - "/usr/plutosvg.h"
+      - "/include/plutosvg/plutosvg.h"
+      - "/include/plutosvg.h"
+      - "/usr/X11R6/include/plutosvg/plutosvg.h"
+      - "/usr/X11R6/include/plutosvg.h"
+      - "/usr/X11R6/plutosvg/plutosvg.h"
+      - "/usr/X11R6/plutosvg.h"
+      - "/usr/pkg/include/plutosvg/plutosvg.h"
+      - "/usr/pkg/include/plutosvg.h"
+      - "/usr/pkg/plutosvg/plutosvg.h"
+      - "/usr/pkg/plutosvg.h"
+      - "/opt/include/plutosvg/plutosvg.h"
+      - "/opt/include/plutosvg.h"
+      - "/opt/plutosvg/plutosvg.h"
+      - "/opt/plutosvg.h"
+      - "/usr/include/X11/plutosvg/plutosvg.h"
+      - "/usr/include/X11/plutosvg.h"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vendored/SDL_ttf/cmake/Findplutovg.cmake:7 (find_library)"
+      - "vendored/SDL_ttf/cmake/Findplutosvg.cmake:30 (find_package)"
+      - "vendored/SDL_ttf/CMakeLists.txt:397 (find_package)"
+    mode: "library"
+    variable: "plutovg_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "plutovg"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+    searched_directories:
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vendored/SDL_ttf/cmake/Findplutovg.cmake:12 (find_path)"
+      - "vendored/SDL_ttf/cmake/Findplutosvg.cmake:30 (find_package)"
+      - "vendored/SDL_ttf/CMakeLists.txt:397 (find_package)"
+    mode: "path"
+    variable: "plutovg_INCLUDE_PATH"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "plutovg.h"
+    candidate_directories:
+      - "/usr/local/bin/plutovg/"
+      - "/usr/local/bin/"
+      - "/usr/bin/plutovg/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/plutovg/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/plutovg/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/plutovg/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/plutovg/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/plutovg/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/include/plutovg/"
+      - "/usr/local/include/"
+      - "/usr/local/plutovg/"
+      - "/usr/local/"
+      - "/usr/include/plutovg/"
+      - "/usr/include/"
+      - "/usr/plutovg/"
+      - "/usr/"
+      - "/include/plutovg/"
+      - "/include/"
+      - "/usr/X11R6/include/plutovg/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/plutovg/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/plutovg/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/plutovg/"
+      - "/usr/pkg/"
+      - "/opt/include/plutovg/"
+      - "/opt/include/"
+      - "/opt/plutovg/"
+      - "/opt/"
+      - "/usr/include/X11/plutovg/"
+      - "/usr/include/X11/"
+    searched_directories:
+      - "/usr/local/bin/plutovg/plutovg.h"
+      - "/usr/local/bin/plutovg.h"
+      - "/usr/bin/plutovg/plutovg.h"
+      - "/usr/bin/plutovg.h"
+      - "/usr/local/sbin/plutovg/plutovg.h"
+      - "/usr/local/sbin/plutovg.h"
+      - "/var/lib/flatpak/exports/bin/plutovg/plutovg.h"
+      - "/var/lib/flatpak/exports/bin/plutovg.h"
+      - "/usr/bin/site_perl/plutovg/plutovg.h"
+      - "/usr/bin/site_perl/plutovg.h"
+      - "/usr/bin/vendor_perl/plutovg/plutovg.h"
+      - "/usr/bin/vendor_perl/plutovg.h"
+      - "/usr/bin/core_perl/plutovg/plutovg.h"
+      - "/usr/bin/core_perl/plutovg.h"
+      - "/usr/local/include/plutovg/plutovg.h"
+      - "/usr/local/include/plutovg.h"
+      - "/usr/local/plutovg/plutovg.h"
+      - "/usr/local/plutovg.h"
+      - "/usr/include/plutovg/plutovg.h"
+      - "/usr/include/plutovg.h"
+      - "/usr/plutovg/plutovg.h"
+      - "/usr/plutovg.h"
+      - "/include/plutovg/plutovg.h"
+      - "/include/plutovg.h"
+      - "/usr/X11R6/include/plutovg/plutovg.h"
+      - "/usr/X11R6/include/plutovg.h"
+      - "/usr/X11R6/plutovg/plutovg.h"
+      - "/usr/X11R6/plutovg.h"
+      - "/usr/pkg/include/plutovg/plutovg.h"
+      - "/usr/pkg/include/plutovg.h"
+      - "/usr/pkg/plutovg/plutovg.h"
+      - "/usr/pkg/plutovg.h"
+      - "/opt/include/plutovg/plutovg.h"
+      - "/opt/include/plutovg.h"
+      - "/opt/plutovg/plutovg.h"
+      - "/opt/plutovg.h"
+      - "/usr/include/X11/plutovg/plutovg.h"
+      - "/usr/include/X11/plutovg.h"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vendored/SDL_ttf/cmake/Findplutovg.cmake:18 (find_library)"
+      - "vendored/SDL_ttf/cmake/Findplutosvg.cmake:30 (find_package)"
+      - "vendored/SDL_ttf/CMakeLists.txt:397 (find_package)"
+    mode: "library"
+    variable: "PLUTOVG_MATH_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m"
+    candidate_directories:
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+    searched_directories:
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib/libm.so"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+...

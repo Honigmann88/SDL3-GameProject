@@ -169,6 +169,19 @@ SDL_uclibc/fast:
 	$(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL_uclibc.dir/build.make vendored/SDL/CMakeFiles/SDL_uclibc.dir/build
 .PHONY : SDL_uclibc/fast
 
+#=============================================================================
+# Target rules for targets named SDL3_ttf-shared
+
+# Build rule for target.
+SDL3_ttf-shared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL3_ttf-shared
+.PHONY : SDL3_ttf-shared
+
+# fast build rule for target.
+SDL3_ttf-shared/fast:
+	$(MAKE) $(MAKESILENT) -f vendored/SDL_ttf/CMakeFiles/SDL3_ttf-shared.dir/build.make vendored/SDL_ttf/CMakeFiles/SDL3_ttf-shared.dir/build
+.PHONY : SDL3_ttf-shared/fast
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -203,6 +216,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... SDL3-shared"
 	@echo "... SDL3_test"
+	@echo "... SDL3_ttf-shared"
 	@echo "... SDL_uclibc"
 	@echo "... main"
 	@echo "... src/main.o"

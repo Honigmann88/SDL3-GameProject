@@ -6,5 +6,5 @@ C_DEFINES = -DHAVE_LIBUNWIND_H
 
 C_INCLUDES = -I/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/include-revision -I/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include
 
-C_FLAGS = -Wall -Wundef -Wfloat-conversion -fno-strict-aliasing -Wshadow -Wno-unused-local-typedefs -Wimplicit-fallthrough -fdiagnostics-color=always
+C_FLAGS = -fPIC -Wall -Wundef -Wfloat-conversion -fno-strict-aliasing -Wshadow -Wno-unused-local-typedefs -Wimplicit-fallthrough -fdiagnostics-color=always
 

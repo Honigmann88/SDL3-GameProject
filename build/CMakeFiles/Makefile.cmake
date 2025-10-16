@@ -35,6 +35,16 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/cmake/sdlplatform.cmake"
   "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/build_config/SDL_build_config.h.cmake"
   "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/build_config/SDL_revision.h.cmake"
+  "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_ttf/CMakeLists.txt"
+  "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_ttf/cmake/Findharfbuzz.cmake"
+  "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_ttf/cmake/Findplutosvg.cmake"
+  "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_ttf/cmake/Findplutovg.cmake"
+  "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_ttf/cmake/GetGitRevisionDescription.cmake"
+  "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_ttf/cmake/PkgConfigHelper.cmake"
+  "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_ttf/cmake/PrivateSdlFunctions.cmake"
+  "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_ttf/cmake/sdlcpu.cmake"
+  "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_ttf/cmake/sdlmanpages.cmake"
+  "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_ttf/cmake/sdlplatform.cmake"
   "/usr/share/cmake/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -119,6 +129,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "vendored/SDL/SDL3ConfigVersion.cmake"
   "vendored/SDL/include-config-/build_config/SDL_build_config.h"
   "vendored/SDL/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "vendored/SDL_ttf/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -127,4 +138,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "vendored/SDL/CMakeFiles/SDL3-shared.dir/DependInfo.cmake"
   "vendored/SDL/CMakeFiles/SDL3_test.dir/DependInfo.cmake"
   "vendored/SDL/CMakeFiles/SDL_uclibc.dir/DependInfo.cmake"
+  "vendored/SDL_ttf/CMakeFiles/SDL3_ttf-shared.dir/DependInfo.cmake"
   )

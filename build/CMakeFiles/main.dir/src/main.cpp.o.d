@@ -83,6 +83,7 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_version.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_oldnames.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_main.h \
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_ttf/include/SDL3_ttf/SDL_ttf.h \
  /usr/include/c++/15.2.1/iostream \
  /usr/include/c++/15.2.1/bits/requires_hosted.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \

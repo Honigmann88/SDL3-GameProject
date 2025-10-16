@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/include-revision -I/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include
+CXX_INCLUDES = -I/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_ttf/include -I/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/include-revision -I/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include
 
-CXX_FLAGS = 
+CXX_FLAGS = -fPIE
 

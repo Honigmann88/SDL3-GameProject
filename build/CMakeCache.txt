@@ -23,6 +23,9 @@ ALSA_LIBRARY:FILEPATH=/usr/lib/libasound.so
 //Path to a library.
 ASOUND_LIB:FILEPATH=/usr/lib/libasound.so
 
+//Build the library as a shared library
+BUILD_SHARED_LIBS:BOOL=ON
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -197,6 +200,9 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 
 //Path to a program.
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
+
+//Build static libraries with -fPIC
+CMAKE_POSITION_INDEPENDENT_CODE:BOOL=ON
 
 //Value Computed by CMake
 CMAKE_PROJECT_COMPAT_VERSION:STATIC=
@@ -426,6 +432,9 @@ PKG_CONFIG_ARGN:STRING=
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Path to a library.
+PLUTOVG_MATH_LIBRARY:FILEPATH=/usr/lib/libm.so
+
+//Path to a library.
 PULSE_LIB:FILEPATH=/usr/lib/libpulse.so
 
 //Value Computed by CMake
@@ -436,6 +445,36 @@ SDL3_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 SDL3_SOURCE_DIR:STATIC=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL
+
+//Value Computed by CMake
+SDL3_ttf_BINARY_DIR:STATIC=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL_ttf
+
+//Value Computed by CMake
+SDL3_ttf_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+SDL3_ttf_SOURCE_DIR:STATIC=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL_ttf
+
+//Use harfbuzz to improve text shaping
+SDLTTF_HARFBUZZ:BOOL=ON
+
+//Enable SDL3_ttf install target
+SDLTTF_INSTALL:BOOL=OFF
+
+//Use plutosvg for color emoji support
+SDLTTF_PLUTOSVG:BOOL=ON
+
+//Build the SDL3_ttf sample program(s)
+SDLTTF_SAMPLES:BOOL=OFF
+
+//Fail when a dependency could not be found
+SDLTTF_STRICT:BOOL=OFF
+
+//Use vendored third-party libraries
+SDLTTF_VENDORED:BOOL=OFF
+
+//Treat warnings as errors
+SDLTTF_WERROR:BOOL=OFF
 
 //Support the ALSA audio API
 SDL_ALSA:BOOL=ON
@@ -1233,6 +1272,24 @@ XSS_LIB:FILEPATH=/usr/lib/libXss.so
 //Path to a library.
 XTST_LIB:FILEPATH=/usr/lib/libXtst.so
 
+//Extra compile flags of harfbuzz
+harfbuzz_COMPILE_OPTIONS:STRING=-pthread
+
+//Path to a file.
+harfbuzz_INCLUDE_PATH:PATH=/usr/include/harfbuzz
+
+//Path to a library.
+harfbuzz_LIBRARY:FILEPATH=/usr/lib/libharfbuzz.so
+
+//Extra link directories of harfbuzz
+harfbuzz_LINK_DIRECTORIES:PATH=/usr/lib
+
+//Extra link libraries of harfbuzz
+harfbuzz_LINK_LIBRARIES:STRING=
+
+//Extra link flags of harfbuzz
+harfbuzz_LINK_OPTIONS:STRING=
+
 //Path to a library.
 pkgcfg_lib_DBUS_dbus-1:FILEPATH=/usr/lib/libdbus-1.so
 
@@ -1256,6 +1313,9 @@ pkgcfg_lib_PC_FRIBIDI_fribidi:FILEPATH=/usr/lib/libfribidi.so
 
 //Path to a library.
 pkgcfg_lib_PC_GBM_gbm:FILEPATH=/usr/lib/libgbm.so
+
+//Path to a library.
+pkgcfg_lib_PC_HARFBUZZ_harfbuzz:FILEPATH=/usr/lib/libharfbuzz.so
 
 //Path to a library.
 pkgcfg_lib_PC_JACK_jack:FILEPATH=/usr/lib/libjack.so
@@ -1301,6 +1361,42 @@ pkgcfg_lib_PC_WAYLAND_xkbcommon:FILEPATH=/usr/lib/libxkbcommon.so
 
 //Path to a library.
 pkgcfg_lib_PKG_FONTCONFIG_fontconfig:FILEPATH=/usr/lib/libfontconfig.so
+
+//Extra compile flags of plutosvg
+plutosvg_COMPILE_OPTIONS:STRING=
+
+//Path to a file.
+plutosvg_INCLUDE_PATH:PATH=plutosvg_INCLUDE_PATH-NOTFOUND
+
+//Path to a library.
+plutosvg_LIBRARY:FILEPATH=plutosvg_LIBRARY-NOTFOUND
+
+//Extra link flags of plutosvg
+plutosvg_LINK_DIRECTORIES:STRING=
+
+//Extra link libraries of plutosvg
+plutosvg_LINK_LIBRARIES:STRING=
+
+//Extra link flags of plutosvg
+plutosvg_LINK_OPTIONS:STRING=
+
+//Extra compile flags of plutovg
+plutovg_COMPILE_OPTIONS:STRING=
+
+//Path to a file.
+plutovg_INCLUDE_PATH:PATH=plutovg_INCLUDE_PATH-NOTFOUND
+
+//Path to a library.
+plutovg_LIBRARY:FILEPATH=plutovg_LIBRARY-NOTFOUND
+
+//Extra link flags of plutovg
+plutovg_LINK_DIRECTORIES:STRING=
+
+//Extra link libraries of plutovg
+plutovg_LINK_LIBRARIES:STRING=
+
+//Extra link flags of plutovg
+plutovg_LINK_OPTIONS:STRING=
 
 //Value Computed by CMake
 sdl3Game_BINARY_DIR:STATIC=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build
@@ -1466,7 +1562,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1574,6 +1670,8 @@ DBUS_dbus-1_PREFIX:INTERNAL=
 DBUS_dbus-1_VERSION:INTERNAL=
 //Details about finding ALSA
 FIND_PACKAGE_MESSAGE_DETAILS_ALSA:INTERNAL=[/usr/lib/libasound.so][/usr/include][v1.2.14()]
+//Details about finding Freetype
+FIND_PACKAGE_MESSAGE_DETAILS_Freetype:INTERNAL=[/usr/lib/libfreetype.so][/usr/include/freetype2][v2.14.1(2.8.0)]
 //Details about finding LibUSB
 FIND_PACKAGE_MESSAGE_DETAILS_LibUSB:INTERNAL=[/usr/lib/libusb-1.0.so][/usr/include/libusb-1.0][v1.0.29()]
 //Details about finding OpenGL
@@ -1582,6 +1680,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/libOpenGL.so][/usr/lib/li
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v2.5.1()]
 //Details about finding X11
 FIND_PACKAGE_MESSAGE_DETAILS_X11:INTERNAL=[/usr/include][/usr/lib/libX11.so][ ][v()]
+//Details about finding harfbuzz
+FIND_PACKAGE_MESSAGE_DETAILS_harfbuzz:INTERNAL=[/usr/lib/libharfbuzz.so][/usr/include/harfbuzz][v12.1.0(2.3.1)]
 //Have library c
 FOUND_CLOCK_GETTIME_LIBC:INTERNAL=1
 //ADVANCED property for variable: FREETYPE_INCLUDE_DIR_freetype2
@@ -1716,6 +1816,8 @@ HAVE_SYSCONF:INTERNAL=1
 HAVE_SYSCTLBYNAME:INTERNAL=
 //Have include sys/inotify.h
 HAVE_SYS_INOTIFY_H:INTERNAL=1
+//Test HAVE_WL_NO_UNDEFINED
+HAVE_WL_NO_UNDEFINED:INTERNAL=1
 //Test HAVE_XFIXES_H
 HAVE_XFIXES_H:INTERNAL=1
 //Test HAVE_XGENERICEVENT
@@ -2148,6 +2250,41 @@ PC_GBM_gbm_INCLUDEDIR:INTERNAL=
 PC_GBM_gbm_LIBDIR:INTERNAL=
 PC_GBM_gbm_PREFIX:INTERNAL=
 PC_GBM_gbm_VERSION:INTERNAL=
+PC_HARFBUZZ_CFLAGS:INTERNAL=-I/usr/include/harfbuzz;-I/usr/include/freetype2;-I/usr/include;-I/usr/include/libpng16;-I/usr/include/glib-2.0;-I/usr/lib/glib-2.0/include;-I/usr/include/sysprof-6;-pthread
+PC_HARFBUZZ_CFLAGS_I:INTERNAL=
+PC_HARFBUZZ_CFLAGS_OTHER:INTERNAL=-pthread
+PC_HARFBUZZ_FOUND:INTERNAL=1
+PC_HARFBUZZ_INCLUDEDIR:INTERNAL=/usr/include
+PC_HARFBUZZ_INCLUDE_DIRS:INTERNAL=/usr/include/harfbuzz;/usr/include/freetype2;/usr/include;/usr/include/libpng16;/usr/include/glib-2.0;/usr/lib/glib-2.0/include;/usr/include/sysprof-6
+PC_HARFBUZZ_LDFLAGS:INTERNAL=-L/usr/lib;-lharfbuzz
+PC_HARFBUZZ_LDFLAGS_OTHER:INTERNAL=
+PC_HARFBUZZ_LIBDIR:INTERNAL=/usr/lib
+PC_HARFBUZZ_LIBRARIES:INTERNAL=harfbuzz
+PC_HARFBUZZ_LIBRARY_DIRS:INTERNAL=/usr/lib
+PC_HARFBUZZ_LIBS:INTERNAL=
+PC_HARFBUZZ_LIBS_L:INTERNAL=
+PC_HARFBUZZ_LIBS_OTHER:INTERNAL=
+PC_HARFBUZZ_LIBS_PATHS:INTERNAL=
+PC_HARFBUZZ_MODULE_NAME:INTERNAL=harfbuzz
+PC_HARFBUZZ_PREFIX:INTERNAL=/usr
+PC_HARFBUZZ_STATIC_CFLAGS:INTERNAL=-I/usr/include/harfbuzz;-I/usr/include/freetype2;-I/usr/include;-I/usr/include/libpng16;-I/usr/include/glib-2.0;-I/usr/lib/glib-2.0/include;-I/usr/include/sysprof-6;-pthread
+PC_HARFBUZZ_STATIC_CFLAGS_I:INTERNAL=
+PC_HARFBUZZ_STATIC_CFLAGS_OTHER:INTERNAL=-pthread
+PC_HARFBUZZ_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/harfbuzz;/usr/include/freetype2;/usr/include;/usr/include/libpng16;/usr/include/glib-2.0;/usr/lib/glib-2.0/include;/usr/include/sysprof-6
+PC_HARFBUZZ_STATIC_LDFLAGS:INTERNAL=-L/usr/lib;-lharfbuzz;-pthread;-lm;-lfreetype;-ldl;-lbz2;-lpng16;-lm;-lm;-lz;-lbrotlidec;-lbrotlicommon;-lglib-2.0;-lm;-lsysprof-capture-4;-Wl,-z,nodelete;-pthread;-lpcre2-8;-lgraphite2
+PC_HARFBUZZ_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-Wl,-z,nodelete;-pthread
+PC_HARFBUZZ_STATIC_LIBDIR:INTERNAL=
+PC_HARFBUZZ_STATIC_LIBRARIES:INTERNAL=harfbuzz;m;freetype;dl;bz2;png16;m;m;z;brotlidec;brotlicommon;glib-2.0;m;sysprof-capture-4;pcre2-8;graphite2
+PC_HARFBUZZ_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib
+PC_HARFBUZZ_STATIC_LIBS:INTERNAL=
+PC_HARFBUZZ_STATIC_LIBS_L:INTERNAL=
+PC_HARFBUZZ_STATIC_LIBS_OTHER:INTERNAL=
+PC_HARFBUZZ_STATIC_LIBS_PATHS:INTERNAL=
+PC_HARFBUZZ_VERSION:INTERNAL=12.1.0
+PC_HARFBUZZ_harfbuzz_INCLUDEDIR:INTERNAL=
+PC_HARFBUZZ_harfbuzz_LIBDIR:INTERNAL=
+PC_HARFBUZZ_harfbuzz_PREFIX:INTERNAL=
+PC_HARFBUZZ_harfbuzz_VERSION:INTERNAL=
 PC_JACK_CFLAGS:INTERNAL=-I/usr/include;-D_REENTRANT
 PC_JACK_CFLAGS_I:INTERNAL=
 PC_JACK_CFLAGS_OTHER:INTERNAL=-D_REENTRANT
@@ -2366,6 +2503,56 @@ PC_PIPEWIRE_libpipewire-0.3_INCLUDEDIR:INTERNAL=
 PC_PIPEWIRE_libpipewire-0.3_LIBDIR:INTERNAL=
 PC_PIPEWIRE_libpipewire-0.3_PREFIX:INTERNAL=
 PC_PIPEWIRE_libpipewire-0.3_VERSION:INTERNAL=
+PC_PLUTOSG_CFLAGS:INTERNAL=
+PC_PLUTOSG_CFLAGS_I:INTERNAL=
+PC_PLUTOSG_CFLAGS_OTHER:INTERNAL=
+PC_PLUTOSG_FOUND:INTERNAL=
+PC_PLUTOSG_INCLUDEDIR:INTERNAL=
+PC_PLUTOSG_LIBDIR:INTERNAL=
+PC_PLUTOSG_LIBS:INTERNAL=
+PC_PLUTOSG_LIBS_L:INTERNAL=
+PC_PLUTOSG_LIBS_OTHER:INTERNAL=
+PC_PLUTOSG_LIBS_PATHS:INTERNAL=
+PC_PLUTOSG_MODULE_NAME:INTERNAL=
+PC_PLUTOSG_PREFIX:INTERNAL=
+PC_PLUTOSG_STATIC_CFLAGS:INTERNAL=
+PC_PLUTOSG_STATIC_CFLAGS_I:INTERNAL=
+PC_PLUTOSG_STATIC_CFLAGS_OTHER:INTERNAL=
+PC_PLUTOSG_STATIC_LIBDIR:INTERNAL=
+PC_PLUTOSG_STATIC_LIBS:INTERNAL=
+PC_PLUTOSG_STATIC_LIBS_L:INTERNAL=
+PC_PLUTOSG_STATIC_LIBS_OTHER:INTERNAL=
+PC_PLUTOSG_STATIC_LIBS_PATHS:INTERNAL=
+PC_PLUTOSG_VERSION:INTERNAL=
+PC_PLUTOSG_plutovg_INCLUDEDIR:INTERNAL=
+PC_PLUTOSG_plutovg_LIBDIR:INTERNAL=
+PC_PLUTOSG_plutovg_PREFIX:INTERNAL=
+PC_PLUTOSG_plutovg_VERSION:INTERNAL=
+PC_PLUTOSVG_CFLAGS:INTERNAL=
+PC_PLUTOSVG_CFLAGS_I:INTERNAL=
+PC_PLUTOSVG_CFLAGS_OTHER:INTERNAL=
+PC_PLUTOSVG_FOUND:INTERNAL=
+PC_PLUTOSVG_INCLUDEDIR:INTERNAL=
+PC_PLUTOSVG_LIBDIR:INTERNAL=
+PC_PLUTOSVG_LIBS:INTERNAL=
+PC_PLUTOSVG_LIBS_L:INTERNAL=
+PC_PLUTOSVG_LIBS_OTHER:INTERNAL=
+PC_PLUTOSVG_LIBS_PATHS:INTERNAL=
+PC_PLUTOSVG_MODULE_NAME:INTERNAL=
+PC_PLUTOSVG_PREFIX:INTERNAL=
+PC_PLUTOSVG_STATIC_CFLAGS:INTERNAL=
+PC_PLUTOSVG_STATIC_CFLAGS_I:INTERNAL=
+PC_PLUTOSVG_STATIC_CFLAGS_OTHER:INTERNAL=
+PC_PLUTOSVG_STATIC_LIBDIR:INTERNAL=
+PC_PLUTOSVG_STATIC_LIBS:INTERNAL=
+PC_PLUTOSVG_STATIC_LIBS_L:INTERNAL=
+PC_PLUTOSVG_STATIC_LIBS_OTHER:INTERNAL=
+PC_PLUTOSVG_STATIC_LIBS_PATHS:INTERNAL=
+PC_PLUTOSVG_VERSION:INTERNAL=
+PC_PLUTOSVG_plutosvg_INCLUDEDIR:INTERNAL=
+PC_PLUTOSVG_plutosvg_LIBDIR:INTERNAL=
+PC_PLUTOSVG_plutosvg_PREFIX:INTERNAL=
+PC_PLUTOSVG_plutosvg_VERSION:INTERNAL=
 PC_PULSEAUDIO_CFLAGS:INTERNAL=-I/usr/include;-D_REENTRANT
 PC_PULSEAUDIO_CFLAGS_I:INTERNAL=
 PC_PULSEAUDIO_CFLAGS_OTHER:INTERNAL=-D_REENTRANT
@@ -2807,6 +2994,7 @@ X11_xkbfile_LIB-ADVANCED:INTERNAL=1
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 __pkg_config_arguments_PC_FRIBIDI:INTERNAL=IMPORTED_TARGET;fribidi
 __pkg_config_arguments_PC_GBM:INTERNAL=IMPORTED_TARGET;gbm
+__pkg_config_arguments_PC_HARFBUZZ:INTERNAL=QUIET;harfbuzz
 __pkg_config_arguments_PC_JACK:INTERNAL=IMPORTED_TARGET;jack
 __pkg_config_arguments_PC_LIBDECOR:INTERNAL=IMPORTED_TARGET;libdecor-0
 __pkg_config_arguments_PC_LIBDRM:INTERNAL=IMPORTED_TARGET;libdrm
@@ -2821,12 +3009,15 @@ __pkg_config_checked_IBUS:INTERNAL=1
 __pkg_config_checked_LIBURING:INTERNAL=1
 __pkg_config_checked_PC_FRIBIDI:INTERNAL=1
 __pkg_config_checked_PC_GBM:INTERNAL=1
+__pkg_config_checked_PC_HARFBUZZ:INTERNAL=1
 __pkg_config_checked_PC_JACK:INTERNAL=1
 __pkg_config_checked_PC_LIBDECOR:INTERNAL=1
 __pkg_config_checked_PC_LIBDRM:INTERNAL=1
 __pkg_config_checked_PC_LIBUNWIND:INTERNAL=1
 __pkg_config_checked_PC_LibUSB:INTERNAL=1
 __pkg_config_checked_PC_PIPEWIRE:INTERNAL=1
+__pkg_config_checked_PC_PLUTOSG:INTERNAL=1
+__pkg_config_checked_PC_PLUTOSVG:INTERNAL=1
 __pkg_config_checked_PC_PULSEAUDIO:INTERNAL=1
 __pkg_config_checked_PC_SNDIO:INTERNAL=1
 __pkg_config_checked_PC_WAYLAND:INTERNAL=1
@@ -2847,6 +3038,8 @@ pkgcfg_lib_LIBURING_uring-ffi-ADVANCED:INTERNAL=1
 pkgcfg_lib_PC_FRIBIDI_fribidi-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PC_GBM_gbm
 pkgcfg_lib_PC_GBM_gbm-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_PC_HARFBUZZ_harfbuzz
+pkgcfg_lib_PC_HARFBUZZ_harfbuzz-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PC_JACK_jack
 pkgcfg_lib_PC_JACK_jack-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PC_LIBDECOR_decor-0

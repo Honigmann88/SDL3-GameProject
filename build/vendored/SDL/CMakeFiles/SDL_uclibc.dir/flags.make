@@ -6,5 +6,5 @@ C_DEFINES = -DUSING_GENERATED_CONFIG_H
 
 C_INCLUDES = -I/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/include-config-/build_config -I/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src -I/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include
 
-C_FLAGS = -fvisibility=hidden -Wall -Wundef -Wfloat-conversion -fno-strict-aliasing -Wshadow -Wno-unused-local-typedefs -Wimplicit-fallthrough -fdiagnostics-color=always
+C_FLAGS = -fPIC -fvisibility=hidden -Wall -Wundef -Wfloat-conversion -fno-strict-aliasing -Wshadow -Wno-unused-local-typedefs -Wimplicit-fallthrough -fdiagnostics-color=always
 

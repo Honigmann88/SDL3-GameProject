@@ -1,5 +1,6 @@
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
+#include <SDL3/SDL_surface.h>
 #include <SDL3/SDL_timer.h>
 #include <iostream>
 
@@ -43,65 +44,28 @@ int main(){
     SDL_Surface* surface = SDL_GetWindowSurface(window);
     SDL_ClearSurface(surface, 0,0,0,0);
 
-    // if (SDL_WriteSurfacePixel(surface, 60 , 60 , 60 , 70 , 28 , 1)) {
-    //     cout << "Pixel written succesfully! \n";
-    
-    // }
-
-    // else {
-    //     cout << "ERROR: Pixel \n";
-    // }
-
-    // SDL_UpdateWindowSurface(window);
-   
-   
-    // SDL_Event event;
-    // bool prog = true;
-    // int ax, ay = 0;
-    // while (prog) {
-    //     if (SDL_WriteSurfacePixel(surface, 60+ax , 60+ay , 255, 00 , 00 , 1)) {
-    //         cout << "Pixel written succesfully! \n";
-    //     }
-    //     else {
-    //         cout << "ERROR: Pixel \n";
-    //     }
-    //     while (SDL_PollEvent(&event)) {
-
-    //         if (event.type == SDL_EVENT_QUIT) {
-    //             prog = false;
-    //         }
-    //         else if (event.key.scancode == 41) {
-    //             prog = false;
-    //         }
-    //         else if (event.key.scancode == 7 ) {
-    //             ax += 1;
-    //         }
-    //         else if (event.key.scancode == 4 ) {
-    //             ax -= 1;
-    //         }
-    //         else if (event.type == SDL_EVENT_KEY_DOWN) {
-    //             SDL_Log("Key pressed: %d ", event.key.scancode);
-    //         }
-    //     }
-    //     SDL_UpdateWindowSurface(window);
-    //     SDL_Delay(120);
-    //     SDL_ClearSurface(surface, 0,0,0,0);
-    // }
+    // ----------------------------------------------
+    // Main Game Loop
+    // ----------------------------------------------
     SDL_Event event;
     bool prog = true;
     int ax = 0, ay = 0; // Initialize both variables
-
+    int runSpeed = 5;
     while (prog) {
         // Clear the surface FIRST
         SDL_ClearSurface(surface, 0, 0, 0, 0);
     
         // Then draw the pixel
-        if (SDL_WriteSurfacePixel(surface, 60+ax, 60+ay, 255, 0, 0, 1)) {
-            cout << "Pixel written successfully! \n";
-        } else {
-            cout << "ERROR: Pixel \n";
-        }
+        
     
+        for (int i = 0; i < 21; i++) {
+            
+            for (int j = 0; j<21; j++) {
+            
+                SDL_WriteSurfacePixel(surface, 60+ax+j, 60+ay+i, 255, 0, 0, 1);
+            }
+        }
+
         // Update the window to show the changes
         SDL_UpdateWindowSurface(window);
     
@@ -115,16 +79,16 @@ int main(){
                     prog = false;
                 }
                 else if (event.key.scancode == 7) {  // Key a
-                    ax += 1;
+                    ax += runSpeed;
                 }
                 else if (event.key.scancode == 4) {  // Key d
-                    ax -= 1;
+                    ax -= runSpeed;
                 }
                 else if (event.key.scancode == 22) { // Key w
-                    ay += 1;
+                    ay += runSpeed;
                 }
                 else if (event.key.scancode == 26) { // Key s
-                    ay -= 1;
+                    ay -= runSpeed;
                 }
                 SDL_Log("Key pressed: %d ", event.key.scancode);
             }
@@ -136,6 +100,7 @@ int main(){
     
     // 4. Clean & close
     SDL_DestroyWindow(window);
+    SDL_DestroySurface(surface);
     SDL_Quit();
 
     

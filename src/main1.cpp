@@ -58,13 +58,14 @@ int main(){
         // Then draw the pixel
         
     
-        for (int i = 0; i < 21; i++) {
+        // This draws us a rectangle
+        // for (int i = 0; i < 21; i++) {
             
-            for (int j = 0; j<21; j++) {
+        //     for (int j = 0; j<21; j++) {
             
-                SDL_WriteSurfacePixel(surface, 60+ax+j, 60+ay+i, 255, 0, 0, 1);
-            }
-        }
+        //         SDL_WriteSurfacePixel(surface, 60+ax+j, 60+ay+i, 255, 0, 0, 1);
+        //     }
+        // }
 
         // Update the window to show the changes
         SDL_UpdateWindowSurface(window);

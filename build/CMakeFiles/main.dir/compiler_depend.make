@@ -34,6 +34,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ekipcalismasi/Documents/GitHub/SDL3-Ga
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_loadso.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_locale.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_log.h \
+  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_main.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_messagebox.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_metal.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_misc.h \
@@ -324,11 +325,7 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/sys/cdefs.h:
 
-/usr/include/bits/types/wint_t.h:
-
-/usr/include/c++/15.2.1/bits/memoryfwd.h:
-
-/usr/include/c++/15.2.1/cwchar:
+/usr/include/strings.h:
 
 /usr/include/bits/types/timer_t.h:
 
@@ -600,13 +597,13 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/asm/types.h:
 
+/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_main.h:
+
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_platform_defines.h:
 
 /usr/include/c++/15.2.1/cwctype:
 
 /usr/include/c++/15.2.1/istream:
-
-/usr/include/strings.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_process.h:
 
@@ -631,6 +628,12 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/bits/types/struct_sched_param.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_time.h:
+
+/usr/include/bits/types/wint_t.h:
+
+/usr/include/c++/15.2.1/bits/memoryfwd.h:
+
+/usr/include/c++/15.2.1/cwchar:
 
 /usr/include/bits/uintn-identity.h:
 
@@ -726,9 +729,9 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/asm/errno.h:
 
-/usr/include/bits/stdint-uintn.h:
-
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_tray.h:
+
+/usr/include/bits/stdint-uintn.h:
 
 /usr/include/c++/15.2.1/system_error:
 

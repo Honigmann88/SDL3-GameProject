@@ -44,51 +44,6 @@ int main(){
     SDL_Surface* surface = SDL_GetWindowSurface(window);
     SDL_ClearSurface(surface, 0,0,0,0);
 
-    // if (SDL_WriteSurfacePixel(surface, 60 , 60 , 60 , 70 , 28 , 1)) {
-    //     cout << "Pixel written succesfully! \n";
-    
-    // }
-
-    // else {
-    //     cout << "ERROR: Pixel \n";
-    // }
-
-    // SDL_UpdateWindowSurface(window);
-   
-   
-    // SDL_Event event;
-    // bool prog = true;
-    // int ax, ay = 0;
-    // while (prog) {
-    //     if (SDL_WriteSurfacePixel(surface, 60+ax , 60+ay , 255, 00 , 00 , 1)) {
-    //         cout << "Pixel written succesfully! \n";
-    //     }
-    //     else {
-    //         cout << "ERROR: Pixel \n";
-    //     }
-    //     while (SDL_PollEvent(&event)) {
-
-    //         if (event.type == SDL_EVENT_QUIT) {
-    //             prog = false;
-    //         }
-    //         else if (event.key.scancode == 41) {
-    //             prog = false;
-    //         }
-    //         else if (event.key.scancode == 7 ) {
-    //             ax += 1;
-    //         }
-    //         else if (event.key.scancode == 4 ) {
-    //             ax -= 1;
-    //         }
-    //         else if (event.type == SDL_EVENT_KEY_DOWN) {
-    //             SDL_Log("Key pressed: %d ", event.key.scancode);
-    //         }
-    //     }
-    //     SDL_UpdateWindowSurface(window);
-    //     SDL_Delay(120);
-    //     SDL_ClearSurface(surface, 0,0,0,0);
-    // }
-    //
     // ----------------------------------------------
     // Main Game Loop
     // ----------------------------------------------
@@ -145,6 +100,7 @@ int main(){
     
     // 4. Clean & close
     SDL_DestroyWindow(window);
+    SDL_DestroySurface(surface);
     SDL_Quit();
 
     

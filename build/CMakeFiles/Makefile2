@@ -128,8 +128,8 @@ vendored/SDL_image/clean: vendored/SDL_image/CMakeFiles/SDL3_image-shared.dir/cl
 # Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all: vendored/SDL/CMakeFiles/SDL3-shared.dir/all
 CMakeFiles/main.dir/all: vendored/SDL_image/CMakeFiles/SDL3_image-shared.dir/all
+CMakeFiles/main.dir/all: vendored/SDL/CMakeFiles/SDL3-shared.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=100 "Built target main"

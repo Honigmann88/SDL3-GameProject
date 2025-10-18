@@ -58,8 +58,7 @@ int main(){
         SDL_ClearSurface(surface, 0, 0, 0, 0);
     
         // Then draw the pixel
-        YAS_DrawCircle(60, 60, ax, ay, 30, surface, 200, 150, 100, 1);
-    
+        YAS_DrawTri(90, 90 + ay, 0 + ax, surface,99, 70, 100, 39, 1);    
         // Update the window to show the changes
         SDL_UpdateWindowSurface(window);
     
@@ -73,10 +72,10 @@ int main(){
                     prog = false;
                 }
                 else if (event.key.scancode == 7) {  // Key a
-                    ax += runSpeed;
+                    ax += 1;
                 }
                 else if (event.key.scancode == 4) {  // Key d
-                    ax -= runSpeed;
+                    ax -= 1;
                 }
                 else if (event.key.scancode == 22) { // Key w
                     ay += runSpeed;

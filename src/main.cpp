@@ -55,7 +55,7 @@ int main(){
     // Create Renderer
     SDL_Renderer* renderer = SDL_CreateRenderer(window,nullptr);
     // Create Surface for texture
-    SDL_Surface* surface = SDL_LoadBMP("assets/dots.bmp");
+    SDL_Surface* surface = SDL_LoadBMP("denem.bmp");
     if (surface == nullptr) {
         cout << "Couldn't open BMP \n";
     }
@@ -78,13 +78,13 @@ int main(){
         SDL_DestroySurface(surface); // free memory
     
         SDL_FRect dest;
-        dest.x = 467 ;
-        dest.y = 467 ;
+        dest.x = 100 ;
+        dest.y = 100 ;
         SDL_RenderTexture(renderer, gameBg, nullptr, &dest);
         // Basic draw functions
-        YAS_DrawRect(90 + ax, 90 + ay, renderer, 40, 40, 70, 100, 39, 9);    
-        YAS_DrawCircle(220 + ax, 90 + ay, renderer, 20, 255, 244, 233, 1);
-        YAS_DrawTri(330 + ax , 90 + ay , 0, renderer, 20, 24, 120, 40, 1);
+        // YAS_DrawRect(90 + ax, 90 + ay, renderer, 40, 40, 70, 100, 39, 9);    
+        // YAS_DrawCircle(220 + ax, 90 + ay, renderer, 20, 255, 244, 233, 1);
+        // YAS_DrawTri(330 + ax , 90 + ay , 0, renderer, 20, 24, 120, 40, 1);
 
         // Renderer double buffer
         SDL_RenderPresent(renderer);

@@ -6,6 +6,7 @@
 #include <SDL3/SDL_timer.h>
 #include <SDL3/SDL_video.h>
 #include <iostream>
+#include <filesystem>
 #include "shapes.cpp"
 
 using namespace std;
@@ -30,8 +31,8 @@ int main(){
     // 2.) Creating window
 
     SDL_Window* window = nullptr;
-    window = SDL_CreateWindow("Deneme",1280,720,
-    SDL_WINDOW_VULKAN | SDL_WINDOW_HIGH_PIXEL_DENSITY);
+    window = SDL_CreateWindow("Deneme",1920,1200,
+    SDL_WINDOW_VULKAN | SDL_WINDOW_FULLSCREEN);
     
     if(window == nullptr){
         cout << "Error creating wwindow! \n";
@@ -55,7 +56,7 @@ int main(){
     // Create Renderer
     SDL_Renderer* renderer = SDL_CreateRenderer(window,nullptr);
     // Create Surface for texture
-    SDL_Surface* surface = SDL_LoadBMP("denem.bmp");
+    SDL_Surface* surface = SDL_LoadBMP("/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/src/assets/denem.bmp");
     if (surface == nullptr) {
         cout << "Couldn't open BMP \n";
     }
@@ -69,20 +70,22 @@ int main(){
     SDL_Event event;
     bool prog = true;
     int ax = 0, ay = 0; 
-    int runSpeed = 5;
+    int runSpeed = 010;
 
+    SDL_FRect dest;
+    dest.x = 500;
+    dest.y = 500;
+    dest.h = 320;
+    dest.w = 320;
     while (prog) {
         // Set Renderer
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
         SDL_RenderClear(renderer);
-        SDL_DestroySurface(surface); // free memory
+        // SDL_DestroySurface(surface); // free memory
     
-        SDL_FRect dest;
-        dest.x = 100 ;
-        dest.y = 100 ;
         SDL_RenderTexture(renderer, gameBg, nullptr, &dest);
         // Basic draw functions
-        // YAS_DrawRect(90 + ax, 90 + ay, renderer, 40, 40, 70, 100, 39, 9);    
+        YAS_DrawRect(90 + ax, 90 + ay, renderer, 40, 40, 70, 100, 39, 9);    
         // YAS_DrawCircle(220 + ax, 90 + ay, renderer, 20, 255, 244, 233, 1);
         // YAS_DrawTri(330 + ax , 90 + ay , 0, renderer, 20, 24, 120, 40, 1);
 

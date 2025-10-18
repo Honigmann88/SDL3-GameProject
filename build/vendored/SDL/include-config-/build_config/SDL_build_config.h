@@ -199,7 +199,7 @@
 #define HAVE_SEM_TIMEDWAIT 1
 #define HAVE_GETAUXVAL 1
 /* #undef HAVE_ELF_AUX_INFO */
-#define HAVE_POLL 1
+#define HAVE_PPOLL 1
 #define HAVE__EXIT 1
 
 #endif /* HAVE_LIBC */

@@ -1,5 +1,6 @@
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
+#include <SDL3/SDL_render.h>
 #include <SDL3/SDL_surface.h>
 #include <SDL3/SDL_timer.h>
 #include <math.h>
@@ -7,35 +8,37 @@
 
 // This draws us a rectangle
 //          first: x  y,         draw surface,       input: x     y,    size; a b,    color: RGBA
-int YAS_DrawRect(const int kax, const int kay, SDL_Surface* surface, int a, int b, int R, int G, int B, int A){
+int YAS_DrawRect(const int kax, const int kay, SDL_Renderer* renderer, int a, int b, int R, int G, int B, int A){
     for (int i = 0; i < a; i++) {
         
         for (int j = 0; j<b; j++) {
         
-            SDL_WriteSurfacePixel(surface, kax+j, kay+i, R, G, B, A);
+            SDL_SetRenderDrawColor(renderer, R, G, B, A);
+            SDL_RenderPoint(renderer, kax + j, kay + i);
         }
     }
 
     return 1;    
 }
 // This draws us a circle
-int YAS_DrawCircle (const int kax, const int kay, SDL_Surface* surface, int radius, int R, int G, int B, int A){
+int YAS_DrawCircle (const int kax, const int kay, SDL_Renderer* renderer, int radius, int R, int G, int B, int A){
     int centerX = kax;
     int centerY = kay;
 
     for (int i = -radius; i <= radius; i++) {
 
         for (int j = -radius; j <= radius; j++) {
-            // Check if point (i,j) is inside the circle
             if (i*i + j*j <= radius*radius) {
-                SDL_WriteSurfacePixel(surface, centerX + j, centerY + i, R, G, B, A);
+            SDL_SetRenderDrawColor(renderer, R, G, B, A);
+            SDL_RenderPoint(renderer, kax + j, kay + i);
+                
             }
         }
     }
     return 1;
 }
 // This draws a triangle 
-int YAS_DrawTri(const int kax, const int kay, float angle, SDL_Surface* surface, int size, int R, int G, int B, int A) {
+int YAS_DrawTri(const int kax, const int kay, float angle, SDL_Renderer* renderer, int size, int R, int G, int B, int A) {
     float angleRad = angle * (3.14159 / 180.0);
     float cosAngle = cos(angleRad);
     float sinAngle = sin(angleRad);
@@ -67,7 +70,9 @@ int YAS_DrawTri(const int kax, const int kay, float angle, SDL_Surface* surface,
             
             // If point is inside triangle
             if (a >= 0 && a <= 1 && b >= 0 && b <= 1 && c >= 0 && c <= 1) {
-                SDL_WriteSurfacePixel(surface, x, y, R, G, B, A);
+                // SDL_WriteSurfacePixel(surface, x, y, R, G, B, A);
+                SDL_SetRenderDrawColor(renderer, R, G, B, A);
+                SDL_RenderPoint(renderer, x, y);
             }
         }
     }

@@ -7,3 +7,41 @@ one of the eggs is fermented and we can hatch a new chicken but we need to be ex
 eggs that day, we have to feed him a chicken, if last chicken is eaten we loose the game. 
 
 This idea can be evolutionized.
+
+
+
+Edit 17.10.25 Patrick
+
+1. Grund-Gameplay
+
+Spieler bewegt sich (z. B. mit WASD oder Pfeiltasten) zwischen Hühnerstall und Drachennest.
+
+Hühner legen in regelmäßigen Abständen Eier.
+
+Der Spieler muss Eier einsammeln und zum Drachen bringen.
+
+Der Drache wird mit der Zeit ungeduldig (Timer).
+
+Wenn der Drache nicht genug Eier bekommt → Frustrationslevel steigt.
+
+Wenn das Frustrationslevel ein Maximum erreicht → Drache frisst ein Huhn.
+
+
+2. Erweiterte Mechaniken
+
+Faules Ei-Event: Zufällig ist ein Ei faul (z. B. durch Farbe markiert). Wird es dem Drachen gegeben → großer Frustzuwachs.
+
+Brüt-Event: Manchmal kann ein Ei zum neuen Huhn ausgebrütet werden (durch Tasteneingabe oder Interaktion).
+
+Tag/Nacht-Zyklus: Jeder Tag dauert eine feste Zeit (z. B. 90 Sekunden).
+
+Am Ende des Tages: Bewertung (Drachenzufriedenheit, Hühnerzahl, etc.)
+
+
+3. Ziel / Game Over
+
+Ziel: Überlebe so viele Tage wie möglich.
+
+Game Over: Kein Huhn mehr übrig.
+
+Optional: Highscore-System (überlebte Tage, gefütterte Eier).

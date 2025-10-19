@@ -11,6 +11,8 @@
 
 using namespace std;
 
+const int eH = 966;
+const int eW = 966;
 int main(){
 
     cout << "Just a point \n";
@@ -31,8 +33,8 @@ int main(){
     // 2.) Creating window
 
     SDL_Window* window = nullptr;
-    window = SDL_CreateWindow("Deneme",1920,1200,
-    SDL_WINDOW_VULKAN | SDL_WINDOW_FULLSCREEN);
+    window = SDL_CreateWindow("Deneme", eW, eH,
+    SDL_WINDOW_VULKAN );
     
     if(window == nullptr){
         cout << "Error creating wwindow! \n";
@@ -56,7 +58,12 @@ int main(){
     // Create Renderer
     SDL_Renderer* renderer = SDL_CreateRenderer(window,nullptr);
     // Create Surface for texture
-    SDL_Surface* surface = SDL_LoadBMP("/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/src/assets/denem.bmp");
+    filesystem::path p = "src/assets/gameBg.bmp";
+    string nig = filesystem::absolute(p);
+    cout << nig << "\n";
+
+    SDL_Surface* surface = SDL_LoadBMP(nig.c_str());
+    // SDL_Surface* surface = SDL_LoadBMP("/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/src/assets/gameBg.bmp");
     if (surface == nullptr) {
         cout << "Couldn't open BMP \n";
     }
@@ -70,13 +77,13 @@ int main(){
     SDL_Event event;
     bool prog = true;
     int ax = 0, ay = 0; 
-    int runSpeed = 010;
+    int runSpeed = 20;
 
     SDL_FRect dest;
-    dest.x = 500;
-    dest.y = 500;
-    dest.h = 320;
-    dest.w = 320;
+    dest.h = 960;
+    dest.w = 960;
+    dest.x = (eW-dest.h)/2;
+    dest.y = (eH-dest.w)/2;
     while (prog) {
         // Set Renderer
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);

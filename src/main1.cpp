@@ -11,6 +11,8 @@
 
 using namespace std;
 
+const int eH = 966;
+const int eW = 966;
 int main(){
 
     cout << "Just a point \n";
@@ -31,8 +33,8 @@ int main(){
     // 2.) Creating window
 
     SDL_Window* window = nullptr;
-    window = SDL_CreateWindow("Deneme",1280,720,
-    SDL_WINDOW_VULKAN | SDL_WINDOW_HIGH_PIXEL_DENSITY );
+    window = SDL_CreateWindow("Deneme", eW, eH,
+    SDL_WINDOW_VULKAN );
     
     if(window == nullptr){
         cout << "Error creating wwindow! \n";
@@ -56,7 +58,12 @@ int main(){
     // Create Renderer
     SDL_Renderer* renderer = SDL_CreateRenderer(window,nullptr);
     // Create Surface for texture
-    SDL_Surface* surface = SDL_LoadBMP("/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/src/dots.bmp");
+    filesystem::path p = "src/assets/villiage.bmp";
+    string nig = filesystem::absolute(p);
+    cout << nig << "\n";
+
+    SDL_Surface* surface = SDL_LoadBMP(nig.c_str());
+    // SDL_Surface* surface = SDL_LoadBMP("/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/src/assets/gameBg.bmp");
     if (surface == nullptr) {
         cout << "Couldn't open BMP \n";
     }
@@ -70,20 +77,22 @@ int main(){
     SDL_Event event;
     bool prog = true;
     int ax = 0, ay = 0; 
-    int runSpeed = 010;
+    int runSpeed = 20;
 
     SDL_FRect dest;
-    dest.x = 100;
-    dest.y = 100;
+    dest.h = 960;
+    dest.w = 960;
+    dest.x = (eW-dest.h)/2;
+    dest.y = (eH-dest.w)/2;
     while (prog) {
         // Set Renderer
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
         SDL_RenderClear(renderer);
-        SDL_DestroySurface(surface); // free memory
+        // SDL_DestroySurface(surface); // free memory
     
         SDL_RenderTexture(renderer, gameBg, nullptr, &dest);
         // Basic draw functions
-        // YAS_DrawRect(90 + ax, 90 + ay, renderer, 40, 40, 70, 100, 39, 9);    
+        YAS_DrawRect(90 + ax, 90 + ay, renderer, 40, 40, 70, 100, 39, 9);    
         // YAS_DrawCircle(220 + ax, 90 + ay, renderer, 20, 255, 244, 233, 1);
         // YAS_DrawTri(330 + ax , 90 + ay , 0, renderer, 20, 24, 120, 40, 1);
 

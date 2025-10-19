@@ -6,6 +6,8 @@ edit:
 
 com:
 	sh bit.sh
+	cp -r ./src/ ./build
+	rm -rf ./build/src/*.cpp
 	# g++ src/main.cpp -o bubu/main 'pkg-config --cflags --libs sdl3'
 
 cop:

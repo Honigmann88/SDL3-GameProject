@@ -58,7 +58,7 @@ int main(){
     // Create Renderer
     SDL_Renderer* renderer = SDL_CreateRenderer(window,nullptr);
     // Create Surface for texture
-    filesystem::path p = "src/assets/gameBg.bmp";
+    filesystem::path p = "src/assets/villiage.bmp";
     string nig = filesystem::absolute(p);
     cout << nig << "\n";
 

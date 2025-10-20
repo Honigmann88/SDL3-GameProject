@@ -3,7 +3,6 @@ main: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
   CMakeFiles/main.dir/src/main.cpp.o \
-  libSDL3_image.so.0.3.0 \
   libSDL3.so.0.3.0 \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
@@ -40,8 +39,6 @@ main: \
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
 
 CMakeFiles/main.dir/src/main.cpp.o:
-
-libSDL3_image.so.0.3.0:
 
 libSDL3.so.0.3.0:
 

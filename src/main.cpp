@@ -1,10 +1,5 @@
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
-#include <SDL3/SDL_oldnames.h>
-#include <SDL3/SDL_render.h>
-#include <SDL3/SDL_surface.h>
-#include <SDL3/SDL_timer.h>
-#include <SDL3/SDL_video.h>
 #include <iostream>
 #include <filesystem>
 #include "shapes.cpp"
@@ -93,8 +88,8 @@ int main(){
         SDL_RenderTexture(renderer, gameBg, nullptr, &dest);
         // Basic draw functions
         YAS_DrawRect(90 + ax, 90 + ay, renderer, 40, 40, 70, 100, 39, 9);    
-        // YAS_DrawCircle(220 + ax, 90 + ay, renderer, 20, 255, 244, 233, 1);
-        // YAS_DrawTri(330 + ax , 90 + ay , 0, renderer, 20, 24, 120, 40, 1);
+        YAS_DrawCircle(220 + ax, 90 + ay, renderer, 20, 255, 244, 233, 1);
+        YAS_DrawTri(330 + ax , 90 + ay , 0, renderer, 20, 24, 120, 40, 1);
 
         // Renderer double buffer
         SDL_RenderPresent(renderer);

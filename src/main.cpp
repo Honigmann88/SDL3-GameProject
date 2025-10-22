@@ -1,24 +1,24 @@
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
+#include <SDL3/SDL_render.h>
+#include <SDL3/SDL_timer.h>
+#include <SDL3/SDL_video.h>
 #include <iostream>
 #include <filesystem>
 #include "shapes.cpp"
 
 using namespace std;
 
-const int eH = 966;
-const int eW = 966;
+const int eH = 128*7;
+const int eW = 128*7;
+
 int main(){
 
-    cout << "Just a point \n";
+    cout << "Welcome!  \n";
 
     // 1.) Initialisation
 
-    if (SDL_INIT_VIDEO) {
-        cout << "Window succesfully initialisiert! \n";
-    }
-
-    else {
+    if (!SDL_INIT_VIDEO) {
         cout << SDL_GetError();
         SDL_Quit();
         return -1;
@@ -36,9 +36,6 @@ int main(){
         SDL_Quit();
         return -1;
     }
-    else {
-        cout << "Window created successfully :) \n";
-    }
 
     // 3 Write to surface directly
 
@@ -53,17 +50,23 @@ int main(){
     // Create Renderer
     SDL_Renderer* renderer = SDL_CreateRenderer(window,nullptr);
     // Create Surface for texture
-    filesystem::path p = "src/assets/villiage.bmp";
-    string nig = filesystem::absolute(p);
-    cout << nig << "\n";
+    filesystem::path pVil = "src/assets/villiage.bmp";
+    string nigVil = filesystem::absolute(pVil);
+    cout << nigVil << "\n";
 
-    SDL_Surface* surface = SDL_LoadBMP(nig.c_str());
+    SDL_Surface* surface = SDL_LoadBMP(nigVil.c_str());
+    filesystem::path pDene = "src/assets/playG1.bmp";
+    string nigDene = filesystem::absolute(pDene);
+    cout << nigDene << "\n";
+
+    SDL_Surface* surfaceDene = SDL_LoadBMP(nigDene.c_str());
     // SDL_Surface* surface = SDL_LoadBMP("/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/src/assets/gameBg.bmp");
     if (surface == nullptr) {
         cout << "Couldn't open BMP \n";
     }
     // Create Texture
     SDL_Texture* gameBg = SDL_CreateTextureFromSurface(renderer,surface);
+    SDL_Texture* gameDene = SDL_CreateTextureFromSurface(renderer,surfaceDene);
     
     if (gameBg == nullptr) {
         cout << "Couldn't generate BMP \n";
@@ -74,18 +77,18 @@ int main(){
     int ax = 0, ay = 0; 
     int runSpeed = 20;
 
-    SDL_FRect dest;
-    dest.h = 960;
-    dest.w = 960;
-    dest.x = (eW-dest.h)/2;
-    dest.y = (eH-dest.w)/2;
+    SDL_FRect destBg;
+    destBg.h = eH;
+    destBg.w = eW;
+    destBg.x = (eW-destBg.h)/2;
+    destBg.y = (eH-destBg.w)/2;
     while (prog) {
         // Set Renderer
-        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
+        SDL_SetRenderDrawColor(renderer, 20, 20, 20, 20);
         SDL_RenderClear(renderer);
         // SDL_DestroySurface(surface); // free memory
     
-        SDL_RenderTexture(renderer, gameBg, nullptr, &dest);
+        SDL_RenderTexture(renderer, gameBg, nullptr, &destBg);
         // Basic draw functions
         YAS_DrawRect(90 + ax, 90 + ay, renderer, 40, 40, 70, 100, 39, 9);    
         YAS_DrawCircle(220 + ax, 90 + ay, renderer, 20, 255, 244, 233, 1);
@@ -96,6 +99,7 @@ int main(){
         
     
         // Process all pending events
+        // All keyboard controlls
         while (SDL_PollEvent(&event)) { 
             if (event.type == SDL_EVENT_QUIT) {
                 prog = false;
@@ -115,6 +119,18 @@ int main(){
                 }
                 else if (event.key.scancode == 26) { // Key s
                     ay -= runSpeed;
+                }
+                else if (event.key.scancode == 44) { // Key Space
+                }
+                else if (event.key.scancode == 14) { // Key k
+                    // SDL_RenderClear(renderer);
+                    gameBg = SDL_CreateTextureFromSurface(renderer,surface);
+                    // SDL_RenderPresent(renderer);
+                }
+                else if (event.key.scancode == 15) { // Key l
+                    // SDL_RenderClear(renderer);
+                    gameBg = SDL_CreateTextureFromSurface(renderer,surfaceDene);
+                    // SDL_RenderPresent(renderer);
                 }
                 SDL_Log("Key pressed: %d ", event.key.scancode);
             }

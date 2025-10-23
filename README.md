@@ -7,6 +7,7 @@ We are a team of two hobby developers learning game development through this pro
 
 - `src/` - Contains all source files
   - `main.cpp` - Main application entry point
+  - `shapes.cpp` - Main functions library
 - Other directories contain build system files and should not be modified directly
 
 ## Development Guide

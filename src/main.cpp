@@ -13,7 +13,7 @@ using namespace std;
 // Constants
 const int SCREEN_HEIGHT = 128 * 7;
 const int SCREEN_WIDTH = 128 * 7;
-const int CHARACTER_SIZE = 64 * 1.5;
+const int CHARACTER_SIZE = 64 * 2;
 
 int main() {
     cout << "Game Starting...\n";

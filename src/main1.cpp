@@ -23,11 +23,15 @@ const int CHICKEN_SIZE = 80;
 const int MAX_EGGS = 3;
 const int MAX_CHICKENS = 5;
 const int HATCH_TIME = 25000; // 10 seconds to hatch a chicken
+const int INITIAL_HUNGER_TIME = 45000; // 45 seconds at start
+const int MIN_HUNGER_TIME = 15000;     // 15 seconds minimum
+const int HUNGER_DECREMENT = 2000;     // Reduce by 2 seconds each feed
+const int CHICKEN_DEATH_INTERVAL = 11000; // Check for chicken death every 60 seconds
 
 // Grid positions (based on your layout)
 const int CHICKEN_START_X = 200;
 const int CHICKEN_START_Y = 720;
-const int CHICKEN_SPACING = 20;
+const int CHICKEN_SPACING = 50;
 const int DRAGON_X = SCREEN_WIDTH - 250;
 const int DRAGON_Y = 400;
 const int CHARACTER_START_X = SCREEN_WIDTH / 2;
@@ -172,9 +176,11 @@ public:
     Uint32 lastFeedTime;
     int currentFrame;
     Uint32 lastFrameTime;
+    int& hungerTime; // Reference to the current hunger time
     
-    Dragon(float posX, float posY) 
-        : x(posX), y(posY), isHungry(true), lastFeedTime(0), currentFrame(0), lastFrameTime(SDL_GetTicks()) {}
+    Dragon(float posX, float posY, int& hungerTimeRef) 
+        : x(posX), y(posY), isHungry(true), lastFeedTime(0), currentFrame(0), 
+          lastFrameTime(SDL_GetTicks()), hungerTime(hungerTimeRef) {}
     
     SDL_FRect getRect() const {
         return {x, y, CHARACTER_SIZE * 2.5f, CHARACTER_SIZE * 2.5f};
@@ -190,8 +196,8 @@ public:
     }
     
     void update(Uint32 currentTime) {
-        // Dragon gets hungry again after 30 seconds
-        if (!isHungry && (currentTime - lastFeedTime > 30000)) {
+        // Use dynamic hunger time
+        if (!isHungry && (currentTime - lastFeedTime > hungerTime)) {
             isHungry = true;
         }
         
@@ -323,7 +329,7 @@ void animateCharacter(SDL_Texture*& currentTexture,
 
 // Input handling
 void handleInput(const bool* keyboardState, Character& player, bool& quit, 
-                 Dragon& dragon, vector<Chicken>& chickens, vector<HatchingEgg>& hatchingEggs) {
+                 Dragon& dragon, vector<Chicken>& chickens, vector<HatchingEgg>& hatchingEggs, int& currentHungerTime) {
     int moveX = 0, moveY = 0;
     Direction dir = player.currentDirection;
     
@@ -364,7 +370,9 @@ void handleInput(const bool* keyboardState, Character& player, bool& quit,
             
             if (player.eggsCollected > 0 && dragon.feed()) {
                 player.emptyBasket();
-                cout << "Dragon fed! Basket emptied.\n";
+                // Make dragon hungrier for next time
+                currentHungerTime = max(MIN_HUNGER_TIME, currentHungerTime - HUNGER_DECREMENT);
+                cout << "Dragon fed! Basket emptied. Next hunger in: " << currentHungerTime/1000 << " seconds\n";
             }
         }
     }
@@ -457,8 +465,15 @@ int main() {
     }
 
     // 5. Initialize Game Objects
+    int currentHungerTime = INITIAL_HUNGER_TIME;
     Character player(CHARACTER_START_X, CHARACTER_START_Y, 5.0f);
-    Dragon dragon(DRAGON_X, DRAGON_Y);
+    Dragon dragon(DRAGON_X, DRAGON_Y, currentHungerTime);
+    
+    // Game state variables
+    int dayCount = 1;
+    Uint32 lastDayTime = SDL_GetTicks();
+    Uint32 lastChickenDeathCheck = SDL_GetTicks();
+    bool gameOver = false;
     
     // Start with one chicken in the first spot
     vector<Chicken> chickens;
@@ -490,7 +505,7 @@ int main() {
         
         // Handle Input
         const bool* keyboardState = SDL_GetKeyboardState(NULL);
-        handleInput(keyboardState, player, running, dragon, chickens, hatchingEggs);
+        handleInput(keyboardState, player, running, dragon, chickens, hatchingEggs, currentHungerTime);
         
         // Update Character Position
         characterRect.x = player.x;
@@ -525,6 +540,35 @@ int main() {
             } else {
                 ++it;
             }
+        }
+        
+        // Update day counter (increment every 30 seconds)
+        if (currentTime - lastDayTime > 30000) { // 30 seconds = 1 day
+            dayCount++;
+            lastDayTime = currentTime;
+            cout << "Day " << dayCount << " survived!\n";
+        }
+        
+        // Check for chicken deaths periodically
+        if (currentTime - lastChickenDeathCheck > CHICKEN_DEATH_INTERVAL) {
+            lastChickenDeathCheck = currentTime;
+            
+            // Only check if we have chickens and it's not the first chicken
+            if (chickens.size() > 1) {
+                // 20% chance that a chicken dies (but never kill the last chicken)
+                if ((rand() % 100) < 20) {
+                    // Don't kill the first chicken (index 0)
+                    int chickenToKill = 1 + (rand() % (chickens.size() - 1));
+                    chickens.erase(chickens.begin() + chickenToKill);
+                    cout << "A chicken died! Remaining chickens: " << chickens.size() << "\n";
+                }
+            }
+        }
+        
+        // Check for game over condition
+        if (chickens.empty() && !gameOver) {
+            gameOver = true;
+            cout << "GAME OVER! All chickens died on day " << dayCount << "\n";
         }
         
         // Check for egg collection from world
@@ -628,6 +672,43 @@ int main() {
             YAS_DrawCircle(30 + i * 25, 60, renderer, 10, 0, 255, 0, 1); // Green for fertilized
         }
         
+        // Render Day Counter (Top Right)
+        string dayText = "Day: " + to_string(dayCount);
+        int dayX = SCREEN_WIDTH - 100;
+        int dayY = 30;
+
+        // Draw background for day counter
+        YAS_DrawRect(dayX - 10, dayY - 15, renderer, 80, 30, 0, 0, 0, 0.7f);
+
+        // Draw each digit of the day count
+        string dayStr = to_string(dayCount);
+        for (size_t i = 0; i < dayStr.length(); i++) {
+            char digit = dayStr[i];
+            int digitX = dayX + (i * 15);
+            
+            // Simple number drawing using circles for each digit
+            YAS_DrawCircle(digitX, dayY, renderer, 8, 255, 255, 255, 1);
+        }
+
+        // If game over, display message
+        if (gameOver) {
+            // Draw semi-transparent overlay
+            YAS_DrawRect(SCREEN_WIDTH/2 - 150, SCREEN_HEIGHT/2 - 50, renderer, 300, 100, 0, 0, 0, 0.8f);
+            
+            // Draw game over text using circles
+            string gameOverText = "GAME OVER";
+            for (size_t i = 0; i < gameOverText.length(); i++) {
+                int textX = SCREEN_WIDTH/2 - 120 + (i * 15);
+                YAS_DrawCircle(textX, SCREEN_HEIGHT/2 - 10, renderer, 6, 255, 0, 0, 1);
+            }
+            
+            string daysText = "Days: " + to_string(dayCount);
+            for (size_t i = 0; i < daysText.length(); i++) {
+                int textX = SCREEN_WIDTH/2 - 80 + (i * 12);
+                YAS_DrawCircle(textX, SCREEN_HEIGHT/2 + 15, renderer, 5, 255, 255, 255, 1);
+            }
+        }
+        
         // Present Frame
         SDL_RenderPresent(renderer);
         
@@ -660,6 +741,7 @@ int main() {
     SDL_Quit();
 
     cout << "Game Ended. Final stats - Chickens: " << chickens.size() 
-         << ", Eggs collected: " << player.eggsCollected << "\n";
+         << ", Eggs collected: " << player.eggsCollected 
+         << ", Days survived: " << dayCount << "\n";
     return 0;
 }

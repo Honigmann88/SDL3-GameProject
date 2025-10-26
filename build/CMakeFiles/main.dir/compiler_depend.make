@@ -147,8 +147,10 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ekipcalismasi/Documents/GitHub/SDL3-Ga
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/c++/15.2.1/algorithm \
   /usr/include/c++/15.2.1/backward/binders.h \
   /usr/include/c++/15.2.1/bit \
+  /usr/include/c++/15.2.1/bits/algorithmfwd.h \
   /usr/include/c++/15.2.1/bits/alloc_traits.h \
   /usr/include/c++/15.2.1/bits/allocated_ptr.h \
   /usr/include/c++/15.2.1/bits/allocator.h \
@@ -198,6 +200,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ekipcalismasi/Documents/GitHub/SDL3-Ga
   /usr/include/c++/15.2.1/bits/predefined_ops.h \
   /usr/include/c++/15.2.1/bits/ptr_traits.h \
   /usr/include/c++/15.2.1/bits/quoted_string.h \
+  /usr/include/c++/15.2.1/bits/random.h \
+  /usr/include/c++/15.2.1/bits/random.tcc \
   /usr/include/c++/15.2.1/bits/range_access.h \
   /usr/include/c++/15.2.1/bits/refwrap.h \
   /usr/include/c++/15.2.1/bits/requires_hosted.h \
@@ -206,20 +210,25 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ekipcalismasi/Documents/GitHub/SDL3-Ga
   /usr/include/c++/15.2.1/bits/specfun.h \
   /usr/include/c++/15.2.1/bits/sstream.tcc \
   /usr/include/c++/15.2.1/bits/std_abs.h \
+  /usr/include/c++/15.2.1/bits/stl_algo.h \
   /usr/include/c++/15.2.1/bits/stl_algobase.h \
   /usr/include/c++/15.2.1/bits/stl_bvector.h \
   /usr/include/c++/15.2.1/bits/stl_construct.h \
   /usr/include/c++/15.2.1/bits/stl_function.h \
+  /usr/include/c++/15.2.1/bits/stl_heap.h \
   /usr/include/c++/15.2.1/bits/stl_iterator.h \
   /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/15.2.1/bits/stl_numeric.h \
   /usr/include/c++/15.2.1/bits/stl_pair.h \
+  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/15.2.1/bits/stl_vector.h \
   /usr/include/c++/15.2.1/bits/streambuf.tcc \
   /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/15.2.1/bits/string_view.tcc \
   /usr/include/c++/15.2.1/bits/stringfwd.h \
+  /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/15.2.1/bits/unique_ptr.h \
   /usr/include/c++/15.2.1/bits/uses_allocator.h \
   /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
@@ -260,8 +269,13 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ekipcalismasi/Documents/GitHub/SDL3-Ga
   /usr/include/c++/15.2.1/locale \
   /usr/include/c++/15.2.1/math.h \
   /usr/include/c++/15.2.1/new \
+  /usr/include/c++/15.2.1/numeric \
   /usr/include/c++/15.2.1/ostream \
+  /usr/include/c++/15.2.1/pstl/execution_defs.h \
+  /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/15.2.1/pstl/glue_numeric_defs.h \
   /usr/include/c++/15.2.1/pstl/pstl_config.h \
+  /usr/include/c++/15.2.1/random \
   /usr/include/c++/15.2.1/ratio \
   /usr/include/c++/15.2.1/sstream \
   /usr/include/c++/15.2.1/stdexcept \
@@ -296,6 +310,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ekipcalismasi/Documents/GitHub/SDL3-Ga
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/messages_members.h \
+  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/opt_random.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/time_members.h \
   /usr/include/ctype.h \
@@ -380,15 +395,11 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/sys/types.h:
 
-/usr/include/sys/select.h:
-
 /usr/include/sys/cdefs.h:
 
 /usr/include/string.h:
 
 /usr/include/stdlib.h:
-
-/usr/include/stdc-predef.h:
 
 /usr/lib/libstdc++.so:
 
@@ -409,6 +420,8 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/time_members.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/opt_random.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h:
 
@@ -458,11 +471,27 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/pstl/pstl_config.h:
 
+/usr/include/c++/15.2.1/pstl/glue_numeric_defs.h:
+
+/usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h:
+
+/usr/include/c++/15.2.1/pstl/execution_defs.h:
+
 /usr/include/c++/15.2.1/ostream:
+
+/usr/include/sys/select.h:
+
+/usr/include/c++/15.2.1/numeric:
 
 /usr/include/c++/15.2.1/new:
 
 /usr/include/c++/15.2.1/math.h:
+
+/usr/include/c++/15.2.1/istream:
+
+/usr/include/c++/15.2.1/iomanip:
+
+/usr/include/c++/15.2.1/initializer_list:
 
 /usr/include/bits/types/locale_t.h:
 
@@ -471,6 +500,10 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/c++/15.2.1/bits/parse_numbers.h:
 
 /usr/include/bits/types/clock_t.h:
+
+/usr/include/c++/15.2.1/iostream:
+
+/usr/include/bits/mathcalls.h:
 
 /usr/include/bits/types/__mbstate_t.h:
 
@@ -483,6 +516,10 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/bits/stdlib-float.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_power.h:
+
+/usr/include/c++/15.2.1/ios:
+
+/usr/include/bits/thread-shared-types.h:
 
 /usr/include/c++/15.2.1/debug/debug.h:
 
@@ -566,10 +603,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/stl_function.h:
 
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/c++/15.2.1/ios:
-
 /usr/include/asm/bitsperlong.h:
 
 /usr/include/asm-generic/errno-base.h:
@@ -579,6 +612,10 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/asm-generic/int-ll64.h:
 
 /usr/include/bits/mathcalls-macros.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/15.2.1/bits/stl_tempbuf.h:
 
 /usr/include/c++/15.2.1/bits/ostream.h:
 
@@ -594,6 +631,8 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/lib/crtn.o:
 
+/usr/include/c++/15.2.1/bits/stl_numeric.h:
+
 /usr/include/c++/15.2.1/bits/functional_hash.h:
 
 /usr/include/c++/15.2.1/bits/refwrap.h:
@@ -605,6 +644,8 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/bits/atomic_wide_counter.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_haptic.h:
+
+/usr/include/c++/15.2.1/random:
 
 /usr/include/bits/stdint-intn.h:
 
@@ -623,10 +664,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/c++/15.2.1/bits/cpp_type_traits.h:
 
 /usr/include/c++/15.2.1/bits/streambuf_iterator.h:
-
-/usr/include/pthread.h:
-
-/usr/include/c++/15.2.1/bits/stl_uninitialized.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_error.h:
 
@@ -768,8 +805,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/cwctype:
 
-/usr/include/c++/15.2.1/istream:
-
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_process.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_cpuinfo.h:
@@ -802,6 +837,10 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/bits/types/mbstate_t.h:
 
+/usr/include/c++/15.2.1/filesystem:
+
+/usr/include/bits/types/struct_FILE.h:
+
 /usr/include/bits/waitstatus.h:
 
 /usr/include/bits/wchar.h:
@@ -816,9 +855,19 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/bits/types/struct_timespec.h:
 
+/usr/include/c++/15.2.1/iosfwd:
+
+/usr/include/bits/types/struct_timeval.h:
+
 /usr/include/bits/types/struct_tm.h:
 
 /usr/include/bits/types/time_t.h:
+
+/usr/include/pthread.h:
+
+/usr/include/c++/15.2.1/bits/stl_uninitialized.h:
+
+/usr/include/c++/15.2.1/bits/stl_algo.h:
 
 /usr/include/c++/15.2.1/tr1/poly_hermite.tcc:
 
@@ -827,8 +876,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/bits/types/wint_t.h:
 
 /usr/include/c++/15.2.1/bits/memoryfwd.h:
-
-/usr/include/c++/15.2.1/cwchar:
 
 /usr/include/bits/uintn-identity.h:
 
@@ -841,6 +888,10 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/c++/15.2.1/bits/stl_pair.h:
 
 /usr/include/bits/wctype-wchar.h:
+
+/usr/include/c++/15.2.1/algorithm:
+
+/usr/include/c++/15.2.1/bits/algorithmfwd.h:
 
 /usr/include/c++/15.2.1/bits/allocator.h:
 
@@ -886,6 +937,14 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h:
 
+/usr/include/c++/15.2.1/limits:
+
+/usr/include/bits/struct_mutex.h:
+
+/usr/include/c++/15.2.1/bits/stl_construct.h:
+
+/usr/include/c++/15.2.1/bits/istream.tcc:
+
 /usr/include/c++/15.2.1/cstdio:
 
 /usr/include/c++/15.2.1/bits/locale_conv.h:
@@ -897,14 +956,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/c++/15.2.1/bits/predefined_ops.h:
 
 /usr/include/c++/15.2.1/ext/string_conversions.h:
-
-/usr/include/bits/struct_mutex.h:
-
-/usr/include/c++/15.2.1/bits/stl_construct.h:
-
-/usr/include/c++/15.2.1/bits/istream.tcc:
-
-/usr/include/c++/15.2.1/limits:
 
 /usr/include/asm/posix_types_64.h:
 
@@ -938,6 +989,10 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/postypes.h:
 
+/usr/include/c++/15.2.1/bits/random.h:
+
+/usr/include/c++/15.2.1/bits/random.tcc:
+
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
 
 /usr/include/c++/15.2.1/bits/range_access.h:
@@ -960,6 +1015,8 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/stl_vector.h:
 
+/usr/include/c++/15.2.1/bits/stl_heap.h:
+
 /usr/include/asm-generic/types.h:
 
 /usr/include/asm-generic/bitsperlong.h:
@@ -971,6 +1028,10 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/bits/typesizes.h:
 
 /usr/include/c++/15.2.1/bits/string_view.tcc:
+
+/usr/include/c++/15.2.1/cwchar:
+
+/usr/include/c++/15.2.1/bits/uniform_int_dist.h:
 
 /usr/include/c++/15.2.1/bits/unique_ptr.h:
 
@@ -1030,20 +1091,4 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/ext/numeric_traits.h:
 
-/usr/include/c++/15.2.1/iomanip:
-
 /usr/include/c++/15.2.1/ext/type_traits.h:
-
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/c++/15.2.1/filesystem:
-
-/usr/include/c++/15.2.1/initializer_list:
-
-/usr/include/bits/types/struct_timeval.h:
-
-/usr/include/c++/15.2.1/iosfwd:
-
-/usr/include/bits/mathcalls.h:
-
-/usr/include/c++/15.2.1/iostream:

@@ -171,7 +171,6 @@ libSDL3.so: /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/s
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_drawline.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_drawpoint.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.o \
-  vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o \
@@ -226,6 +225,7 @@ libSDL3.so: /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/s
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o \
+  vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_stb.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_stretch.c.o \
   vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_surface.c.o \
@@ -3862,6 +3862,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_events.c.o: vendored/SDL/
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_video.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_vulkan.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
+  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/core/linux/SDL_dbus.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_hints_c.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/audio/SDL_audio_c.h \
@@ -3911,6 +3912,23 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_events.c.o: vendored/SDL/
   /usr/include/bits/types.h \
   /usr/include/bits/types/struct_timeval.h \
   /usr/include/bits/types/time_t.h \
+  /usr/include/dbus-1.0/dbus/dbus-address.h \
+  /usr/include/dbus-1.0/dbus/dbus-bus.h \
+  /usr/include/dbus-1.0/dbus/dbus-connection.h \
+  /usr/include/dbus-1.0/dbus/dbus-errors.h \
+  /usr/include/dbus-1.0/dbus/dbus-macros.h \
+  /usr/include/dbus-1.0/dbus/dbus-memory.h \
+  /usr/include/dbus-1.0/dbus/dbus-message.h \
+  /usr/include/dbus-1.0/dbus/dbus-misc.h \
+  /usr/include/dbus-1.0/dbus/dbus-pending-call.h \
+  /usr/include/dbus-1.0/dbus/dbus-protocol.h \
+  /usr/include/dbus-1.0/dbus/dbus-server.h \
+  /usr/include/dbus-1.0/dbus/dbus-shared.h \
+  /usr/include/dbus-1.0/dbus/dbus-signature.h \
+  /usr/include/dbus-1.0/dbus/dbus-syntax.h \
+  /usr/include/dbus-1.0/dbus/dbus-threads.h \
+  /usr/include/dbus-1.0/dbus/dbus-types.h \
+  /usr/include/dbus-1.0/dbus/dbus.h \
   /usr/include/features.h \
   /usr/include/libudev.h \
   /usr/include/linux/input-event-codes.h \
@@ -3927,6 +3945,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_events.c.o: vendored/SDL/
   /usr/include/sys/time.h \
   /usr/include/sys/ttydefaults.h \
   /usr/include/sys/types.h \
+  /usr/lib/dbus-1.0/include/dbus/dbus-arch-deps.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
 
@@ -5975,6 +5994,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.o: v
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_pixels_c.h \
+  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rotate.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_surface_c.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/SDL_sysrender.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/SDL_yuv_sw_c.h \
@@ -5986,16 +6006,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.o: v
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_drawpoint.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_render_sw.c \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_render_sw_c.h \
-  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_rotate.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_triangle.h \
-  /usr/include/stdc-predef.h
-
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h \
-  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
-  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit.h \
-  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_surface_c.h \
-  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_rotate.c \
-  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_rotate.h \
   /usr/include/stdc-predef.h
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h \
@@ -7117,6 +7128,14 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o: vendored/SDL/CMa
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rect_impl.h \
   /usr/include/stdc-predef.h
 
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h \
+  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
+  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit.h \
+  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rotate.c \
+  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rotate.h \
+  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_surface_c.h \
+  /usr/include/stdc-predef.h
+
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_stb.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit.h \
@@ -7149,6 +7168,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_surface.c.o: vendored/SDL/
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_RLEaccel_c.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_pixels_c.h \
+  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rotate.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_stb_c.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_surface.c \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_surface_c.h \
@@ -7482,6 +7502,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmevents.c.o: v
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmevents.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmvideo.h \
   /usr/include/EGL/egl.h \
+  /usr/include/EGL/eglext.h \
   /usr/include/EGL/eglplatform.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -7548,6 +7569,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmmouse.c.o: ve
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmsym.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmvideo.h \
   /usr/include/EGL/egl.h \
+  /usr/include/EGL/eglext.h \
   /usr/include/EGL/eglplatform.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -7851,6 +7873,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmvulkan.c.o: v
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmvulkan.c \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmvulkan.h \
   /usr/include/EGL/egl.h \
+  /usr/include/EGL/eglext.h \
   /usr/include/EGL/eglplatform.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/X11/X.h \
@@ -8743,6 +8766,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandmouse.c.o: 
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/core/linux/SDL_dbus.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/core/linux/SDL_ime.h \
+  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/core/unix/SDL_poll.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/events/SDL_keymap_c.h \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/events/SDL_mouse_c.h \
@@ -8765,6 +8789,11 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandmouse.c.o: 
   /usr/include/EGL/egl.h \
   /usr/include/EGL/eglplatform.h \
   /usr/include/KHR/khrplatform.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/types/error_t.h \
   /usr/include/dbus-1.0/dbus/dbus-address.h \
   /usr/include/dbus-1.0/dbus/dbus-bus.h \
   /usr/include/dbus-1.0/dbus/dbus-connection.h \
@@ -8782,8 +8811,11 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandmouse.c.o: 
   /usr/include/dbus-1.0/dbus/dbus-threads.h \
   /usr/include/dbus-1.0/dbus/dbus-types.h \
   /usr/include/dbus-1.0/dbus/dbus.h \
+  /usr/include/errno.h \
+  /usr/include/features.h \
   /usr/include/inttypes.h \
   /usr/include/libdecor-0/libdecor.h \
+  /usr/include/linux/errno.h \
   /usr/include/math.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
@@ -14829,6 +14861,8 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_malloc.c.o:
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_video.c.o:
 
+/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rotate.c:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vlbwintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vbmi2intrin.h:
@@ -15184,8 +15218,6 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_gamecube.
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vbmiintrin.h:
 
 vendored/SDL/include-config-/build_config/SDL_build_config.h:
-
-vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-toplevel-icon-v1-protocol.c.o:
 
 /usr/include/pipewire-0.3/pipewire/protocol.h:
 
@@ -15600,6 +15632,8 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_audiotypecvt.c.o:
 /usr/include/glib-2.0/gio/gfilemonitor.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xsavesintrin.h:
+
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandvulkan.c.o:
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/unix/SDL_gtk.c.o:
 
@@ -16183,8 +16217,6 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_rumble.c.
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/direct3d12/SDL_render_d3d12.c.o:
 
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o:
-
 /usr/include/asm-generic/errno.h:
 
 /usr/include/sys/shm.h:
@@ -16251,24 +16283,6 @@ vendored/SDL/wayland-generated-protocols/pointer-warp-v1-client-protocol.h:
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.o:
 
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandvulkan.c.o:
-
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_xboxone.c.o:
-
-/usr/include/glib-2.0/gio/gdbuserror.h:
-
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_rotate.h:
-
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylanddatamanager.c.o:
-
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/x11/SDL_x11pen.c:
-
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/offscreen/SDL_offscreenwindow.c:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/prfchiintrin.h:
-
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_getenv_c.h:
-
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL.c.o:
 
 /usr/include/bits/getopt_core.h:
@@ -16298,8 +16312,6 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/sensor/dummy/SDL_dummysensor.c.o:
 /usr/include/spa-0.2/spa/param/audio/vorbis.h:
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc32.c.o:
-
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_rotate.c:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mm_malloc.h:
 
@@ -16435,6 +16447,14 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_steamdeck
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_stretch.c.o:
 
+vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-toplevel-icon-v1-protocol.c.o:
+
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o:
+
+/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/thread/pthread/SDL_systhread_c.h:
+
+/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/audio/SDL_wave.h:
+
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/joystick/hidapi/SDL_hidapi_nintendo.h:
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/dummy/SDL_nullevents.c.o:
@@ -16472,6 +16492,20 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandevents.c.o:
 /usr/include/glib-2.0/gio/gmemoryoutputstream.h:
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandcolor.c.o:
+
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_xboxone.c.o:
+
+/usr/include/glib-2.0/gio/gdbuserror.h:
+
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylanddatamanager.c.o:
+
+/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/x11/SDL_x11pen.c:
+
+/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/offscreen/SDL_offscreenwindow.c:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/prfchiintrin.h:
+
+/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_getenv_c.h:
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandmessagebox.c.o:
 
@@ -16660,10 +16694,6 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11pen.c.o:
 /usr/include/glib-2.0/glib/gstring.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/thread/SDL_thread_c.h:
-
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/thread/pthread/SDL_systhread_c.h:
-
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/audio/SDL_wave.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/x11/SDL_x11clipboard.h:
 
@@ -17398,6 +17428,8 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/haptic/hidapi/SDL_hidapihaptic_lg4ff
 /usr/include/spa-0.2/spa/param/video/color.h:
 
 /usr/include/spa-0.2/spa/param/video/dsp.h:
+
+/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rotate.h:
 
 /usr/include/spa-0.2/spa/param/video/encoded.h:
 

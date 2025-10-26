@@ -2,6 +2,10 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandmouse.c.o: 
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/wayland/SDL_waylandmouse.c \
  /usr/include/stdc-predef.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
+ /usr/include/errno.h /usr/include/features.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/bits/types/error_t.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/wayland/../SDL_sysvideo.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_vulkan.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_stdinc.h \
@@ -12,6 +16,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandmouse.c.o: 
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/wayland/../SDL_surface_c.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/wayland/../SDL_blit.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/wayland/../SDL_video_c.h \
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/wayland/../../core/unix/SDL_poll.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/wayland/../../events/SDL_mouse_c.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/wayland/SDL_waylandvideo.h \
  /usr/include/EGL/egl.h /usr/include/EGL/eglplatform.h \

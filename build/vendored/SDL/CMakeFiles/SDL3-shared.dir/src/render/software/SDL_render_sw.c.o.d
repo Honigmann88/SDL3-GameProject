@@ -14,6 +14,6 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.o: \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_blendpoint.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_drawline.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_drawpoint.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_rotate.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_triangle.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/../../video/SDL_pixels_c.h
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/../../video/SDL_pixels_c.h \
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/../../video/SDL_rotate.h

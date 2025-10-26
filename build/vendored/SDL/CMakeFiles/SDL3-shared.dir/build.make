@@ -1605,28 +1605,12 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.s: c
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.s"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -S /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_render_sw.c -o CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.s
 
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/flags.make
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o: /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_rotate.c
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o"
-	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o -MF CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o.d -o CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_rotate.c
-
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.i"
-	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -E /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_rotate.c > CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.i
-
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.s"
-	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -S /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_rotate.c -o CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.s
-
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/flags.make
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o: /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_triangle.c
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o -MF CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o.d -o CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_triangle.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.i: cmake_force
@@ -1642,7 +1626,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o -MF CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o.d -o CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/vitagxm/SDL_render_vita_gxm.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.i: cmake_force
@@ -1658,7 +1642,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_m
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o -MF CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o.d -o CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/vitagxm/SDL_render_vita_gxm_memory.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.i: cmake_force
@@ -1674,7 +1658,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_t
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o -MF CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o.d -o CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/vitagxm/SDL_render_vita_gxm_tools.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.i: cmake_force
@@ -1690,7 +1674,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_render_vulkan.c.o:
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_render_vulkan.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_render_vulkan.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_render_vulkan.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_render_vulkan.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_render_vulkan.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_render_vulkan.c.o -MF CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_render_vulkan.c.o.d -o CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_render_vulkan.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/vulkan/SDL_render_vulkan.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_render_vulkan.c.i: cmake_force
@@ -1706,7 +1690,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_shaders_vulkan.c.o
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_shaders_vulkan.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_shaders_vulkan.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_shaders_vulkan.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_shaders_vulkan.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_shaders_vulkan.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_shaders_vulkan.c.o -MF CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_shaders_vulkan.c.o.d -o CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_shaders_vulkan.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/vulkan/SDL_shaders_vulkan.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_shaders_vulkan.c.i: cmake_force
@@ -1722,7 +1706,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/sensor/SDL_sensor.c.o: /home/ekipcal
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/sensor/SDL_sensor.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/sensor/SDL_sensor.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/sensor/SDL_sensor.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/sensor/SDL_sensor.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/sensor/SDL_sensor.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/sensor/SDL_sensor.c.o -MF CMakeFiles/SDL3-shared.dir/src/sensor/SDL_sensor.c.o.d -o CMakeFiles/SDL3-shared.dir/src/sensor/SDL_sensor.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/sensor/SDL_sensor.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/sensor/SDL_sensor.c.i: cmake_force
@@ -1738,7 +1722,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc16.c.o: /home/ekipcali
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc16.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc16.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc16.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc16.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc16.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc16.c.o -MF CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc16.c.o.d -o CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc16.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_crc16.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc16.c.i: cmake_force
@@ -1754,7 +1738,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc32.c.o: /home/ekipcali
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc32.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc32.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc32.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc32.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc32.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc32.c.o -MF CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc32.c.o.d -o CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc32.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_crc32.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc32.c.i: cmake_force
@@ -1770,7 +1754,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_getenv.c.o: /home/ekipcal
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_getenv.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_getenv.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_getenv.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_getenv.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_getenv.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_getenv.c.o -MF CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_getenv.c.o.d -o CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_getenv.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_getenv.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_getenv.c.i: cmake_force
@@ -1786,7 +1770,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_iconv.c.o: /home/ekipcali
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_iconv.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_iconv.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_iconv.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_iconv.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_iconv.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_iconv.c.o -MF CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_iconv.c.o.d -o CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_iconv.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_iconv.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_iconv.c.i: cmake_force
@@ -1802,7 +1786,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_malloc.c.o: /home/ekipcal
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_malloc.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_malloc.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_malloc.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_malloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_malloc.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_malloc.c.o -MF CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_malloc.c.o.d -o CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_malloc.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_malloc.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_malloc.c.i: cmake_force
@@ -1818,7 +1802,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memcpy.c.o: /home/ekipcal
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memcpy.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memcpy.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memcpy.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memcpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memcpy.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memcpy.c.o -MF CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memcpy.c.o.d -o CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memcpy.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_memcpy.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memcpy.c.i: cmake_force
@@ -1834,7 +1818,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memmove.c.o: /home/ekipca
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memmove.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memmove.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memmove.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memmove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memmove.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memmove.c.o -MF CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memmove.c.o.d -o CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memmove.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_memmove.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memmove.c.i: cmake_force
@@ -1850,7 +1834,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memset.c.o: /home/ekipcal
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memset.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memset.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memset.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memset.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memset.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memset.c.o -MF CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memset.c.o.d -o CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memset.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_memset.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memset.c.i: cmake_force
@@ -1866,7 +1850,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_mslibc.c.o: /home/ekipcal
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_mslibc.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_mslibc.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_mslibc.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_mslibc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_mslibc.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_mslibc.c.o -MF CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_mslibc.c.o.d -o CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_mslibc.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_mslibc.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_mslibc.c.i: cmake_force
@@ -1882,7 +1866,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_murmur3.c.o: /home/ekipca
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_murmur3.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_murmur3.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_murmur3.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_murmur3.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_murmur3.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_murmur3.c.o -MF CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_murmur3.c.o.d -o CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_murmur3.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_murmur3.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_murmur3.c.i: cmake_force
@@ -1898,7 +1882,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_qsort.c.o: /home/ekipcali
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_qsort.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_qsort.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_qsort.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_qsort.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_qsort.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_qsort.c.o -MF CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_qsort.c.o.d -o CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_qsort.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_qsort.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_qsort.c.i: cmake_force
@@ -1914,7 +1898,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_random.c.o: /home/ekipcal
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_random.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_random.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_random.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_random.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_random.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_random.c.o -MF CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_random.c.o.d -o CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_random.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_random.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_random.c.i: cmake_force
@@ -1930,7 +1914,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_stdlib.c.o: /home/ekipcal
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_stdlib.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_stdlib.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_stdlib.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_stdlib.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_stdlib.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_stdlib.c.o -MF CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_stdlib.c.o.d -o CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_stdlib.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_stdlib.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_stdlib.c.i: cmake_force
@@ -1946,7 +1930,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_string.c.o: /home/ekipcal
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_string.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_string.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_string.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_string.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_string.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_string.c.o -MF CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_string.c.o.d -o CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_string.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_string.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_string.c.i: cmake_force
@@ -1962,7 +1946,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_strtokr.c.o: /home/ekipca
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_strtokr.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_strtokr.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_strtokr.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_strtokr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_strtokr.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_strtokr.c.o -MF CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_strtokr.c.o.d -o CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_strtokr.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_strtokr.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_strtokr.c.i: cmake_force
@@ -1978,7 +1962,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/storage/SDL_storage.c.o: /home/ekipc
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/storage/SDL_storage.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/storage/SDL_storage.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/storage/SDL_storage.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/storage/SDL_storage.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/storage/SDL_storage.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/storage/SDL_storage.c.o -MF CMakeFiles/SDL3-shared.dir/src/storage/SDL_storage.c.o.d -o CMakeFiles/SDL3-shared.dir/src/storage/SDL_storage.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/storage/SDL_storage.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/storage/SDL_storage.c.i: cmake_force
@@ -1994,7 +1978,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/SDL_thread.c.o: /home/ekipcal
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/SDL_thread.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/SDL_thread.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/SDL_thread.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/SDL_thread.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/SDL_thread.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/SDL_thread.c.o -MF CMakeFiles/SDL3-shared.dir/src/thread/SDL_thread.c.o.d -o CMakeFiles/SDL3-shared.dir/src/thread/SDL_thread.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/thread/SDL_thread.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/SDL_thread.c.i: cmake_force
@@ -2010,7 +1994,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/time/SDL_time.c.o: /home/ekipcalisma
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/time/SDL_time.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/time/SDL_time.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/time/SDL_time.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/time/SDL_time.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/time/SDL_time.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/time/SDL_time.c.o -MF CMakeFiles/SDL3-shared.dir/src/time/SDL_time.c.o.d -o CMakeFiles/SDL3-shared.dir/src/time/SDL_time.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/time/SDL_time.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/time/SDL_time.c.i: cmake_force
@@ -2026,7 +2010,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/timer/SDL_timer.c.o: /home/ekipcalis
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/timer/SDL_timer.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/timer/SDL_timer.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/timer/SDL_timer.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/timer/SDL_timer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/timer/SDL_timer.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/timer/SDL_timer.c.o -MF CMakeFiles/SDL3-shared.dir/src/timer/SDL_timer.c.o.d -o CMakeFiles/SDL3-shared.dir/src/timer/SDL_timer.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/timer/SDL_timer.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/timer/SDL_timer.c.i: cmake_force
@@ -2042,7 +2026,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_RLEaccel.c.o: /home/ekipca
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_RLEaccel.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_RLEaccel.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_RLEaccel.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_RLEaccel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_RLEaccel.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_RLEaccel.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_RLEaccel.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_RLEaccel.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_RLEaccel.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_RLEaccel.c.i: cmake_force
@@ -2058,7 +2042,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit.c.o: /home/ekipcalism
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_blit.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_blit.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit.c.i: cmake_force
@@ -2074,7 +2058,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_0.c.o: /home/ekipcali
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_0.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_0.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_0.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_0.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_0.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_0.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_0.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_0.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit_0.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_0.c.i: cmake_force
@@ -2090,7 +2074,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_1.c.o: /home/ekipcali
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_1.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_1.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_1.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_1.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_1.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_1.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_1.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit_1.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_1.c.i: cmake_force
@@ -2106,7 +2090,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_A.c.o: /home/ekipcali
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_A.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_A.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_A.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_A.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_A.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_A.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_A.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_A.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit_A.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_A.c.i: cmake_force
@@ -2122,7 +2106,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_N.c.o: /home/ekipcali
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_N.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_N.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_N.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_N.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_N.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_N.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_N.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_N.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit_N.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_N.c.i: cmake_force
@@ -2138,7 +2122,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_auto.c.o: /home/ekipc
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_auto.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_auto.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_auto.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_auto.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_auto.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_auto.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_auto.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_auto.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit_auto.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_auto.c.i: cmake_force
@@ -2154,7 +2138,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_copy.c.o: /home/ekipc
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_copy.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_copy.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_copy.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_copy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_copy.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_copy.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_copy.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_copy.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit_copy.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_copy.c.i: cmake_force
@@ -2170,7 +2154,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_slow.c.o: /home/ekipc
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_slow.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_slow.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_slow.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_slow.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_slow.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_slow.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_slow.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_slow.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit_slow.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_slow.c.i: cmake_force
@@ -2186,7 +2170,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_bmp.c.o: /home/ekipcalisma
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_bmp.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_bmp.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_bmp.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_bmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_bmp.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_bmp.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_bmp.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_bmp.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_bmp.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_bmp.c.i: cmake_force
@@ -2202,7 +2186,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_clipboard.c.o: /home/ekipc
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_clipboard.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_clipboard.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_clipboard.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_clipboard.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_clipboard.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_clipboard.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_clipboard.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_clipboard.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_clipboard.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_clipboard.c.i: cmake_force
@@ -2218,7 +2202,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_egl.c.o: /home/ekipcalisma
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_egl.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_egl.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_egl.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_egl.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_egl.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_egl.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_egl.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_egl.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_egl.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_egl.c.i: cmake_force
@@ -2234,7 +2218,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o: /home/ekipca
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_fillrect.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.i: cmake_force
@@ -2250,7 +2234,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o: /home/ekipcali
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_pixels.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.i: cmake_force
@@ -2266,7 +2250,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o: /home/ekipcalism
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_174) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rect.c
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.i: cmake_force
@@ -2276,6 +2260,22 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.i: cmake_force
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.s"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -S /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rect.c -o CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.s
+
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/flags.make
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o: /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rotate.c
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_174) "Building C object vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o"
+	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -MD -MT vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o -MF CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o.d -o CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o -c /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rotate.c
+
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.i"
+	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -E /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rotate.c > CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.i
+
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.s"
+	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Winvalid-pch -include /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h -S /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rotate.c -o CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.s
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_stb.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/flags.make
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_stb.c.o: /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_stb.c
@@ -5082,7 +5082,6 @@ SDL3__shared_OBJECTS = \
 "CMakeFiles/SDL3-shared.dir/src/render/software/SDL_drawline.c.o" \
 "CMakeFiles/SDL3-shared.dir/src/render/software/SDL_drawpoint.c.o" \
 "CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.o" \
-"CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o" \
 "CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o" \
 "CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o" \
 "CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o" \
@@ -5124,6 +5123,7 @@ SDL3__shared_OBJECTS = \
 "CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o" \
 "CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o" \
 "CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o" \
+"CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o" \
 "CMakeFiles/SDL3-shared.dir/src/video/SDL_stb.c.o" \
 "CMakeFiles/SDL3-shared.dir/src/video/SDL_stretch.c.o" \
 "CMakeFiles/SDL3-shared.dir/src/video/SDL_surface.c.o" \
@@ -5298,315 +5298,315 @@ SDL3__shared_OBJECTS = \
 # External object files for target SDL3-shared
 SDL3__shared_EXTERNAL_OBJECTS =
 
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_assert.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_error.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_guid.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_hashtable.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_hints.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_list.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_log.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_properties.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_utils.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/atomic/SDL_atomic.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/atomic/SDL_spinlock.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_audio.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_audiocvt.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_audiodev.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_audioqueue.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_audioresample.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_audiotypecvt.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_mixer.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_wave.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/camera/SDL_camera.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/SDL_core_unsupported.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/cpuinfo/SDL_cpuinfo.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dynapi/SDL_dynapi.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_categories.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_clipboardevents.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_displayevents.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_dropevents.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_events.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_eventwatch.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_keyboard.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_keymap.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_keysym_to_keycode.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_keysym_to_scancode.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_mouse.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_pen.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_quit.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_scancode_tables.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_touch.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_windowevents.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/imKStoUCS.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/filesystem/SDL_filesystem.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/gpu/SDL_gpu.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/haptic/SDL_haptic.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/hidapi/SDL_hidapi.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/io/SDL_asyncio.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/io/SDL_iostream.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/io/generic/SDL_asyncio_generic.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/SDL_gamepad.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/SDL_joystick.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/SDL_steam_virtual_gamepad.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/controller_type.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/locale/SDL_locale.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/main/SDL_main_callbacks.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/main/SDL_runapp.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/misc/SDL_libusb.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/misc/SDL_url.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/power/SDL_power.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_render.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_render_unsupported.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_yuv_sw.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/direct3d/SDL_render_d3d.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/direct3d/SDL_shaders_d3d.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/direct3d11/SDL_render_d3d11.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/direct3d11/SDL_shaders_d3d11.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/direct3d12/SDL_render_d3d12.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/direct3d12/SDL_shaders_d3d12.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/gpu/SDL_pipeline_gpu.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/gpu/SDL_render_gpu.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/gpu/SDL_shaders_gpu.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/ngage/SDL_render_ngage.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/opengl/SDL_render_gl.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/opengl/SDL_shaders_gl.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/opengles2/SDL_render_gles2.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/opengles2/SDL_shaders_gles2.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/ps2/SDL_render_ps2.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/psp/SDL_render_psp.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_blendfillrect.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_blendline.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_blendpoint.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_drawline.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_drawpoint.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_render_vulkan.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_shaders_vulkan.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/sensor/SDL_sensor.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc16.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc32.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_getenv.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_iconv.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_malloc.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memcpy.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memmove.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memset.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_mslibc.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_murmur3.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_qsort.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_random.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_stdlib.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_string.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_strtokr.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/storage/SDL_storage.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/SDL_thread.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/time/SDL_time.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/timer/SDL_timer.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_RLEaccel.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_0.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_1.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_A.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_N.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_auto.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_copy.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_slow.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_bmp.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_clipboard.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_egl.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_stb.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_stretch.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_surface.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_video.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_video_unsupported.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_vulkan_utils.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_yuv.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/yuv2rgb/yuv_rgb_lsx.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/yuv2rgb/yuv_rgb_sse.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/yuv2rgb/yuv_rgb_std.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/dummy/SDL_dummyaudio.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/disk/SDL_diskaudio.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/camera/dummy/SDL_camera_dummy.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/loadso/dlopen/SDL_sysloadso.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/virtual/SDL_virtualjoystick.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/dummy/SDL_nullevents.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/dummy/SDL_nullframebuffer.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/dummy/SDL_nullvideo.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/alsa/SDL_alsa_audio.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/jack/SDL_jackaudio.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/pipewire/SDL_pipewire.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/camera/pipewire/SDL_camera_pipewire.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/pulseaudio/SDL_pulseaudio.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11clipboard.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11dyn.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11events.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11framebuffer.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11keyboard.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11messagebox.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11modes.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11mouse.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11opengl.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11opengles.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11pen.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11settings.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11shape.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11toolkit.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11touch.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11video.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11vulkan.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11window.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11xfixes.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11xinput2.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11xsync.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11xtest.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/edid-parse.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/xsettings-client.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmdyn.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmevents.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmmouse.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmopengles.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmvideo.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmvulkan.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandclipboard.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandcolor.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylanddatamanager.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylanddyn.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandevents.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandkeyboard.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandmessagebox.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandmouse.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandopengles.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandshmbuffer.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandvideo.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandvulkan.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandwindow.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/alpha-modifier-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/color-management-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/cursor-shape-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/fractional-scale-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/frog-color-management-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/idle-inhibit-unstable-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/input-timestamps-unstable-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-warp-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/primary-selection-unstable-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/tablet-v2-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/text-input-unstable-v3-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/viewporter-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/wayland-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-activation-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-decoration-unstable-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-dialog-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-foreign-unstable-v2-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-output-unstable-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-shell-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-toplevel-icon-v1-protocol.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/tray/unix/SDL_tray.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/unix/SDL_appid.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/unix/SDL_fribidi.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/unix/SDL_gtk.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/unix/SDL_poll.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/camera/v4l2/SDL_camera_v4l2.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/haptic/linux/SDL_syshaptic.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_dbus.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_system_theme.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_progressbar.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_ime.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_ibus.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_fcitx.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_udev.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_evdev.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_evdev_kbd.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/io/io_uring/SDL_asyncio_liburing.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_evdev_capabilities.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_threadprio.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_8bitdo.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_combined.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_flydigi.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_gamecube.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_gip.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_lg4ff.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_luna.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_ps3.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_ps4.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_ps5.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_rumble.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_shield.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_sinput.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_stadia.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_steam.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_steam_hori.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_steamdeck.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_switch.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_switch2.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_wii.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_xbox360.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_xbox360w.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_xboxone.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_zuiki.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapijoystick.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/haptic/hidapi/SDL_hidapihaptic.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/haptic/hidapi/SDL_hidapihaptic_lg4ff.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/linux/SDL_sysjoystick.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_systhread.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_sysmutex.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_syscond.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_sysrwlock.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_systls.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_syssem.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/misc/unix/SDL_sysurl.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/power/linux/SDL_syspower.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/locale/unix/SDL_syslocale.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/filesystem/unix/SDL_sysfilesystem.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/storage/generic/SDL_genericstorage.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/storage/steam/SDL_steamstorage.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/filesystem/posix/SDL_sysfsops.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/time/unix/SDL_systime.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/timer/unix/SDL_systimer.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dialog/SDL_dialog.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dialog/SDL_dialog_utils.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dialog/unix/SDL_unixdialog.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dialog/unix/SDL_portaldialog.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dialog/unix/SDL_zenitydialog.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dialog/unix/SDL_zenitymessagebox.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/process/SDL_process.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/process/posix/SDL_posixprocess.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenevents.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenframebuffer.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenopengles.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenvideo.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenvulkan.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenwindow.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/tray/SDL_tray_utils.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/gpu/vulkan/SDL_gpu_vulkan.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/sensor/dummy/SDL_dummysensor.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/main/generic/SDL_sysmain_callbacks.c.o
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
-libSDL3.so.0.3.0: vendored/SDL/libSDL_uclibc.a
-libSDL3.so.0.3.0: /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dynapi/SDL_dynapi.sym
-libSDL3.so.0.3.0: vendored/SDL/CMakeFiles/SDL3-shared.dir/link.txt
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h.gch
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_assert.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_error.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_guid.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_hashtable.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_hints.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_list.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_log.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_properties.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/SDL_utils.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/atomic/SDL_atomic.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/atomic/SDL_spinlock.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_audio.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_audiocvt.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_audiodev.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_audioqueue.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_audioresample.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_audiotypecvt.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_mixer.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/SDL_wave.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/camera/SDL_camera.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/SDL_core_unsupported.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/cpuinfo/SDL_cpuinfo.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dynapi/SDL_dynapi.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_categories.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_clipboardevents.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_displayevents.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_dropevents.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_events.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_eventwatch.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_keyboard.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_keymap.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_keysym_to_keycode.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_keysym_to_scancode.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_mouse.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_pen.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_quit.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_scancode_tables.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_touch.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_windowevents.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/imKStoUCS.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/filesystem/SDL_filesystem.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/gpu/SDL_gpu.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/haptic/SDL_haptic.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/hidapi/SDL_hidapi.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/io/SDL_asyncio.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/io/SDL_iostream.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/io/generic/SDL_asyncio_generic.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/SDL_gamepad.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/SDL_joystick.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/SDL_steam_virtual_gamepad.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/controller_type.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/locale/SDL_locale.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/main/SDL_main_callbacks.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/main/SDL_runapp.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/misc/SDL_libusb.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/misc/SDL_url.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/power/SDL_power.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_render.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_render_unsupported.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/SDL_yuv_sw.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/direct3d/SDL_render_d3d.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/direct3d/SDL_shaders_d3d.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/direct3d11/SDL_render_d3d11.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/direct3d11/SDL_shaders_d3d11.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/direct3d12/SDL_render_d3d12.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/direct3d12/SDL_shaders_d3d12.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/gpu/SDL_pipeline_gpu.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/gpu/SDL_render_gpu.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/gpu/SDL_shaders_gpu.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/ngage/SDL_render_ngage.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/opengl/SDL_render_gl.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/opengl/SDL_shaders_gl.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/opengles2/SDL_render_gles2.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/opengles2/SDL_shaders_gles2.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/ps2/SDL_render_ps2.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/psp/SDL_render_psp.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_blendfillrect.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_blendline.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_blendpoint.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_drawline.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_drawpoint.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_render_vulkan.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vulkan/SDL_shaders_vulkan.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/sensor/SDL_sensor.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc16.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_crc32.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_getenv.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_iconv.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_malloc.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memcpy.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memmove.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_memset.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_mslibc.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_murmur3.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_qsort.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_random.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_stdlib.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_string.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_strtokr.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/storage/SDL_storage.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/SDL_thread.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/time/SDL_time.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/timer/SDL_timer.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_RLEaccel.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_0.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_1.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_A.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_N.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_auto.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_copy.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_blit_slow.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_bmp.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_clipboard.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_egl.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_stb.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_stretch.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_surface.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_video.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_video_unsupported.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_vulkan_utils.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_yuv.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/yuv2rgb/yuv_rgb_lsx.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/yuv2rgb/yuv_rgb_sse.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/yuv2rgb/yuv_rgb_std.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/dummy/SDL_dummyaudio.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/disk/SDL_diskaudio.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/camera/dummy/SDL_camera_dummy.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/loadso/dlopen/SDL_sysloadso.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/virtual/SDL_virtualjoystick.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/dummy/SDL_nullevents.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/dummy/SDL_nullframebuffer.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/dummy/SDL_nullvideo.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/alsa/SDL_alsa_audio.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/jack/SDL_jackaudio.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/pipewire/SDL_pipewire.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/camera/pipewire/SDL_camera_pipewire.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/pulseaudio/SDL_pulseaudio.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11clipboard.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11dyn.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11events.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11framebuffer.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11keyboard.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11messagebox.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11modes.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11mouse.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11opengl.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11opengles.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11pen.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11settings.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11shape.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11toolkit.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11touch.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11video.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11vulkan.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11window.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11xfixes.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11xinput2.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11xsync.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11xtest.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/edid-parse.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/xsettings-client.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmdyn.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmevents.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmmouse.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmopengles.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmvideo.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmvulkan.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandclipboard.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandcolor.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylanddatamanager.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylanddyn.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandevents.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandkeyboard.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandmessagebox.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandmouse.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandopengles.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandshmbuffer.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandvideo.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandvulkan.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandwindow.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/alpha-modifier-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/color-management-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/cursor-shape-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/fractional-scale-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/frog-color-management-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/idle-inhibit-unstable-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/input-timestamps-unstable-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-gestures-unstable-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/pointer-warp-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/primary-selection-unstable-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/tablet-v2-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/text-input-unstable-v3-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/viewporter-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/wayland-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-activation-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-decoration-unstable-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-dialog-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-foreign-unstable-v2-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-output-unstable-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-shell-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/wayland-generated-protocols/xdg-toplevel-icon-v1-protocol.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/tray/unix/SDL_tray.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/unix/SDL_appid.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/unix/SDL_fribidi.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/unix/SDL_gtk.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/unix/SDL_poll.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/camera/v4l2/SDL_camera_v4l2.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/haptic/linux/SDL_syshaptic.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_dbus.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_system_theme.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_progressbar.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_ime.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_ibus.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_fcitx.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_udev.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_evdev.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_evdev_kbd.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/io/io_uring/SDL_asyncio_liburing.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_evdev_capabilities.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_threadprio.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_8bitdo.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_combined.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_flydigi.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_gamecube.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_gip.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_lg4ff.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_luna.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_ps3.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_ps4.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_ps5.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_rumble.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_shield.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_sinput.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_stadia.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_steam.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_steam_hori.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_steamdeck.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_switch.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_switch2.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_wii.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_xbox360.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_xbox360w.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_xboxone.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_zuiki.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapijoystick.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/haptic/hidapi/SDL_hidapihaptic.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/haptic/hidapi/SDL_hidapihaptic_lg4ff.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/linux/SDL_sysjoystick.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_systhread.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_sysmutex.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_syscond.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_sysrwlock.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_systls.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/thread/pthread/SDL_syssem.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/misc/unix/SDL_sysurl.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/power/linux/SDL_syspower.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/locale/unix/SDL_syslocale.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/filesystem/unix/SDL_sysfilesystem.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/storage/generic/SDL_genericstorage.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/storage/steam/SDL_steamstorage.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/filesystem/posix/SDL_sysfsops.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/time/unix/SDL_systime.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/timer/unix/SDL_systimer.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dialog/SDL_dialog.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dialog/SDL_dialog_utils.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dialog/unix/SDL_unixdialog.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dialog/unix/SDL_portaldialog.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dialog/unix/SDL_zenitydialog.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dialog/unix/SDL_zenitymessagebox.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/process/SDL_process.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/process/posix/SDL_posixprocess.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenevents.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenframebuffer.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenopengles.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenvideo.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenvulkan.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/offscreen/SDL_offscreenwindow.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/tray/SDL_tray_utils.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/gpu/vulkan/SDL_gpu_vulkan.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/sensor/dummy/SDL_dummysensor.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/src/main/generic/SDL_sysmain_callbacks.c.o
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/compiler_depend.ts
+libSDL3.so.0.3.3: vendored/SDL/libSDL_uclibc.a
+libSDL3.so.0.3.3: /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dynapi/SDL_dynapi.sym
+libSDL3.so.0.3.3: vendored/SDL/CMakeFiles/SDL3-shared.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_345) "Linking C shared library ../../libSDL3.so"
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL3-shared.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && $(CMAKE_COMMAND) -E cmake_symlink_library ../../libSDL3.so.0.3.0 ../../libSDL3.so.0 ../../libSDL3.so
+	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL && $(CMAKE_COMMAND) -E cmake_symlink_library ../../libSDL3.so.0.3.3 ../../libSDL3.so.0 ../../libSDL3.so
 
-libSDL3.so.0: libSDL3.so.0.3.0
+libSDL3.so.0: libSDL3.so.0.3.3
 	@$(CMAKE_COMMAND) -E touch_nocreate libSDL3.so.0
 
-libSDL3.so: libSDL3.so.0.3.0
+libSDL3.so: libSDL3.so.0.3.3
 	@$(CMAKE_COMMAND) -E touch_nocreate libSDL3.so
 
 # Rule to build all files generated by this target.

@@ -16,19 +16,19 @@ using namespace std;
 // Constants
 const int SCREEN_HEIGHT = 128 * 8;
 const int SCREEN_WIDTH = 128 * 10;
-const int CHARACTER_SIZE = 128;
+const int CHARACTER_SIZE = 100;
 const int EGG_SIZE = 32;
 const int BASKET_SIZE = 48 * 2;
-const int CHICKEN_SIZE = 40;
+const int CHICKEN_SIZE = 80;
 const int MAX_EGGS = 3;
 const int MAX_CHICKENS = 5;
-const int HATCH_TIME = 10000; // 10 seconds to hatch a chicken
+const int HATCH_TIME = 25000; // 10 seconds to hatch a chicken
 
 // Grid positions (based on your layout)
-const int CHICKEN_START_X = 100;
-const int CHICKEN_START_Y = 400;
-const int CHICKEN_SPACING = 80;
-const int DRAGON_X = SCREEN_WIDTH - 200;
+const int CHICKEN_START_X = 200;
+const int CHICKEN_START_Y = 720;
+const int CHICKEN_SPACING = 20;
+const int DRAGON_X = SCREEN_WIDTH - 250;
 const int DRAGON_Y = 400;
 const int CHARACTER_START_X = SCREEN_WIDTH / 2;
 const int CHARACTER_START_Y = 400;
@@ -177,7 +177,7 @@ public:
         : x(posX), y(posY), isHungry(true), lastFeedTime(0), currentFrame(0), lastFrameTime(SDL_GetTicks()) {}
     
     SDL_FRect getRect() const {
-        return {x, y, CHARACTER_SIZE * 1.5f, CHARACTER_SIZE * 1.5f};
+        return {x, y, CHARACTER_SIZE * 2.5f, CHARACTER_SIZE * 2.5f};
     }
     
     bool feed() {
@@ -274,7 +274,7 @@ vector<SDL_Texture*> loadDragonFrames(SDL_Renderer* renderer) {
     vector<SDL_Texture*> dragonFrames;
     
     for (int i = 0; i < 3; i++) {
-        string dragonPath = "src/assets/dragon_" + to_string(i) + ".bmp";
+        string dragonPath = "src/assets/drag/dragon_" + to_string(i) + ".bmp";
         filesystem::path pDragon = dragonPath;
         string absolutePath = filesystem::absolute(pDragon);
         
@@ -408,8 +408,8 @@ int main() {
     SDL_Renderer* renderer = SDL_CreateRenderer(window, nullptr);
 
     // 4. Load Textures
-    SDL_Texture* bgTexture1 = loadTexture(renderer, filesystem::absolute("src/assets/villiage.bmp"));
-    SDL_Texture* bgTexture2 = loadTexture(renderer, filesystem::absolute("src/assets/playG1.bmp"));
+    SDL_Texture* bgTexture1 = loadTexture(renderer, filesystem::absolute("src/assets/playG1.bmp"));
+    SDL_Texture* bgTexture2 = loadTexture(renderer, filesystem::absolute("src/assets/playG2.bmp"));
     SDL_Texture* currentBgTexture = bgTexture1;
 
     // Load character frames
@@ -426,7 +426,7 @@ int main() {
 
     // Load egg and chicken textures
     SDL_Texture* eggTexture = loadTexture(renderer, filesystem::absolute("src/assets/basketNeggs/egg.bmp"));
-    SDL_Texture* chickenTexture = loadTexture(renderer, filesystem::absolute("src/assets/chicken.bmp"));
+    SDL_Texture* chickenTexture = loadTexture(renderer, filesystem::absolute("src/assets/drag/chicken.bmp"));
     
     // Load dragon frames for animation
     vector<SDL_Texture*> dragonFrames = loadDragonFrames(renderer);
@@ -563,9 +563,6 @@ int main() {
             float spotX = CHICKEN_START_X;
             float spotY = CHICKEN_START_Y + (i * CHICKEN_SPACING);
             
-            // Draw empty spot outline
-            YAS_DrawRect(spotX - 5, spotY - 5, renderer, CHICKEN_SIZE + 10, CHICKEN_SIZE + 10, 100, 100, 100, 0);
-            YAS_DrawRect(spotX - 5, spotY - 5, renderer, CHICKEN_SIZE + 10, CHICKEN_SIZE + 10, 200, 200, 200, 1);
         }
         
         // Render Chickens in their spots

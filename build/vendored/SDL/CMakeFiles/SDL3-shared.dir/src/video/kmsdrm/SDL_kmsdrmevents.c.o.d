@@ -37,6 +37,6 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmevents.c.o: \
  /usr/include/xf86drmMode.h /usr/include/libdrm/drm_mode.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
  /usr/include/gbm.h /usr/include/EGL/egl.h /usr/include/EGL/eglplatform.h \
- /usr/include/KHR/khrplatform.h \
+ /usr/include/KHR/khrplatform.h /usr/include/EGL/eglext.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmevents.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/../../core/linux/SDL_evdev.h

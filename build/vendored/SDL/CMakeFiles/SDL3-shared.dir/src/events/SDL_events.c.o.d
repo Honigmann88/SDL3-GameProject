@@ -52,7 +52,26 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_events.c.o: \
  /usr/include/linux/input-event-codes.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/events/../joystick/SDL_joystick_c.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/events/../sensor/SDL_sensor_c.h \
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/core/linux/SDL_dbus.h \
+ /usr/include/dbus-1.0/dbus/dbus.h \
+ /usr/lib/dbus-1.0/include/dbus/dbus-arch-deps.h \
+ /usr/include/dbus-1.0/dbus/dbus-macros.h \
+ /usr/include/dbus-1.0/dbus/dbus-address.h \
+ /usr/include/dbus-1.0/dbus/dbus-types.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
+ /usr/include/dbus-1.0/dbus/dbus-errors.h \
+ /usr/include/dbus-1.0/dbus/dbus-protocol.h \
+ /usr/include/dbus-1.0/dbus/dbus-bus.h \
+ /usr/include/dbus-1.0/dbus/dbus-connection.h \
+ /usr/include/dbus-1.0/dbus/dbus-memory.h \
+ /usr/include/dbus-1.0/dbus/dbus-message.h \
+ /usr/include/dbus-1.0/dbus/dbus-shared.h \
+ /usr/include/dbus-1.0/dbus/dbus-misc.h \
+ /usr/include/dbus-1.0/dbus/dbus-pending-call.h \
+ /usr/include/dbus-1.0/dbus/dbus-server.h \
+ /usr/include/dbus-1.0/dbus/dbus-signature.h \
+ /usr/include/dbus-1.0/dbus/dbus-syntax.h \
+ /usr/include/dbus-1.0/dbus/dbus-threads.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/events/../tray/SDL_tray_utils.h \
  /usr/include/X11/Xlib.h /usr/include/X11/X.h \
- /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
+ /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h

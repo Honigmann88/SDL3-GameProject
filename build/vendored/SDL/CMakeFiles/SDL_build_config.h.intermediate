@@ -344,6 +344,7 @@
 #define SDL_SENSOR_DUMMY 1
 /* #undef SDL_SENSOR_VITA */
 /* #undef SDL_SENSOR_N3DS */
+/* #undef SDL_SENSOR_EMSCRIPTEN */
 
 /* #undef SDL_SENSOR_PRIVATE */
 

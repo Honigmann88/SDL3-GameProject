@@ -89,7 +89,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmvulkan.c.o: \
  /usr/include/libdrm/drm_mode.h /usr/include/libdrm/drm.h \
  /usr/include/xf86drmMode.h /usr/include/libdrm/drm_mode.h \
  /usr/include/gbm.h /usr/include/EGL/egl.h /usr/include/EGL/eglplatform.h \
- /usr/include/KHR/khrplatform.h \
+ /usr/include/KHR/khrplatform.h /usr/include/EGL/eglext.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmdyn.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmsym.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmvulkan.h \

@@ -14,6 +14,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_surface.c.o: \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_video_c.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_RLEaccel_c.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_pixels_c.h \
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rotate.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_stb_c.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_yuv_c.h \
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/../render/SDL_sysrender.h \

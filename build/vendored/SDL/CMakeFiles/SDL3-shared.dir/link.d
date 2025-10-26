@@ -1,4 +1,4 @@
-../../libSDL3.so.0.3.0: \
+../../libSDL3.so.0.3.3: \
   /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dynapi/SDL_dynapi.sym \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
@@ -85,7 +85,6 @@
   CMakeFiles/SDL3-shared.dir/src/render/software/SDL_drawline.c.o \
   CMakeFiles/SDL3-shared.dir/src/render/software/SDL_drawpoint.c.o \
   CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.o \
-  CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o \
   CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o \
   CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o \
   CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o \
@@ -127,6 +126,7 @@
   CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o \
   CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o \
   CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o \
+  CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o \
   CMakeFiles/SDL3-shared.dir/src/video/SDL_stb.c.o \
   CMakeFiles/SDL3-shared.dir/src/video/SDL_stretch.c.o \
   CMakeFiles/SDL3-shared.dir/src/video/SDL_surface.c.o \
@@ -497,8 +497,6 @@ CMakeFiles/SDL3-shared.dir/src/render/software/SDL_drawpoint.c.o:
 
 CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.o:
 
-CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o:
-
 CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o:
 
 CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o:
@@ -580,6 +578,8 @@ CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o:
 CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o:
 
 CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o:
+
+CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o:
 
 CMakeFiles/SDL3-shared.dir/src/video/SDL_stb.c.o:
 

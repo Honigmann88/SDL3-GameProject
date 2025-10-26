@@ -96,7 +96,7 @@ main_EXTERNAL_OBJECTS =
 main: CMakeFiles/main.dir/src/main.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/compiler_depend.ts
-main: libSDL3.so.0.3.0
+main: libSDL3.so.0.3.3
 main: /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dynapi/SDL_dynapi.sym
 main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"

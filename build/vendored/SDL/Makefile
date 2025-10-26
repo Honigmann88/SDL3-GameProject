@@ -4470,30 +4470,6 @@ src/render/software/SDL_render_sw.c.s:
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.s
 .PHONY : src/render/software/SDL_render_sw.c.s
 
-src/render/software/SDL_rotate.o: src/render/software/SDL_rotate.c.o
-.PHONY : src/render/software/SDL_rotate.o
-
-# target to build an object file
-src/render/software/SDL_rotate.c.o:
-	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o
-.PHONY : src/render/software/SDL_rotate.c.o
-
-src/render/software/SDL_rotate.i: src/render/software/SDL_rotate.c.i
-.PHONY : src/render/software/SDL_rotate.i
-
-# target to preprocess a source file
-src/render/software/SDL_rotate.c.i:
-	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.i
-.PHONY : src/render/software/SDL_rotate.c.i
-
-src/render/software/SDL_rotate.s: src/render/software/SDL_rotate.c.s
-.PHONY : src/render/software/SDL_rotate.s
-
-# target to generate assembly for a file
-src/render/software/SDL_rotate.c.s:
-	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.s
-.PHONY : src/render/software/SDL_rotate.c.s
-
 src/render/software/SDL_triangle.o: src/render/software/SDL_triangle.c.o
 .PHONY : src/render/software/SDL_triangle.o
 
@@ -6029,6 +6005,30 @@ src/video/SDL_rect.s: src/video/SDL_rect.c.s
 src/video/SDL_rect.c.s:
 	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.s
 .PHONY : src/video/SDL_rect.c.s
+
+src/video/SDL_rotate.o: src/video/SDL_rotate.c.o
+.PHONY : src/video/SDL_rotate.o
+
+# target to build an object file
+src/video/SDL_rotate.c.o:
+	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o
+.PHONY : src/video/SDL_rotate.c.o
+
+src/video/SDL_rotate.i: src/video/SDL_rotate.c.i
+.PHONY : src/video/SDL_rotate.i
+
+# target to preprocess a source file
+src/video/SDL_rotate.c.i:
+	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.i
+.PHONY : src/video/SDL_rotate.c.i
+
+src/video/SDL_rotate.s: src/video/SDL_rotate.c.s
+.PHONY : src/video/SDL_rotate.s
+
+# target to generate assembly for a file
+src/video/SDL_rotate.c.s:
+	cd /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build && $(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.s
+.PHONY : src/video/SDL_rotate.c.s
 
 src/video/SDL_stb.o: src/video/SDL_stb.c.o
 .PHONY : src/video/SDL_stb.o
@@ -8645,9 +8645,6 @@ help:
 	@echo "... src/render/software/SDL_render_sw.o"
 	@echo "... src/render/software/SDL_render_sw.i"
 	@echo "... src/render/software/SDL_render_sw.s"
-	@echo "... src/render/software/SDL_rotate.o"
-	@echo "... src/render/software/SDL_rotate.i"
-	@echo "... src/render/software/SDL_rotate.s"
 	@echo "... src/render/software/SDL_triangle.o"
 	@echo "... src/render/software/SDL_triangle.i"
 	@echo "... src/render/software/SDL_triangle.s"
@@ -8840,6 +8837,9 @@ help:
 	@echo "... src/video/SDL_rect.o"
 	@echo "... src/video/SDL_rect.i"
 	@echo "... src/video/SDL_rect.s"
+	@echo "... src/video/SDL_rotate.o"
+	@echo "... src/video/SDL_rotate.i"
+	@echo "... src/video/SDL_rotate.s"
 	@echo "... src/video/SDL_stb.o"
 	@echo "... src/video/SDL_stb.i"
 	@echo "... src/video/SDL_stb.s"

@@ -364,10 +364,8 @@ main: /usr/lib/Scrt1.o \
   /usr/lib/libm.so.6 \
   /usr/lib/libmvec.so.1 \
   CMakeFiles/main.dir/src/main.cpp.o \
-  libSDL3.so.0.3.0
+  libSDL3.so.0.3.3
 
-
-libSDL3.so.0.3.0:
 
 CMakeFiles/main.dir/src/main.cpp.o:
 
@@ -830,6 +828,8 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/c++/15.2.1/string_view:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_pixels.h:
+
+libSDL3.so.0.3.3:
 
 /usr/include/c++/15.2.1/codecvt:
 

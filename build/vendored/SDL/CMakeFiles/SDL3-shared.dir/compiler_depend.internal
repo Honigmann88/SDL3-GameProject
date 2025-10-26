@@ -172,7 +172,6 @@ libSDL3.so
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_drawline.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_drawpoint.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.o
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o
@@ -227,6 +226,7 @@ libSDL3.so
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_fillrect.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_pixels.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_stb.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_stretch.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_surface.c.o
@@ -3923,6 +3923,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_events.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_video.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_vulkan.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/core/linux/SDL_dbus.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_hints_c.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/audio/SDL_audio_c.h
@@ -3972,6 +3973,23 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_events.c.o
  /usr/include/bits/types.h
  /usr/include/bits/types/struct_timeval.h
  /usr/include/bits/types/time_t.h
+ /usr/include/dbus-1.0/dbus/dbus-address.h
+ /usr/include/dbus-1.0/dbus/dbus-bus.h
+ /usr/include/dbus-1.0/dbus/dbus-connection.h
+ /usr/include/dbus-1.0/dbus/dbus-errors.h
+ /usr/include/dbus-1.0/dbus/dbus-macros.h
+ /usr/include/dbus-1.0/dbus/dbus-memory.h
+ /usr/include/dbus-1.0/dbus/dbus-message.h
+ /usr/include/dbus-1.0/dbus/dbus-misc.h
+ /usr/include/dbus-1.0/dbus/dbus-pending-call.h
+ /usr/include/dbus-1.0/dbus/dbus-protocol.h
+ /usr/include/dbus-1.0/dbus/dbus-server.h
+ /usr/include/dbus-1.0/dbus/dbus-shared.h
+ /usr/include/dbus-1.0/dbus/dbus-signature.h
+ /usr/include/dbus-1.0/dbus/dbus-syntax.h
+ /usr/include/dbus-1.0/dbus/dbus-threads.h
+ /usr/include/dbus-1.0/dbus/dbus-types.h
+ /usr/include/dbus-1.0/dbus/dbus.h
  /usr/include/features.h
  /usr/include/libudev.h
  /usr/include/linux/input-event-codes.h
@@ -3988,6 +4006,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/events/SDL_events.c.o
  /usr/include/sys/time.h
  /usr/include/sys/ttydefaults.h
  /usr/include/sys/types.h
+ /usr/lib/dbus-1.0/include/dbus/dbus-arch-deps.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
 
@@ -6131,6 +6150,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_pixels_c.h
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rotate.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_surface_c.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/SDL_sysrender.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/SDL_yuv_sw_c.h
@@ -6142,17 +6162,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_drawpoint.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_render_sw.c
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_render_sw_c.h
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_rotate.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_triangle.h
- /usr/include/stdc-predef.h
-
-vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_rotate.c.o
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit.h
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_surface_c.h
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_rotate.c
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/render/software/SDL_rotate.h
  /usr/include/stdc-predef.h
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_triangle.c.o
@@ -7328,6 +7338,15 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rect.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rect_impl.h
  /usr/include/stdc-predef.h
 
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_rotate.c.o
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit.h
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rotate.c
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rotate.h
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_surface_c.h
+ /usr/include/stdc-predef.h
+
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_stb.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h
@@ -7363,6 +7382,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/SDL_surface.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_RLEaccel_c.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_blit.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_pixels_c.h
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_rotate.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_stb_c.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_surface.c
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/SDL_surface_c.h
@@ -7705,6 +7725,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmevents.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmevents.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmvideo.h
  /usr/include/EGL/egl.h
+ /usr/include/EGL/eglext.h
  /usr/include/EGL/eglplatform.h
  /usr/include/KHR/khrplatform.h
  /usr/include/asm-generic/bitsperlong.h
@@ -7772,6 +7793,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmmouse.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmsym.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmvideo.h
  /usr/include/EGL/egl.h
+ /usr/include/EGL/eglext.h
  /usr/include/EGL/eglplatform.h
  /usr/include/KHR/khrplatform.h
  /usr/include/asm-generic/bitsperlong.h
@@ -8078,6 +8100,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/kmsdrm/SDL_kmsdrmvulkan.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmvulkan.c
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/kmsdrm/SDL_kmsdrmvulkan.h
  /usr/include/EGL/egl.h
+ /usr/include/EGL/eglext.h
  /usr/include/EGL/eglplatform.h
  /usr/include/KHR/khrplatform.h
  /usr/include/X11/X.h
@@ -8984,6 +9007,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandmouse.c.o
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/core/linux/SDL_dbus.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/core/linux/SDL_ime.h
+ /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/core/unix/SDL_poll.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/events/SDL_keymap_c.h
  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/events/SDL_mouse_c.h
@@ -9006,6 +9030,11 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandmouse.c.o
  /usr/include/EGL/egl.h
  /usr/include/EGL/eglplatform.h
  /usr/include/KHR/khrplatform.h
+ /usr/include/asm-generic/errno-base.h
+ /usr/include/asm-generic/errno.h
+ /usr/include/asm/errno.h
+ /usr/include/bits/errno.h
+ /usr/include/bits/types/error_t.h
  /usr/include/dbus-1.0/dbus/dbus-address.h
  /usr/include/dbus-1.0/dbus/dbus-bus.h
  /usr/include/dbus-1.0/dbus/dbus-connection.h
@@ -9023,8 +9052,11 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylandmouse.c.o
  /usr/include/dbus-1.0/dbus/dbus-threads.h
  /usr/include/dbus-1.0/dbus/dbus-types.h
  /usr/include/dbus-1.0/dbus/dbus.h
+ /usr/include/errno.h
+ /usr/include/features.h
  /usr/include/inttypes.h
  /usr/include/libdecor-0/libdecor.h
+ /usr/include/linux/errno.h
  /usr/include/math.h
  /usr/include/stdc-predef.h
  /usr/include/stdio.h

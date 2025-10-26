@@ -61,7 +61,7 @@ set_target_properties(SDL3::SDL3-shared PROPERTIES
 # Import target "SDL3::SDL3-shared" for configuration ""
 set_property(TARGET SDL3::SDL3-shared APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(SDL3::SDL3-shared PROPERTIES
-  IMPORTED_LOCATION_NOCONFIG "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/libSDL3.so.0.3.0"
+  IMPORTED_LOCATION_NOCONFIG "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/libSDL3.so.0.3.3"
   IMPORTED_SONAME_NOCONFIG "libSDL3.so.0"
   )
 

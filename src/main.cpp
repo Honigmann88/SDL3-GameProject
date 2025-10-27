@@ -6,7 +6,7 @@
 #include <filesystem>
 #include <string>
 #include <vector>
-#include <random>
+// #include <random>
 #include <ctime>
 #include <algorithm>
 #include "shapes.cpp"
@@ -17,7 +17,7 @@ using namespace std;
 const int SCREEN_HEIGHT = 128 * 8;
 const int SCREEN_WIDTH = 128 * 10;
 const int CHARACTER_SIZE = 100;
-const int EGG_SIZE = 32;
+const int EGG_SIZE = 22;
 const int BASKET_SIZE = 32 * 2;
 const int CHICKEN_SIZE = 90;
 const int MAX_EGGS = 3;
@@ -25,14 +25,14 @@ const int MAX_CHICKENS = 5;
 const int HATCH_TIME = 20000; // 10 seconds to hatch a chicken
 const int INITIAL_HUNGER_TIME = 45000; // 45 seconds at start
 const int MIN_HUNGER_TIME = 15000;     // 15 seconds minimum
-const int HUNGER_DECREMENT = 2000;     // Reduce by 2 seconds each feed
-const int CHICKEN_DEATH_INTERVAL = 20000; // Check for chicken death every 60 seconds
-const int EGG_REQUIREMENT_INCREMENT = 2; // Dragon requires 1 more egg every 5 days
+const int HUNGER_DECREMENT = 3000;     // Reduce by 2 seconds each feed
+const int CHICKEN_DEATH_INTERVAL = 60000; // Check for chicken death every 60 seconds
+const int EGG_REQUIREMENT_INCREMENT = 3; // Dragon requires 1 more egg every 5 days
 
 // Grid positions (based on your layout)
 const int CHICKEN_START_X = 200;
 const int CHICKEN_START_Y = 720;
-const int CHICKEN_SPACING = 20;
+const int CHICKEN_SPACING = 30;
 const int DRAGON_X = SCREEN_WIDTH - 250;
 const int DRAGON_Y = 400;
 const int CHARACTER_START_X = SCREEN_WIDTH / 2;
@@ -534,8 +534,9 @@ int main() {
         // Update Character Position
         characterRect.x = player.x;
         characterRect.y = player.y;
-        basketRect.x = player.x + (CHARACTER_SIZE - BASKET_SIZE) / 2;
-        basketRect.y = player.y - BASKET_SIZE + 10;
+        basketRect.x = player.x + int((CHARACTER_SIZE - BASKET_SIZE) / 2);
+        basketRect.y = player.y - BASKET_SIZE + 15;
+
         
         // Update Chickens
         for (auto& chicken : chickens) {
@@ -638,11 +639,6 @@ int main() {
         // animateBackground(currentBgTexture, bgTexture1, bgTexture2, currentTime);
         SDL_RenderTexture(renderer, currentBgTexture, nullptr, &backgroundRect);
         
-        // Render Dragon (with animation and hunger indicator)
-        if (!dragonFrames.empty()) {
-            SDL_Texture* currentDragonTexture = dragonFrames[dragon.currentFrame];
-            SDL_RenderTexture(renderer, currentDragonTexture, nullptr, &dragonRect);
-        }
         
         // Render Chicken Spots (5 fixed positions)
         for (int i = 0; i < MAX_CHICKENS; i++) {
@@ -657,7 +653,7 @@ int main() {
             
             // Show egg indicator if chicken has egg
             if (chickens[i].hasEgg) {
-                YAS_DrawCircle(chickenRect.x + CHICKEN_SIZE/2, chickenRect.y - 10, renderer, 5, 255, 255, 255, 1);
+                YAS_DrawCircle(chickenRect.x +int( CHICKEN_SIZE/2), chickenRect.y - 10, renderer, 5, 255, 255, 255, 1);
             }
         }
         
@@ -679,15 +675,11 @@ int main() {
                 
                 // Show fertilization indicator
                 if (egg.fertilized) {
-                    YAS_DrawCircle(eggRect.x + EGG_SIZE/2, eggRect.y - 5, renderer, 3, 0, 255, 0, 1);
+                    YAS_DrawCircle(eggRect.x + int(EGG_SIZE/2), eggRect.y - 5, renderer, 3, 0, 255, 0, 1);
                 }
             }
         }
         
-        // Render Basket
-        if (player.eggsCollected >= 0 && player.eggsCollected < basketTextures.size()) {
-            SDL_RenderTexture(renderer, basketTextures[player.eggsCollected], nullptr, &basketRect);
-        }
 
         // Render Character
         if (!gameOver) {
@@ -696,11 +688,22 @@ int main() {
             SDL_RenderTexture(renderer, currentCharacterTexture, nullptr, &characterRect);
         }
 
+        // Render Basket
+        if (player.eggsCollected >= 0 && player.eggsCollected < basketTextures.size()) {
+            SDL_RenderTexture(renderer, basketTextures[player.eggsCollected], nullptr, &basketRect);
+        }
+
+        // Render Dragon (with animation and hunger indicator)
+        if (!dragonFrames.empty()) {
+            SDL_Texture* currentDragonTexture = dragonFrames[dragon.currentFrame];
+            SDL_RenderTexture(renderer, currentDragonTexture, nullptr, &dragonRect);
+        }
+
         // Render hunger indicator above dragon
         if (dragon.isHungry) {
             YAS_DrawRect(dragon.x - 500, dragon.y - 350, renderer, 15, 150, 255, 0, 0, 1); // Red hunger bar
         } else {
-            YAS_DrawRect(dragon.x - 10, dragon.y - 25, renderer, 60, 8, 0, 255, 0, 1); // Green fed bar
+            YAS_DrawRect(dragon.x - 500, dragon.y - 350, renderer, 60, 8, 0, 255, 0, 1); // Green fed bar
         }
         
         // Render UI - Egg Counter (Top Left)
@@ -746,7 +749,7 @@ int main() {
         // If game over, display message
         if (gameOver) {
             // Draw semi-transparent overlay
-            YAS_DrawRect(SCREEN_WIDTH/2 - 150, SCREEN_HEIGHT/2 - 50, renderer, 300, 300, 130, 0, 0, 0.8f);
+            YAS_DrawRect(SCREEN_WIDTH/2 - 150, SCREEN_HEIGHT/2 - 50, renderer, 300, 300, 130, 0, 0, 1);
             
             // Draw game over text using circles
             string gameOverText = "GAME OVER";

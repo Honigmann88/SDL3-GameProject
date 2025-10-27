@@ -200,8 +200,6 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ekipcalismasi/Documents/GitHub/SDL3-Ga
   /usr/include/c++/15.2.1/bits/predefined_ops.h \
   /usr/include/c++/15.2.1/bits/ptr_traits.h \
   /usr/include/c++/15.2.1/bits/quoted_string.h \
-  /usr/include/c++/15.2.1/bits/random.h \
-  /usr/include/c++/15.2.1/bits/random.tcc \
   /usr/include/c++/15.2.1/bits/range_access.h \
   /usr/include/c++/15.2.1/bits/refwrap.h \
   /usr/include/c++/15.2.1/bits/requires_hosted.h \
@@ -219,7 +217,6 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ekipcalismasi/Documents/GitHub/SDL3-Ga
   /usr/include/c++/15.2.1/bits/stl_iterator.h \
   /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
-  /usr/include/c++/15.2.1/bits/stl_numeric.h \
   /usr/include/c++/15.2.1/bits/stl_pair.h \
   /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
@@ -269,13 +266,10 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ekipcalismasi/Documents/GitHub/SDL3-Ga
   /usr/include/c++/15.2.1/locale \
   /usr/include/c++/15.2.1/math.h \
   /usr/include/c++/15.2.1/new \
-  /usr/include/c++/15.2.1/numeric \
   /usr/include/c++/15.2.1/ostream \
   /usr/include/c++/15.2.1/pstl/execution_defs.h \
   /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/15.2.1/pstl/glue_numeric_defs.h \
   /usr/include/c++/15.2.1/pstl/pstl_config.h \
-  /usr/include/c++/15.2.1/random \
   /usr/include/c++/15.2.1/ratio \
   /usr/include/c++/15.2.1/sstream \
   /usr/include/c++/15.2.1/stdexcept \
@@ -310,7 +304,6 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ekipcalismasi/Documents/GitHub/SDL3-Ga
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/messages_members.h \
-  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/opt_random.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/time_members.h \
   /usr/include/ctype.h \
@@ -393,6 +386,8 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/sys/types.h:
 
+/usr/include/sys/select.h:
+
 /usr/include/sys/cdefs.h:
 
 /usr/include/string.h:
@@ -418,8 +413,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/time_members.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/opt_random.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h:
 
@@ -469,27 +462,17 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/pstl/pstl_config.h:
 
-/usr/include/c++/15.2.1/pstl/glue_numeric_defs.h:
-
 /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/15.2.1/pstl/execution_defs.h:
 
 /usr/include/c++/15.2.1/ostream:
 
-/usr/include/sys/select.h:
-
-/usr/include/c++/15.2.1/numeric:
-
 /usr/include/c++/15.2.1/new:
 
 /usr/include/c++/15.2.1/math.h:
 
 /usr/include/c++/15.2.1/istream:
-
-/usr/include/c++/15.2.1/iomanip:
-
-/usr/include/c++/15.2.1/initializer_list:
 
 /usr/include/bits/types/locale_t.h:
 
@@ -629,8 +612,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 
 /usr/lib/crtn.o:
 
-/usr/include/c++/15.2.1/bits/stl_numeric.h:
-
 /usr/include/c++/15.2.1/bits/functional_hash.h:
 
 /usr/include/c++/15.2.1/bits/refwrap.h:
@@ -642,8 +623,6 @@ CMakeFiles/main.dir/src/main.cpp.o:
 /usr/include/bits/atomic_wide_counter.h:
 
 /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_haptic.h:
-
-/usr/include/c++/15.2.1/random:
 
 /usr/include/bits/stdint-intn.h:
 
@@ -837,10 +816,6 @@ libSDL3.so.0.3.3:
 
 /usr/include/bits/types/mbstate_t.h:
 
-/usr/include/c++/15.2.1/filesystem:
-
-/usr/include/bits/types/struct_FILE.h:
-
 /usr/include/bits/waitstatus.h:
 
 /usr/include/bits/wchar.h:
@@ -989,10 +964,6 @@ libSDL3.so.0.3.3:
 
 /usr/include/c++/15.2.1/bits/postypes.h:
 
-/usr/include/c++/15.2.1/bits/random.h:
-
-/usr/include/c++/15.2.1/bits/random.tcc:
-
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
 
 /usr/include/c++/15.2.1/bits/range_access.h:
@@ -1091,4 +1062,12 @@ libSDL3.so.0.3.3:
 
 /usr/include/c++/15.2.1/ext/numeric_traits.h:
 
+/usr/include/c++/15.2.1/iomanip:
+
 /usr/include/c++/15.2.1/ext/type_traits.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/c++/15.2.1/filesystem:
+
+/usr/include/c++/15.2.1/initializer_list:

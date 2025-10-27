@@ -15,19 +15,23 @@ using namespace std;
 
 // Constants
 const int SCREEN_HEIGHT = 128 * 8;
-const int SCREEN_WIDTH = 128 * 10;
+const int SCREEN_WIDTH = 1280;
 const int CHARACTER_SIZE = 100;
 const int EGG_SIZE = 22;
-const int BASKET_SIZE = 32 * 2;
+const int BASKET_SIZE = 64;
 const int CHICKEN_SIZE = 90;
 const int MAX_EGGS = 3;
 const int MAX_CHICKENS = 5;
-const int HATCH_TIME = 20000; // 10 seconds to hatch a chicken
+int HATCH_TIME = 20000; // 10 seconds to hatch a chicken
+const int HATCH_MIN_TIME = 1000; // 10 seconds to hatch a chicken
 const int INITIAL_HUNGER_TIME = 45000; // 45 seconds at start
 const int MIN_HUNGER_TIME = 15000;     // 15 seconds minimum
 const int HUNGER_DECREMENT = 3000;     // Reduce by 2 seconds each feed
-const int CHICKEN_DEATH_INTERVAL = 60000; // Check for chicken death every 60 seconds
+int CHICKEN_DEATH_INTERVAL = 60000 ; // Check for chicken death every 60 seconds
+const int CHICKEN_DEATH_MIN_INTERVAL = 10000 ; // Check for chicken death every 60 seconds
 const int EGG_REQUIREMENT_INCREMENT = 3; // Dragon requires 1 more egg every 5 days
+int intervalDeathChicken = 1;
+int intervalHatchChicken = 1;
 
 // Grid positions (based on your layout)
 const int CHICKEN_START_X = 200;
@@ -623,7 +627,21 @@ int main() {
                 ++it;
             }
         }
+
+        if (CHICKEN_DEATH_INTERVAL > CHICKEN_DEATH_MIN_INTERVAL && dayCount != intervalDeathChicken) {
         
+            CHICKEN_DEATH_INTERVAL -= 2000;
+            intervalDeathChicken++;
+            cout << "New Death time: "<< CHICKEN_DEATH_INTERVAL << endl;
+        }
+
+        if (HATCH_TIME > HATCH_MIN_TIME && dayCount != intervalHatchChicken) {
+        
+            HATCH_TIME -= 2000;
+            intervalHatchChicken++;
+            cout << "New Hatch time: "<< HATCH_TIME << endl;
+        }
+
         // Clean up collected eggs
         worldEggs.erase(
             std::remove_if(worldEggs.begin(), worldEggs.end(),
@@ -703,7 +721,7 @@ int main() {
         if (dragon.isHungry) {
             YAS_DrawRect(dragon.x - 500, dragon.y - 350, renderer, 15, 150, 255, 0, 0, 1); // Red hunger bar
         } else {
-            YAS_DrawRect(dragon.x - 500, dragon.y - 350, renderer, 60, 8, 0, 255, 0, 1); // Green fed bar
+            YAS_DrawRect(dragon.x - 500, dragon.y - 350, renderer, 15, 150, 0, 255, 0, 1); // Green fed bar
         }
         
         // Render UI - Egg Counter (Top Left)

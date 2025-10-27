@@ -18,16 +18,16 @@ const int SCREEN_HEIGHT = 128 * 8;
 const int SCREEN_WIDTH = 128 * 10;
 const int CHARACTER_SIZE = 100;
 const int EGG_SIZE = 32;
-const int BASKET_SIZE = 48 * 2;
-const int CHICKEN_SIZE = 80;
+const int BASKET_SIZE = 32 * 2;
+const int CHICKEN_SIZE = 90;
 const int MAX_EGGS = 3;
 const int MAX_CHICKENS = 5;
-const int HATCH_TIME = 25000; // 10 seconds to hatch a chicken
+const int HATCH_TIME = 20000; // 10 seconds to hatch a chicken
 const int INITIAL_HUNGER_TIME = 45000; // 45 seconds at start
 const int MIN_HUNGER_TIME = 15000;     // 15 seconds minimum
 const int HUNGER_DECREMENT = 2000;     // Reduce by 2 seconds each feed
-const int CHICKEN_DEATH_INTERVAL = 60000; // Check for chicken death every 60 seconds
-const int EGG_REQUIREMENT_INCREMENT = 1; // Dragon requires 1 more egg every 5 days
+const int CHICKEN_DEATH_INTERVAL = 20000; // Check for chicken death every 60 seconds
+const int EGG_REQUIREMENT_INCREMENT = 2; // Dragon requires 1 more egg every 5 days
 
 // Grid positions (based on your layout)
 const int CHICKEN_START_X = 200;
@@ -713,40 +713,40 @@ int main() {
             YAS_DrawCircle(30 + i * 25, 60, renderer, 10, 0, 255, 0, 1); // Green for fertilized
         }
         
-        // Render Day Counter (Top Right)
-        string dayText = "Day: " + to_string(dayCount);
-        int dayX = SCREEN_WIDTH - 100;
-        int dayY = 30;
+        // // Render Day Counter (Top Right)
+        // string dayText = "Day: " + to_string(dayCount);
+        // int dayX = SCREEN_WIDTH - 100;
+        // int dayY = 30;
 
-        // Draw background for day counter
-        YAS_DrawRect(dayX - 10, dayY - 15, renderer, 80, 30, 0, 0, 0, 0.7f);
+        // // Draw background for day counter
+        // YAS_DrawRect(dayX - 10, dayY - 15, renderer, 80, 30, 0, 0, 0, 1);
 
-        // Draw each digit of the day count
-        string dayStr = to_string(dayCount);
-        for (size_t i = 0; i < dayStr.length(); i++) {
-            char digit = dayStr[i];
-            int digitX = dayX + (i * 15);
+        // // Draw each digit of the day count
+        // string dayStr = to_string(dayCount);
+        // for (size_t i = 0; i < dayStr.length(); i++) {
+        //     char digit = dayStr[i];
+        //     int digitX = dayX + (i * 15);
             
-            // Simple number drawing using circles for each digit
-            YAS_DrawCircle(digitX, dayY, renderer, 8, 255, 255, 255, 1);
-        }
+        //     // Simple number drawing using circles for each digit
+        //     YAS_DrawCircle(digitX, dayY, renderer, 8, 255, 255, 255, 1);
+        // }
         
-        // Render Dragon Egg Requirement (Top Right, below day counter)
-        string reqText = "Need: " + to_string(dragon.eggsRequired) + " eggs";
-        int reqX = SCREEN_WIDTH - 100;
-        int reqY = 70;
+        // // Render Dragon Egg Requirement (Top Right, below day counter)
+        // string reqText = "Need: " + to_string(dragon.eggsRequired) + " eggs";
+        // int reqX = SCREEN_WIDTH - 100;
+        // int reqY = 70;
         
-        YAS_DrawRect(reqX - 10, reqY - 15, renderer, 80, 30, 0, 0, 0, 0.7f);
-        string reqStr = to_string(dragon.eggsRequired);
-        for (size_t i = 0; i < reqStr.length(); i++) {
-            int digitX = reqX + (i * 15);
-            YAS_DrawCircle(digitX, reqY, renderer, 8, 255, 100, 100, 1); // Pink for requirement
-        }
+        // YAS_DrawRect(reqX - 10, reqY - 15, renderer, 80, 30, 0, 0, 0, 0.7f);
+        // string reqStr = to_string(dragon.eggsRequired);
+        // for (size_t i = 0; i < reqStr.length(); i++) {
+        //     int digitX = reqX + (i * 15);
+        //     YAS_DrawCircle(digitX, reqY, renderer, 8, 255, 100, 100, 1); // Pink for requirement
+        // }
 
         // If game over, display message
         if (gameOver) {
             // Draw semi-transparent overlay
-            YAS_DrawRect(SCREEN_WIDTH/2 - 150, SCREEN_HEIGHT/2 - 50, renderer, 300, 100, 0, 0, 0, 0.8f);
+            YAS_DrawRect(SCREEN_WIDTH/2 - 150, SCREEN_HEIGHT/2 - 50, renderer, 300, 300, 130, 0, 0, 0.8f);
             
             // Draw game over text using circles
             string gameOverText = "GAME OVER";

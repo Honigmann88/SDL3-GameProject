@@ -93,6 +93,7 @@ public:
     SDL_FRect getRect() const {
         return {x, y, CHICKEN_SIZE, CHICKEN_SIZE};
     }
+
 };
 
 // Character class

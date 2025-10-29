@@ -17,27 +17,27 @@
 
 set(HEAD_HASH)
 
-file(READ "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/git-data/HEAD" HEAD_CONTENTS LIMIT 1024)
+file(READ "/home/honigmann/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/git-data/HEAD" HEAD_CONTENTS LIMIT 1024)
 
 string(STRIP "${HEAD_CONTENTS}" HEAD_CONTENTS)
 if(HEAD_CONTENTS MATCHES "ref")
 	# named branch
 	string(REPLACE "ref: " "" HEAD_REF "${HEAD_CONTENTS}")
-	if(EXISTS "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/.git/${HEAD_REF}")
-		configure_file("/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/.git/${HEAD_REF}" "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/git-data/head-ref" COPYONLY)
+	if(EXISTS "/home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/.git/${HEAD_REF}")
+		configure_file("/home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/.git/${HEAD_REF}" "/home/honigmann/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/git-data/head-ref" COPYONLY)
 	else()
-		configure_file("/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/.git/packed-refs" "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/git-data/packed-refs" COPYONLY)
-		file(READ "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/git-data/packed-refs" PACKED_REFS)
+		configure_file("/home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/.git/packed-refs" "/home/honigmann/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/git-data/packed-refs" COPYONLY)
+		file(READ "/home/honigmann/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/git-data/packed-refs" PACKED_REFS)
 		if(${PACKED_REFS} MATCHES "([0-9a-z]*) ${HEAD_REF}")
 			set(HEAD_HASH "${CMAKE_MATCH_1}")
 		endif()
 	endif()
 else()
 	# detached HEAD
-	configure_file("/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/.git/HEAD" "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/git-data/head-ref" COPYONLY)
+	configure_file("/home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/.git/HEAD" "/home/honigmann/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/git-data/head-ref" COPYONLY)
 endif()
 
 if(NOT HEAD_HASH)
-	file(READ "/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/git-data/head-ref" HEAD_HASH LIMIT 1024)
+	file(READ "/home/honigmann/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/CMakeFiles/git-data/head-ref" HEAD_HASH LIMIT 1024)
 	string(STRIP "${HEAD_HASH}" HEAD_HASH)
 endif()

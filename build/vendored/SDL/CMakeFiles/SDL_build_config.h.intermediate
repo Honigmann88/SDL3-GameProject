@@ -577,7 +577,7 @@
 /* Libdecor version info */
 #define SDL_LIBDECOR_VERSION_MAJOR 0
 #define SDL_LIBDECOR_VERSION_MINOR 2
-#define SDL_LIBDECOR_VERSION_PATCH 3
+#define SDL_LIBDECOR_VERSION_PATCH 4
 
 #if !defined(HAVE_STDINT_H) && !defined(_STDINT_H_)
 /* Most everything except Visual Studio 2008 and earlier has stdint.h now */

@@ -1,8 +1,8 @@
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11dyn.c.o: \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/x11/SDL_x11dyn.c \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/x11/SDL_x11dyn.c \
  /usr/include/stdc-predef.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/x11/SDL_x11dyn.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/x11/SDL_x11dyn.h \
  /usr/include/X11/Xlib.h /usr/include/sys/types.h /usr/include/X11/X.h \
  /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
@@ -62,4 +62,4 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11dyn.c.o: \
  /usr/include/X11/extensions/XTest.h \
  /usr/include/X11/extensions/xtestconst.h \
  /usr/include/X11/extensions/XInput.h /usr/include/X11/extensions/XI.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/x11/SDL_x11sym.h
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/x11/SDL_x11sym.h

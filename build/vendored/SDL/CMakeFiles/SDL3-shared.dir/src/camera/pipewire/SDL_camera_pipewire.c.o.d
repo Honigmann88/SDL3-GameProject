@@ -1,12 +1,12 @@
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/camera/pipewire/SDL_camera_pipewire.c.o: \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/camera/pipewire/SDL_camera_pipewire.c \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/camera/pipewire/SDL_camera_pipewire.c \
  /usr/include/stdc-predef.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/camera/pipewire/../SDL_syscamera.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/camera/pipewire/../../SDL_internal.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/camera/pipewire/../../video/SDL_surface_c.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/camera/pipewire/../../video/SDL_blit.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/camera/pipewire/../../core/linux/SDL_dbus.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/camera/pipewire/../SDL_syscamera.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/camera/pipewire/../../SDL_internal.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/camera/pipewire/../../video/SDL_surface_c.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/camera/pipewire/../../video/SDL_blit.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/camera/pipewire/../../core/linux/SDL_dbus.h \
  /usr/include/dbus-1.0/dbus/dbus.h \
  /usr/lib/dbus-1.0/include/dbus/dbus-arch-deps.h \
  /usr/include/dbus-1.0/dbus/dbus-macros.h \

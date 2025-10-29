@@ -1,5 +1,5 @@
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dialog/SDL_dialog_utils.c.o: \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dialog/SDL_dialog_utils.c \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dialog/SDL_dialog_utils.c \
  /usr/include/stdc-predef.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dialog/SDL_dialog_utils.h
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dialog/SDL_dialog_utils.h

@@ -1,7 +1,7 @@
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/power/linux/SDL_syspower.c.o: \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/power/linux/SDL_syspower.c \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/power/linux/SDL_syspower.c \
  /usr/include/stdc-predef.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
  /usr/include/stdio.h /usr/include/unistd.h /usr/include/features.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
  /usr/include/bits/wordsize.h /usr/include/bits/types.h \
@@ -27,8 +27,8 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/power/linux/SDL_syspower.c.o: \
  /usr/include/bits/dirent_ext.h /usr/include/fcntl.h \
  /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
  /usr/include/bits/types/struct_iovec.h /usr/include/linux/falloc.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/power/linux/../SDL_syspower.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/power/linux/../../core/linux/SDL_dbus.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/power/linux/../SDL_syspower.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/power/linux/../../core/linux/SDL_dbus.h \
  /usr/include/dbus-1.0/dbus/dbus.h \
  /usr/lib/dbus-1.0/include/dbus/dbus-arch-deps.h \
  /usr/include/dbus-1.0/dbus/dbus-macros.h \

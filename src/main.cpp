@@ -14,7 +14,7 @@
 using namespace std;
 
 // Constants
-const int SCREEN_HEIGHT = 128 * 8;
+const int SCREEN_HEIGHT = 128 * 6;
 const int SCREEN_WIDTH = 1280;
 const int CHARACTER_SIZE = 100;
 const int EGG_SIZE = 22;

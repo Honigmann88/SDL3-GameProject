@@ -1,8 +1,8 @@
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylanddyn.c.o: \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/wayland/SDL_waylanddyn.c \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/wayland/SDL_waylanddyn.c \
  /usr/include/stdc-predef.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/wayland/SDL_waylanddyn.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/wayland/SDL_waylanddyn.h \
  /usr/include/wayland-cursor.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
  /usr/include/wayland-util.h /usr/include/math.h \
@@ -17,8 +17,8 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/video/wayland/SDL_waylanddyn.c.o: \
  /usr/include/xkbcommon/xkbcommon-compose.h \
  /usr/include/wayland-client-core.h /usr/include/wayland-util.h \
  /usr/include/wayland-version.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/wayland/SDL_waylandsym.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/wayland-client-protocol.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/video/wayland/SDL_waylandsym.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/build/vendored/SDL/wayland-generated-protocols/wayland-client-protocol.h \
  /usr/include/wayland-client.h /usr/include/wayland-client-core.h \
  /usr/include/wayland-client-protocol.h /usr/include/wayland-egl.h \
  /usr/include/wayland-egl-core.h /usr/include/libdecor-0/libdecor.h

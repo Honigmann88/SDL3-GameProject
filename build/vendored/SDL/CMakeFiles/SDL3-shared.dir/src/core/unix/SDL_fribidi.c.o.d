@@ -1,8 +1,8 @@
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/unix/SDL_fribidi.c.o: \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/core/unix/SDL_fribidi.c \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/core/unix/SDL_fribidi.c \
  /usr/include/stdc-predef.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/core/unix/SDL_fribidi.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/core/unix/SDL_fribidi.h \
  /usr/include/sys/types.h /usr/include/fribidi/fribidi.h \
  /usr/include/fribidi/fribidi-common.h \
  /usr/include/fribidi/fribidi-config.h \

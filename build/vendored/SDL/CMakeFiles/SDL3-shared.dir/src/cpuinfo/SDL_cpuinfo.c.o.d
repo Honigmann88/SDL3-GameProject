@@ -1,8 +1,8 @@
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/cpuinfo/SDL_cpuinfo.c.o: \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/cpuinfo/SDL_cpuinfo.c \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/cpuinfo/SDL_cpuinfo.c \
  /usr/include/stdc-predef.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/cpuinfo/SDL_cpuinfo_c.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/cpuinfo/SDL_cpuinfo_c.h \
  /usr/include/unistd.h /usr/include/features.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
  /usr/include/bits/wordsize.h /usr/include/bits/types.h \

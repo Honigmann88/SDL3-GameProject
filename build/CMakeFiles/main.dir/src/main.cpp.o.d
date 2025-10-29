@@ -1,9 +1,9 @@
 CMakeFiles/main.dir/src/main.cpp.o: \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/src/main.cpp \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_stdinc.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_platform_defines.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_stdinc.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_platform_defines.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
  /usr/include/string.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -22,67 +22,67 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_begin_code.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_close_code.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_assert.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_asyncio.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_atomic.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_audio.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_endian.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_begin_code.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_close_code.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_assert.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_asyncio.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_atomic.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_audio.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_endian.h \
  /usr/include/endian.h /usr/include/bits/endian.h \
  /usr/include/bits/endianness.h /usr/include/bits/byteswap.h \
  /usr/include/bits/uintn-identity.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_error.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_mutex.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_thread.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_properties.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_iostream.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_bits.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_blendmode.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_camera.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_pixels.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_surface.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_rect.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_clipboard.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_cpuinfo.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_dialog.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_video.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_dlopennote.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_events.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_gamepad.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_guid.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_joystick.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_power.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_sensor.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_keyboard.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_keycode.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_scancode.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_mouse.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_pen.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_touch.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_filesystem.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_gpu.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_haptic.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_hidapi.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_hints.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_init.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_loadso.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_locale.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_log.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_messagebox.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_metal.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_misc.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_platform.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_process.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_render.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_storage.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_system.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_time.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_timer.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_tray.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_version.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_oldnames.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_main.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_error.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_mutex.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_thread.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_properties.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_iostream.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_bits.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_blendmode.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_camera.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_pixels.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_surface.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_rect.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_clipboard.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_cpuinfo.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_dialog.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_video.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_dlopennote.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_events.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_gamepad.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_guid.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_joystick.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_power.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_sensor.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_keyboard.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_keycode.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_scancode.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_mouse.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_pen.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_touch.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_filesystem.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_gpu.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_haptic.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_hidapi.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_hints.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_init.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_loadso.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_locale.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_log.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_messagebox.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_metal.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_misc.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_platform.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_process.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_render.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_storage.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_system.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_time.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_timer.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_tray.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_version.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_oldnames.h \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/include/SDL3/SDL_main.h \
  /usr/include/c++/15.2.1/iostream \
  /usr/include/c++/15.2.1/bits/requires_hosted.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -247,7 +247,7 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
  /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
  /usr/include/c++/15.2.1/pstl/execution_defs.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/src/shapes.cpp \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/src/shapes.cpp \
  /usr/include/c++/15.2.1/math.h /usr/include/c++/15.2.1/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \

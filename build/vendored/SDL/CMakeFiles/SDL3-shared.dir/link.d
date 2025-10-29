@@ -1,5 +1,5 @@
 ../../libSDL3.so.0.3.3: \
-  /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dynapi/SDL_dynapi.sym \
+  /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dynapi/SDL_dynapi.sym \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
   CMakeFiles/SDL3-shared.dir/src/SDL.c.o \
@@ -325,7 +325,7 @@
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
 
-/home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dynapi/SDL_dynapi.sym:
+/home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/dynapi/SDL_dynapi.sym:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o:
 

@@ -1,4 +1,4 @@
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/stdlib/SDL_malloc.c.o: \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_malloc.c \
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/stdlib/SDL_malloc.c \
  /usr/include/stdc-predef.h \
- /home/ekipcalismasi/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h
+ /home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL/src/SDL_internal.h

@@ -572,7 +572,7 @@
 /* xkbcommon version info */
 #define SDL_XKBCOMMON_VERSION_MAJOR 1
 #define SDL_XKBCOMMON_VERSION_MINOR 12
-#define SDL_XKBCOMMON_VERSION_PATCH 2
+#define SDL_XKBCOMMON_VERSION_PATCH 3
 
 /* Libdecor version info */
 #define SDL_LIBDECOR_VERSION_MAJOR 0

@@ -6,7 +6,6 @@
 #include <filesystem>
 #include <string>
 #include <vector>
-// #include <random>
 #include <ctime>
 #include <algorithm>
 #include "shapes.cpp"
@@ -42,7 +41,8 @@ const int DRAGON_Y = 400;
 const int CHARACTER_START_X = SCREEN_WIDTH / 2;
 const int CHARACTER_START_Y = 400;
 
-// Direction enum for character movement
+// Chicken states
+enum class ChickenState { WALKING, STOPPED, FEEDING };
 enum class Direction { RIGHT, LEFT, UP, DOWN };
 
 // Egg class
@@ -68,15 +68,123 @@ public:
     Uint32 lastEggTime;
     Uint32 eggLayInterval;
     
+    // New variables for movement and animation
+    ChickenState state;
+    Direction direction;
+    float speed;
+    Uint32 stateStartTime;
+    Uint32 stateDuration;
+    int currentFrame;
+    Uint32 lastFrameTime;
+    
     Chicken(float posX, float posY) 
         : x(posX), y(posY), hasEgg(false), lastEggTime(SDL_GetTicks()), 
-          eggLayInterval(15000 + (rand() % 15000)) {} // 15-30 seconds
+          eggLayInterval(15000 + (rand() % 15000)), 
+          state(ChickenState::WALKING), direction(rand() % 2 == 0 ? Direction::RIGHT : Direction::LEFT),
+          speed(1.0f), stateStartTime(SDL_GetTicks()), stateDuration(2000 + (rand() % 3000)),
+          currentFrame(0), lastFrameTime(SDL_GetTicks()) {}
     
     void update(Uint32 currentTime) {
+        // Update egg laying
         if (!hasEgg && (currentTime - lastEggTime > eggLayInterval)) {
             hasEgg = true;
             lastEggTime = currentTime;
             eggLayInterval = 15000 + (rand() % 15000);
+        }
+        
+        // Update state and movement
+        if (currentTime - stateStartTime > stateDuration) {
+            changeState(currentTime);
+        }
+        
+        // Handle current state
+        switch(state) {
+            case ChickenState::WALKING:
+                updateWalking(currentTime);
+                break;
+            case ChickenState::STOPPED:
+                // Just wait
+                break;
+            case ChickenState::FEEDING:
+                updateFeeding(currentTime);
+                break;
+        }
+        
+        // Keep chickens on left side of screen
+        if (x < 50) {
+            x = 50;
+            direction = Direction::RIGHT;
+        } else if (x > SCREEN_WIDTH / 2 - CHICKEN_SIZE) {
+            x = SCREEN_WIDTH / 2 - CHICKEN_SIZE;
+            direction = Direction::LEFT;
+        }
+        
+        // Keep chickens within vertical bounds
+        if (y < 100) {
+            y = 100;
+        } else if (y > SCREEN_HEIGHT - CHICKEN_SIZE - 50) {
+            y = SCREEN_HEIGHT - CHICKEN_SIZE - 50;
+        }
+    }
+    
+    void changeState(Uint32 currentTime) {
+        stateStartTime = currentTime;
+        
+        switch(state) {
+            case ChickenState::WALKING:
+                // After walking, either stop or feed
+                state = (rand() % 100 < 70) ? ChickenState::STOPPED : ChickenState::FEEDING;
+                stateDuration = 1000 + (rand() % 2000);
+                break;
+                
+            case ChickenState::STOPPED:
+                // After stopping, either walk or feed
+                if (rand() % 100 < 50) {
+                    state = ChickenState::WALKING;
+                    direction = (rand() % 2 == 0) ? Direction::RIGHT : Direction::LEFT;
+                    stateDuration = 2000 + (rand() % 3000);
+                } else {
+                    state = ChickenState::FEEDING;
+                    stateDuration = 2000 + (rand() % 2000);
+                }
+                break;
+                
+            case ChickenState::FEEDING:
+                // After feeding, start walking
+                state = ChickenState::WALKING;
+                direction = (rand() % 2 == 0) ? Direction::RIGHT : Direction::LEFT;
+                stateDuration = 2000 + (rand() % 3000);
+                break;
+        }
+        
+        currentFrame = 0; // Reset animation frame when state changes
+    }
+    
+    void updateWalking(Uint32 currentTime) {
+        // Move chicken based on direction
+        if (direction == Direction::RIGHT) {
+            x += speed;
+        } else {
+            x -= speed;
+        }
+        
+        // Occasionally change direction randomly
+        if (rand() % 200 == 0) {
+            direction = (direction == Direction::RIGHT) ? Direction::LEFT : Direction::RIGHT;
+        }
+        
+        // Animate walking (change frame every 200ms)
+        if (currentTime - lastFrameTime > 200) {
+            currentFrame = (currentFrame + 1) % 3;
+            lastFrameTime = currentTime;
+        }
+    }
+    
+    void updateFeeding(Uint32 currentTime) {
+        // Animate feeding (change frame every 300ms)
+        if (currentTime - lastFrameTime > 300) {
+            currentFrame = (currentFrame + 1) % 4;
+            lastFrameTime = currentTime;
         }
     }
     
@@ -93,7 +201,6 @@ public:
     SDL_FRect getRect() const {
         return {x, y, CHICKEN_SIZE, CHICKEN_SIZE};
     }
-
 };
 
 // Character class
@@ -184,10 +291,13 @@ public:
     Uint32 lastFrameTime;
     int& hungerTime; // Reference to the current hunger time
     int eggsRequired; // How many eggs dragon needs to be fed
+    float angerLevel; // 0-100, when reaches 100, dragon eats a chicken
+    Uint32 lastAngerIncrease;
     
     Dragon(float posX, float posY, int& hungerTimeRef) 
         : x(posX), y(posY), isHungry(true), lastFeedTime(0), currentFrame(0), 
-          lastFrameTime(SDL_GetTicks()), hungerTime(hungerTimeRef), eggsRequired(1) {}
+          lastFrameTime(SDL_GetTicks()), hungerTime(hungerTimeRef), eggsRequired(1),
+          angerLevel(0.0f), lastAngerIncrease(SDL_GetTicks()) {}
     
     SDL_FRect getRect() const {
         return {x, y, CHARACTER_SIZE * 2.5f, CHARACTER_SIZE * 2.5f};
@@ -197,20 +307,42 @@ public:
         if (isHungry && eggsGiven >= eggsRequired) {
             isHungry = false;
             lastFeedTime = SDL_GetTicks();
+            angerLevel = 0; // Reset anger when fed
             return true;
         }
         return false;
     }
     
-    void update(Uint32 currentTime) {
+    void update(Uint32 currentTime, vector<Chicken>& chickens, bool& gameOver) {
         // Use dynamic hunger time
         if (!isHungry && (currentTime - lastFeedTime > hungerTime)) {
             isHungry = true;
         }
         
+        // Increase anger when hungry
+        if (isHungry && currentTime - lastAngerIncrease > 1000) { // Increase anger every second when hungry
+            angerLevel = min(100.0f, angerLevel + 1.0f);
+            lastAngerIncrease = currentTime;
+            
+            // If anger reaches 100, eat a chicken
+            if (angerLevel >= 100.0f && !chickens.empty()) {
+                // Eat a random chicken
+                int chickenToEat = rand() % chickens.size();
+                chickens.erase(chickens.begin() + chickenToEat);
+                angerLevel = 0; // Reset anger after eating
+                cout << "Dragon ate a chicken out of anger! Remaining chickens: " << chickens.size() << "\n";
+                
+                // Check for game over
+                if (chickens.empty()) {
+                    gameOver = true;
+                    cout << "GAME OVER! Dragon ate all chickens!\n";
+                }
+            }
+        }
+        
         // Animate dragon (switch frame every 200ms)
         if (currentTime - lastFrameTime > 200) {
-            currentFrame = (currentFrame + 1) % 3;
+            currentFrame = (currentFrame + 1) % 3; // Still using 3 frames for dragon
             lastFrameTime = currentTime;
         }
     }
@@ -288,10 +420,10 @@ vector<SDL_Texture*> loadBasketTextures(SDL_Renderer* renderer) {
     return basketTextures;
 }
 
-vector<SDL_Texture*> loadDragonFrames(SDL_Renderer* renderer) {
+vector<SDL_Texture*> loadDragonFrames(SDL_Renderer* renderer, int frameCount = 3) {
     vector<SDL_Texture*> dragonFrames;
     
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < frameCount; i++) {
         string dragonPath = "src/assets/drag/dragon_" + to_string(i) + ".bmp";
         filesystem::path pDragon = dragonPath;
         string absolutePath = filesystem::absolute(pDragon);
@@ -303,6 +435,49 @@ vector<SDL_Texture*> loadDragonFrames(SDL_Renderer* renderer) {
     }
     
     return dragonFrames;
+}
+
+// Load chicken animation frames
+vector<SDL_Texture*> loadChickenWalkRightFrames(SDL_Renderer* renderer) {
+    vector<SDL_Texture*> frames;
+    for (int i = 0; i <= 2; i++) {
+        string path = "src/assets/chickenFrames/chicken_walk_right_" + to_string(i) + ".bmp";
+        filesystem::path p = path;
+        string absolutePath = filesystem::absolute(p);
+        SDL_Texture* frame = loadTexture(renderer, absolutePath);
+        if (frame != nullptr) {
+            frames.push_back(frame);
+        }
+    }
+    return frames;
+}
+
+vector<SDL_Texture*> loadChickenWalkLeftFrames(SDL_Renderer* renderer) {
+    vector<SDL_Texture*> frames;
+    for (int i = 0; i <= 2; i++) {
+        string path = "src/assets/chickenFrames/chicken_walk_left_" + to_string(i) + ".bmp";
+        filesystem::path p = path;
+        string absolutePath = filesystem::absolute(p);
+        SDL_Texture* frame = loadTexture(renderer, absolutePath);
+        if (frame != nullptr) {
+            frames.push_back(frame);
+        }
+    }
+    return frames;
+}
+
+vector<SDL_Texture*> loadChickenFeedFrames(SDL_Renderer* renderer) {
+    vector<SDL_Texture*> frames;
+    for (int i = 0; i <= 3; i++) {
+        string path = "src/assets/chickenFrames/chicken_feed_" + to_string(i) + ".bmp";
+        filesystem::path p = path;
+        string absolutePath = filesystem::absolute(p);
+        SDL_Texture* frame = loadTexture(renderer, absolutePath);
+        if (frame != nullptr) {
+            frames.push_back(frame);
+        }
+    }
+    return frames;
 }
 
 // Animation functions
@@ -465,7 +640,12 @@ int main() {
     SDL_Texture* chickenTexture = loadTexture(renderer, filesystem::absolute("src/assets/drag/chicken.bmp"));
     
     // Load dragon frames for animation
-    vector<SDL_Texture*> dragonFrames = loadDragonFrames(renderer);
+    vector<SDL_Texture*> dragonFrames = loadDragonFrames(renderer, 3); // Now adjustable frame count
+    
+    // Load chicken animation frames
+    vector<SDL_Texture*> chickenWalkRightFrames = loadChickenWalkRightFrames(renderer);
+    vector<SDL_Texture*> chickenWalkLeftFrames = loadChickenWalkLeftFrames(renderer);
+    vector<SDL_Texture*> chickenFeedFrames = loadChickenFeedFrames(renderer);
 
     // Create placeholders if textures missing
     auto createPlaceholder = [renderer](int width, int height, Uint32 color) {
@@ -478,6 +658,35 @@ int main() {
         SDL_DestroySurface(surface);
         return texture;
     };
+
+    // Create placeholders for chicken animations if needed
+    if (chickenWalkRightFrames.empty()) {
+        for (int i = 0; i < 3; i++) {
+            Uint32 color = 0xFFFFFF00; // Yellow
+            if (i == 1) color = 0xFFDDDD00;
+            if (i == 2) color = 0xFFBBBB00;
+            chickenWalkRightFrames.push_back(createPlaceholder(CHICKEN_SIZE, CHICKEN_SIZE, color));
+        }
+    }
+    
+    if (chickenWalkLeftFrames.empty()) {
+        for (int i = 0; i < 3; i++) {
+            Uint32 color = 0xFFFFFF00; // Yellow
+            if (i == 1) color = 0xFFDDDD00;
+            if (i == 2) color = 0xFFBBBB00;
+            chickenWalkLeftFrames.push_back(createPlaceholder(CHICKEN_SIZE, CHICKEN_SIZE, color));
+        }
+    }
+    
+    if (chickenFeedFrames.empty()) {
+        for (int i = 0; i < 4; i++) {
+            Uint32 color = 0xFFFFFF00; // Yellow
+            if (i == 1) color = 0xFFDDDD00;
+            if (i == 2) color = 0xFFBBBB00;
+            if (i == 3) color = 0xFF999900;
+            chickenFeedFrames.push_back(createPlaceholder(CHICKEN_SIZE, CHICKEN_SIZE, color));
+        }
+    }
 
     if (chickenTexture == nullptr) {
         chickenTexture = createPlaceholder(CHICKEN_SIZE, CHICKEN_SIZE, 0xFFFFFF00); // Yellow
@@ -567,8 +776,8 @@ int main() {
             }
         }
         
-        // Update Dragon
-        dragon.update(currentTime);
+        // Update Dragon (pass chickens reference for anger mechanic)
+        dragon.update(currentTime, chickens, gameOver);
         
         // Update Hatching Eggs
         for (auto it = hatchingEggs.begin(); it != hatchingEggs.end(); ) {
@@ -596,30 +805,6 @@ int main() {
             }
         }
         
-        // Check for chicken deaths periodically (more frequent as game progresses)
-        int deathCheckInterval = max(20000, CHICKEN_DEATH_INTERVAL - (dayCount * 2000)); // Gets faster each day
-        if (currentTime - lastChickenDeathCheck > deathCheckInterval) {
-            lastChickenDeathCheck = currentTime;
-            
-            // Only check if we have chickens
-            if (chickens.size() > 0) {
-                // Increase death chance as game progresses (starts at 10%, up to 50%)
-                int deathChance = min(50, 10 + (dayCount * 2));
-                if ((rand() % 100) < deathChance) {
-                    // Kill a random chicken (can be any chicken including the first)
-                    int chickenToKill = rand() % chickens.size();
-                    chickens.erase(chickens.begin() + chickenToKill);
-                    cout << "A chicken died! Remaining chickens: " << chickens.size() << "\n";
-                    
-                    // Check for game over immediately after a death
-                    if (chickens.empty()) {
-                        gameOver = true;
-                        cout << "GAME OVER! All chickens died on day " << dayCount << "\n";
-                    }
-                }
-            }
-        }
-        
         // Check for egg collection from world
         for (auto it = worldEggs.begin(); it != worldEggs.end(); ) {
             if (player.collectEgg(*it)) {
@@ -630,14 +815,12 @@ int main() {
         }
 
         if (CHICKEN_DEATH_INTERVAL > CHICKEN_DEATH_MIN_INTERVAL && dayCount != intervalDeathChicken) {
-        
             CHICKEN_DEATH_INTERVAL -= 2000;
             intervalDeathChicken++;
             cout << "New Death time: "<< CHICKEN_DEATH_INTERVAL << endl;
         }
 
         if (HATCH_TIME > HATCH_MIN_TIME && dayCount != intervalHatchChicken) {
-        
             HATCH_TIME -= 2000;
             intervalHatchChicken++;
             cout << "New Hatch time: "<< HATCH_TIME << endl;
@@ -665,14 +848,44 @@ int main() {
             float spotY = CHICKEN_START_Y + (i * CHICKEN_SPACING);
         }
         
-        // Render Chickens in their spots
+        // Render Chickens with animations
         for (int i = 0; i < chickens.size(); i++) {
             SDL_FRect chickenRect = chickens[i].getRect();
-            SDL_RenderTexture(renderer, chickenTexture, nullptr, &chickenRect);
+            SDL_Texture* currentChickenTexture = chickenTexture;
+            
+            // Select appropriate texture based on chicken state and direction
+            switch(chickens[i].state) {
+                case ChickenState::WALKING:
+                    if (chickens[i].direction == Direction::RIGHT) {
+                        if (!chickenWalkRightFrames.empty()) {
+                            currentChickenTexture = chickenWalkRightFrames[chickens[i].currentFrame];
+                        }
+                    } else {
+                        if (!chickenWalkLeftFrames.empty()) {
+                            currentChickenTexture = chickenWalkLeftFrames[chickens[i].currentFrame];
+                        }
+                    }
+                    break;
+                    
+                case ChickenState::FEEDING:
+                    if (!chickenFeedFrames.empty()) {
+                        currentChickenTexture = chickenFeedFrames[chickens[i].currentFrame];
+                    }
+                    break;
+                    
+                case ChickenState::STOPPED:
+                    // Use default texture or first frame of walking
+                    if (!chickenWalkRightFrames.empty()) {
+                        currentChickenTexture = chickenWalkRightFrames[0];
+                    }
+                    break;
+            }
+            
+            SDL_RenderTexture(renderer, currentChickenTexture, nullptr, &chickenRect);
             
             // Show egg indicator if chicken has egg
             if (chickens[i].hasEgg) {
-                YAS_DrawCircle(chickenRect.x +int( CHICKEN_SIZE/2), chickenRect.y - 10, renderer, 5, 255, 255, 255, 1);
+                YAS_DrawCircle(chickenRect.x + int(CHICKEN_SIZE/2), chickenRect.y - 10, renderer, 5, 255, 255, 255, 1);
             }
         }
         
@@ -721,6 +934,9 @@ int main() {
         // Render hunger indicator above dragon
         if (dragon.isHungry) {
             YAS_DrawRect(dragon.x - 500, dragon.y - 350, renderer, 15, 150, 255, 0, 0, 1); // Red hunger bar
+            
+            // Also render anger meter
+            YAS_DrawRect(dragon.x - 500, dragon.y - 370, renderer, 15, dragon.angerLevel * 1.5f, 255, 165, 0, 1); // Orange anger bar
         } else {
             YAS_DrawRect(dragon.x - 500, dragon.y - 350, renderer, 15, 150, 0, 255, 0, 1); // Green fed bar
         }
@@ -735,53 +951,30 @@ int main() {
             YAS_DrawCircle(30 + i * 25, 60, renderer, 10, 0, 255, 0, 1); // Green for fertilized
         }
         
-        // // Render Day Counter (Top Right)
-        // string dayText = "Day: " + to_string(dayCount);
-        // int dayX = SCREEN_WIDTH - 100;
-        // int dayY = 30;
-
-        // // Draw background for day counter
-        // YAS_DrawRect(dayX - 10, dayY - 15, renderer, 80, 30, 0, 0, 0, 1);
-
-        // // Draw each digit of the day count
-        // string dayStr = to_string(dayCount);
-        // for (size_t i = 0; i < dayStr.length(); i++) {
-        //     char digit = dayStr[i];
-        //     int digitX = dayX + (i * 15);
-            
-        //     // Simple number drawing using circles for each digit
-        //     YAS_DrawCircle(digitX, dayY, renderer, 8, 255, 255, 255, 1);
-        // }
+        // Render Text UI using SDL_RenderDebugText (Top Right)
+        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255); // White text
+        string dayText = "Survived Day: " + to_string(dayCount);
+        SDL_RenderDebugText(renderer, SCREEN_WIDTH - 150.0f, 30.0f, dayText.c_str());
         
-        // // Render Dragon Egg Requirement (Top Right, below day counter)
-        // string reqText = "Need: " + to_string(dragon.eggsRequired) + " eggs";
-        // int reqX = SCREEN_WIDTH - 100;
-        // int reqY = 70;
+        string reqText = "Dragon needs " + to_string(dragon.eggsRequired) + " eggs";
+        SDL_RenderDebugText(renderer, SCREEN_WIDTH - 150.0f, 50.0f, reqText.c_str());
         
-        // YAS_DrawRect(reqX - 10, reqY - 15, renderer, 80, 30, 0, 0, 0, 0.7f);
-        // string reqStr = to_string(dragon.eggsRequired);
-        // for (size_t i = 0; i < reqStr.length(); i++) {
-        //     int digitX = reqX + (i * 15);
-        //     YAS_DrawCircle(digitX, reqY, renderer, 8, 255, 100, 100, 1); // Pink for requirement
-        // }
+        // Render chicken count
+        string chickenText = "Current Chickens: " + to_string(chickens.size());
+        SDL_RenderDebugText(renderer, SCREEN_WIDTH - 150.0f, 70.0f, chickenText.c_str());
 
         // If game over, display message
         if (gameOver) {
             // Draw semi-transparent overlay
             YAS_DrawRect(SCREEN_WIDTH/2 - 150, SCREEN_HEIGHT/2 - 50, renderer, 300, 300, 130, 0, 0, 1);
             
-            // Draw game over text using circles
-            string gameOverText = "GAME OVER";
-            for (size_t i = 0; i < gameOverText.length(); i++) {
-                int textX = SCREEN_WIDTH/2 - 120 + (i * 15);
-                YAS_DrawCircle(textX, SCREEN_HEIGHT/2 - 10, renderer, 6, 255, 0, 0, 1);
-            }
+            // Render game over text
+            SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255); // Red text
+            SDL_RenderDebugText(renderer, SCREEN_WIDTH/2 - 100.0f, SCREEN_HEIGHT/2 - 20.0f, "GAME OVER");
             
-            string daysText = "Days: " + to_string(dayCount);
-            for (size_t i = 0; i < daysText.length(); i++) {
-                int textX = SCREEN_WIDTH/2 - 80 + (i * 12);
-                YAS_DrawCircle(textX, SCREEN_HEIGHT/2 + 15, renderer, 5, 255, 255, 255, 1);
-            }
+            SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255); // White text
+            string finalDaysText = "Days: " + to_string(dayCount);
+            SDL_RenderDebugText(renderer, SCREEN_WIDTH/2 - 80.0f, SCREEN_HEIGHT/2 + 10.0f, finalDaysText.c_str());
         }
         
         // Present Frame
@@ -808,6 +1001,17 @@ int main() {
     }
     
     for (auto texture : basketTextures) {
+        SDL_DestroyTexture(texture);
+    }
+    
+    // Clean up chicken animation textures
+    for (auto texture : chickenWalkRightFrames) {
+        SDL_DestroyTexture(texture);
+    }
+    for (auto texture : chickenWalkLeftFrames) {
+        SDL_DestroyTexture(texture);
+    }
+    for (auto texture : chickenFeedFrames) {
         SDL_DestroyTexture(texture);
     }
     

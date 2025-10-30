@@ -431,11 +431,17 @@ PULSE_LIB:FILEPATH=/usr/lib/libpulse.so
 //Value Computed by CMake
 SDL3_BINARY_DIR:STATIC=/home/honigmann/Documents/GitHub/SDL3-GameProject/build/vendored/SDL
 
+//The directory containing a CMake configuration file for SDL3.
+SDL3_DIR:PATH=/usr/lib/cmake/SDL3
+
 //Value Computed by CMake
 SDL3_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 SDL3_SOURCE_DIR:STATIC=/home/honigmann/Documents/GitHub/SDL3-GameProject/vendored/SDL
+
+//The directory containing a CMake configuration file for SDL3_ttf.
+SDL3_ttf_DIR:PATH=SDL3_ttf_DIR-NOTFOUND
 
 //Support the ALSA audio API
 SDL_ALSA:BOOL=ON
@@ -2485,7 +2491,7 @@ PC_WAYLAND_xkbcommon_INCLUDEDIR:INTERNAL=/usr/include
 PC_WAYLAND_xkbcommon_LIBDIR:INTERNAL=/usr/lib
 PC_WAYLAND_xkbcommon_MODULE_NAME:INTERNAL=xkbcommon
 PC_WAYLAND_xkbcommon_PREFIX:INTERNAL=/usr
-PC_WAYLAND_xkbcommon_VERSION:INTERNAL=1.12.2
+PC_WAYLAND_xkbcommon_VERSION:INTERNAL=1.12.3
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE

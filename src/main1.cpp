@@ -2,7 +2,6 @@
 #include <SDL3/SDL_keyboard.h>
 #include <SDL3/SDL_main.h>
 #include <SDL3/SDL_render.h>
-// #include <SDL3_ttf/SDL_ttf.h>
 #include <iostream>
 #include <filesystem>
 #include <string>
@@ -15,32 +14,32 @@ using namespace std;
 
 // Constants
 const int SCREEN_HEIGHT = 128 * 6;
-const int SCREEN_WIDTH = 128 * 7;
+const int SCREEN_WIDTH = 1280;
 const int CHARACTER_SIZE = 100;
-const int EGG_SIZE = 22;
+const int EGG_SIZE = 48;
 const int BASKET_SIZE = 64;
-const int CHICKEN_SIZE = 90;
-const int MAX_EGGS = 999;
+const int CHICKEN_SIZE = 100;
+const int MAX_EGGS = 99;
 const int MAX_CHICKENS = 5;
-int HATCH_TIME = 20000; 
+int HATCH_TIME = 20000; // 10 seconds to hatch a chicken
 const int HATCH_MIN_TIME = 1000; // 10 seconds to hatch a chicken
 const int INITIAL_HUNGER_TIME = 45000; // 45 seconds at start
 const int MIN_HUNGER_TIME = 15000;     // 15 seconds minimum
 const int HUNGER_DECREMENT = 3000;     // Reduce by 2 seconds each feed
 int CHICKEN_DEATH_INTERVAL = 60000 ; // Check for chicken death every 60 seconds
-const int CHICKEN_DEATH_MIN_INTERVAL = 10000 ; // Check for chicken death every 10 seconds
+const int CHICKEN_DEATH_MIN_INTERVAL = 10000 ; // Check for chicken death every 60 seconds
 const int EGG_REQUIREMENT_INCREMENT = 3; // Dragon requires 1 more egg every 5 days
 int intervalDeathChicken = 1;
 int intervalHatchChicken = 1;
 
 // Grid positions (based on your layout)
 const int CHICKEN_START_X = 200;
-const int CHICKEN_START_Y = 420;
-const int CHICKEN_SPACING = 10;
-const int DRAGON_X = SCREEN_WIDTH - 240;
+const int CHICKEN_START_Y = 720;
+const int CHICKEN_SPACING = 30;
+const int DRAGON_X = float(SCREEN_WIDTH) - 250;
 const int DRAGON_Y = 400;
-const int CHARACTER_START_X = SCREEN_WIDTH / 2;
-const int CHARACTER_START_Y = 300;
+const int CHARACTER_START_X = float(SCREEN_WIDTH) / 2;
+const int CHARACTER_START_Y = 400;
 
 // Chicken states
 enum class ChickenState { WALKING, STOPPED, FEEDING };
@@ -80,7 +79,7 @@ public:
     
     Chicken(float posX, float posY) 
         : x(posX), y(posY), hasEgg(false), lastEggTime(SDL_GetTicks()), 
-          eggLayInterval(25000 + (rand() % 15000)), 
+          eggLayInterval(15000 + (rand() % 15000)), 
           state(ChickenState::WALKING), direction(rand() % 2 == 0 ? Direction::RIGHT : Direction::LEFT),
           speed(1.0f), stateStartTime(SDL_GetTicks()), stateDuration(2000 + (rand() % 3000)),
           currentFrame(0), lastFrameTime(SDL_GetTicks()) {}
@@ -90,7 +89,7 @@ public:
         if (!hasEgg && (currentTime - lastEggTime > eggLayInterval)) {
             hasEgg = true;
             lastEggTime = currentTime;
-            eggLayInterval = 15000 + (rand() % 15000);
+            eggLayInterval = 25000 + (rand() % 15000);
         }
         
         // Update state and movement
@@ -115,7 +114,7 @@ public:
         if (x < 50) {
             x = 50;
             direction = Direction::RIGHT;
-        } else if (x >  float(SCREEN_WIDTH)/ 2 - CHICKEN_SIZE) {
+        } else if (x > float(SCREEN_WIDTH) / 2 - CHICKEN_SIZE) {
             x = float(SCREEN_WIDTH) / 2 - CHICKEN_SIZE;
             direction = Direction::LEFT;
         }
@@ -224,7 +223,7 @@ public:
         float newY = y + dy * speed;
         
         // Keep character within screen bounds
-        if (newX >= 0 && newX <= SCREEN_WIDTH - CHARACTER_SIZE) {
+        if (newX >= 0 && newX <= float(SCREEN_WIDTH) - CHARACTER_SIZE) {
             x = newX;
         }
         if (newY >= 0 && newY <= SCREEN_HEIGHT - CHARACTER_SIZE) {
@@ -407,7 +406,7 @@ vector<SDL_Texture*> loadCharacterFrames(SDL_Renderer* renderer, const string& d
 vector<SDL_Texture*> loadBasketTextures(SDL_Renderer* renderer) {
     vector<SDL_Texture*> basketTextures;
     
-    for (int i = 0; i <= 3; i++) {
+    for (int i = 0; i <= MAX_EGGS; i++) {
         string basketPath = "src/assets/basketNeggs/basket_egg_" + to_string(i) + ".bmp";
         filesystem::path pBasket = basketPath;
         string absolutePath = filesystem::absolute(pBasket);
@@ -609,7 +608,7 @@ int main() {
     }
 
     // 2. Create Window
-    SDL_Window* window = SDL_CreateWindow("Egg Collector", SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_VULKAN);
+    SDL_Window* window = SDL_CreateWindow("Egg Collector", float(SCREEN_WIDTH), SCREEN_HEIGHT, SDL_WINDOW_VULKAN);
     if (window == nullptr) {
         cout << "Window Creation Error\n";
         SDL_Quit();
@@ -637,7 +636,7 @@ int main() {
     vector<SDL_Texture*> basketTextures = loadBasketTextures(renderer);
 
     // Load egg and chicken textures
-    SDL_Texture* eggTexture = loadTexture(renderer, filesystem::absolute("src/assets/basketNeggs/egg.bmp"));
+    SDL_Texture* eggTexture = loadTexture(renderer, filesystem::absolute("src/assets/basketNeggs/egg0.bmp"));
     SDL_Texture* chickenTexture = loadTexture(renderer, filesystem::absolute("src/assets/drag/chicken.bmp"));
     
     // Load dragon frames for animation
@@ -722,7 +721,7 @@ int main() {
     vector<HatchingEgg> hatchingEggs;
 
     // 6. Setup Rectangles
-    SDL_FRect backgroundRect = {0, 0, SCREEN_WIDTH, SCREEN_HEIGHT};
+    SDL_FRect backgroundRect = {0, 0, float(SCREEN_WIDTH), SCREEN_HEIGHT};
     SDL_FRect characterRect = {player.x, player.y, CHARACTER_SIZE, CHARACTER_SIZE};
     SDL_FRect basketRect = {0, 0, BASKET_SIZE, BASKET_SIZE};
     SDL_FRect dragonRect = dragon.getRect();
@@ -934,12 +933,12 @@ int main() {
 
         // Render hunger indicator above dragon
         if (dragon.isHungry) {
-            YAS_DrawRect(dragon.x - 300, dragon.y - 350, renderer, 15, 150, 255, 0, 0, 1); // Red hunger bar
+            YAS_DrawRect(dragon.x - 500, dragon.y - 350, renderer, 15, 150, 255, 0, 0, 1); // Red hunger bar
             
             // Also render anger meter
-            YAS_DrawRect(dragon.x - 300, dragon.y - 370, renderer, 15, dragon.angerLevel * 1.5f, 255, 165, 0, 1); // Orange anger bar
+            YAS_DrawRect(dragon.x - 500, dragon.y - 370, renderer, 15, dragon.angerLevel * 1.5f, 255, 165, 0, 1); // Orange anger bar
         } else {
-            YAS_DrawRect(dragon.x - 300, dragon.y - 350, renderer, 15, 150, 0, 255, 0, 1); // Green fed bar
+            YAS_DrawRect(dragon.x - 500, dragon.y - 350, renderer, 15, 150, 0, 255, 0, 1); // Green fed bar
         }
         
         // Render UI - Egg Counter (Top Left)
@@ -952,55 +951,30 @@ int main() {
             YAS_DrawCircle(30 + i * 25, 60, renderer, 10, 0, 255, 0, 1); // Green for fertilized
         }
         
-        // Render Day Counter (Top Right)
-        string dayText = "Day: " + to_string(dayCount);
-        int dayX = SCREEN_WIDTH - 100;
-        int dayY = 30;
-
-        // // Draw background for day counter
-        // YAS_DrawRect(dayX - 10, dayY - 15, renderer, 80, 30, 0, 0, 0, 1);
-
-        // Draw each digit of the day count
-        string dayStr = to_string(dayCount);
-        for (size_t i = 0; i < dayStr.length(); i++) {
-            char digit = dayStr[i];
-            int digitX = dayX + (i * 15);
-            
-            // Simple number drawing using circles for each digit
-            YAS_DrawCircle(digitX, dayY, renderer, 8, 255, 255, 255, 1);
-        }
-
-        // YAS_DrawText("HELLO", 50, 200, renderer, 25, 5, 0, 255, 0, 255);
+        // Render Text UI using SDL_RenderDebugText (Top Right)
+        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255); // White text
+        string dayText = "Survived Day: " + to_string(dayCount);
+        SDL_RenderDebugText(renderer, float(SCREEN_WIDTH) - 150.0f, 30.0f, dayText.c_str());
         
-        // // Render Dragon Egg Requirement (Top Right, below day counter)
-        // string reqText = "Need: " + to_string(dragon.eggsRequired) + " eggs";
-        // int reqX = SCREEN_WIDTH - 100;
-        // int reqY = 70;
+        string reqText = "Dragon needs " + to_string(dragon.eggsRequired) + " eggs";
+        SDL_RenderDebugText(renderer, float(SCREEN_WIDTH) - 150.0f, 50.0f, reqText.c_str());
         
-        // YAS_DrawRect(reqX - 10, reqY - 15, renderer, 80, 30, 0, 0, 0, 1);
-        // string reqStr = to_string(dragon.eggsRequired);
-        // for (size_t i = 0; i < reqStr.length(); i++) {
-        //     int digitX = reqX + (i * 15);
-        //     YAS_DrawCircle(digitX, reqY, renderer, 8, 255, 100, 100, 1); // Pink for requirement
-        // }
+        // Render chicken count
+        string chickenText = "Current Chickens: " + to_string(chickens.size());
+        SDL_RenderDebugText(renderer, float(SCREEN_WIDTH) - 150.0f, 70.0f, chickenText.c_str());
 
         // If game over, display message
         if (gameOver) {
             // Draw semi-transparent overlay
-            YAS_DrawRect(SCREEN_WIDTH/2 - 150, SCREEN_HEIGHT/2 - 50, renderer, 300, 300, 130, 0, 0, 1);
+            YAS_DrawRect(float(SCREEN_WIDTH)/2 - 150, SCREEN_HEIGHT/2 - 50, renderer, 300, 300, 130, 0, 0, 1);
             
-            // Draw game over text using circles
-            string gameOverText = "GAME OVER";
-            for (size_t i = 0; i < gameOverText.length(); i++) {
-                int textX = SCREEN_WIDTH/2 - 120 + (i * 15);
-                YAS_DrawCircle(textX, SCREEN_HEIGHT/2 - 10, renderer, 6, 255, 0, 0, 1);
-            }
+            // Render game over text
+            SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255); // Red text
+            SDL_RenderDebugText(renderer, float(SCREEN_WIDTH)/2 - 100.0f, float(SCREEN_HEIGHT)/2 - 20.0f, "GAME OVER");
             
-            string daysText = "Days: " + to_string(dayCount);
-            for (size_t i = 0; i < daysText.length(); i++) {
-                int textX = SCREEN_WIDTH/2 - 80 + (i * 12);
-                YAS_DrawCircle(textX, SCREEN_HEIGHT/2 + 15, renderer, 5, 255, 255, 255, 1);
-            }
+            SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255); // White text
+            string finalDaysText = "Days: " + to_string(dayCount);
+            SDL_RenderDebugText(renderer, float(SCREEN_WIDTH)/2 - 80.0f, float(SCREEN_HEIGHT)/2 + 10.0f, finalDaysText.c_str());
         }
         
         // Present Frame

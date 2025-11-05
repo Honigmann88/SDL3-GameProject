@@ -34,8 +34,8 @@ int intervalHatchChicken = 1;
 
 // Grid positions (based on your layout)
 const int CHICKEN_START_X = 200;
-const int CHICKEN_START_Y = 720;
-const int CHICKEN_SPACING = 30;
+const int CHICKEN_START_Y = 320;
+const int CHICKEN_SPACING = 10;
 const int DRAGON_X = float(SCREEN_WIDTH) - 250;
 const int DRAGON_Y = 400;
 const int CHARACTER_START_X = float(SCREEN_WIDTH) / 2;
@@ -406,7 +406,7 @@ vector<SDL_Texture*> loadCharacterFrames(SDL_Renderer* renderer, const string& d
 vector<SDL_Texture*> loadBasketTextures(SDL_Renderer* renderer) {
     vector<SDL_Texture*> basketTextures;
     
-    for (int i = 0; i <= MAX_EGGS; i++) {
+    for (int i = 0; i <= 3; i++) {
         string basketPath = "src/assets/basketNeggs/basket_egg_" + to_string(i) + ".bmp";
         filesystem::path pBasket = basketPath;
         string absolutePath = filesystem::absolute(pBasket);

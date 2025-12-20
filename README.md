@@ -27,11 +27,7 @@ For Archlinux
 4. Test your changes locally before committing
 
 ### For Non-Linux Users
-If you're using Windows/macOS:
-1. Copy the source files to your development environment
-2. Set up SDL3 and build tools for your platform
-3. Implement and test your changes
-4. Copy back the modified source files to this repository
+I recommend using a VM.
 
 ## Versioning System
 
